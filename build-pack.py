@@ -26,8 +26,9 @@ SKILLS = {
         'assets/THIRD_PARTY_NOTICES.txt'),
 }
 SKILL_FILES = {f'skills/{name}/{file}' for name, files in SKILLS.items() for file in files}
-ARCHIVES = [f'{name}.zip' for name in SKILLS] + ['folloze-ai-webinar-skills.zip']
-ALLOWED = SKILL_FILES | {'README.md', 'START-HERE.md', '.gitignore', '.gitattributes', 'build-pack.py', 'downloads/manifest.json'} | {f'downloads/{name}' for name in ARCHIVES}
+GUIDES = {'START-HERE.md', 'CLAUDE-REHEARSAL.md'}
+ARCHIVES = [f'{name}.zip' for name in SKILLS] + ['claude-rehearsal-kit.zip', 'folloze-ai-webinar-skills.zip']
+ALLOWED = SKILL_FILES | GUIDES | {'README.md', '.gitignore', '.gitattributes', 'build-pack.py', 'downloads/manifest.json'} | {f'downloads/{name}' for name in ARCHIVES}
 
 
 def sha(data):
@@ -108,7 +109,7 @@ def main():
         folder = ROOT / 'skills' / name
         if inventory(folder) != set(files):
             raise ValueError(f'Unexpected or missing resources: {name}')
-    for relative in sorted(SKILL_FILES | {'START-HERE.md'}):
+    for relative in sorted(SKILL_FILES | GUIDES):
         file = ROOT / relative
         audit_attendee_file(file)
         if file.suffix == '.md':
@@ -121,9 +122,14 @@ def main():
     archives = []
     for name, files in SKILLS.items():
         archives.append(archive(f'{name}.zip', {f'{name}/{file}': (ROOT / 'skills' / name / file).read_bytes() for file in files}))
-    full = {f'folloze-ai-webinar-skills/{name}': (ROOT / name).read_bytes() for name in SKILL_FILES | {'START-HERE.md'}}
+    rehearsal = {f'claude-rehearsal-kit/skill-zips/{name}.zip': (ROOT / 'downloads' / f'{name}.zip').read_bytes() for name in SKILLS}
+    rehearsal['claude-rehearsal-kit/CLAUDE-REHEARSAL.md'] = (ROOT / 'CLAUDE-REHEARSAL.md').read_bytes()
+    for name in ('campaign-workspace.html', 'OpenSans-OFL.txt', 'THIRD_PARTY_NOTICES.txt'):
+        rehearsal[f'claude-rehearsal-kit/{name}'] = (ROOT / 'skills/campaign-workspace/assets' / name).read_bytes()
+    archives.append(archive('claude-rehearsal-kit.zip', rehearsal))
+    full = {f'folloze-ai-webinar-skills/{name}': (ROOT / name).read_bytes() for name in SKILL_FILES | GUIDES}
     archives.append(archive('folloze-ai-webinar-skills.zip', full))
-    manifest = {'version': '0.1.0', 'skillCount': len(SKILLS), 'skillFileCount': len(SKILL_FILES),
+    manifest = {'version': '0.1.1', 'skillCount': len(SKILLS), 'skillFileCount': len(SKILL_FILES),
                 'checks': ['explicit file allowlist', 'portable paths', 'relative references', 'archive CRC', 'source byte parity', 'fresh extraction'],
                 'artifacts': archives}
     (ROOT / 'downloads/manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')

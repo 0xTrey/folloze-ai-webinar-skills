@@ -4,6 +4,8 @@ Build campaign context, map your audience, and create reviewable drafts with eig
 
 **[Download all eight skills](downloads/folloze-ai-webinar-skills.zip?raw=1)** · [Start here](START-HERE.md)
 
+**Rehearsing in Claude?** [Download the rehearsal kit](downloads/claude-rehearsal-kit.zip?raw=1) for eight installable skill ZIPs, the HTML app, and [15 copy-ready prompts with exact setup steps](CLAUDE-REHEARSAL.md).
+
 | Skill | What it helps you do | Download |
 |---|---|---|
 | [Campaign Workspace](skills/campaign-workspace/SKILL.md) | Open the Folloze campaign map and track sources, gaps, and review | [ZIP](downloads/campaign-workspace.zip?raw=1) |

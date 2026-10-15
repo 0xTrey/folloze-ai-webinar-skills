@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "skillCount": 8,
   "skillFileCount": 58,
   "checks": [
@@ -366,15 +366,88 @@
       ]
     },
     {
-      "name": "folloze-ai-webinar-skills.zip",
-      "bytes": 377518,
-      "sha256": "18ebc7d921d8a4c226e5f9b63303bf6d7c744116a06f0483a464e7f22755a852",
-      "fileCount": 59,
+      "name": "claude-rehearsal-kit.zip",
+      "bytes": 656025,
+      "sha256": "9affab5e3227f05f63fc9fc459f57a4a138351f7704320ed076fabceca7fcfe9",
+      "fileCount": 12,
       "files": [
         {
+          "path": "claude-rehearsal-kit/CLAUDE-REHEARSAL.md",
+          "bytes": 18099,
+          "sha256": "0e0c14b6c0fb675a162e642e1eb20b18634eafe4f662e863c9f3270deb8787dc"
+        },
+        {
+          "path": "claude-rehearsal-kit/OpenSans-OFL.txt",
+          "bytes": 4389,
+          "sha256": "fbbbcfef55318de350562559b671360de6d597112ecc5c73881b05092db89602"
+        },
+        {
+          "path": "claude-rehearsal-kit/THIRD_PARTY_NOTICES.txt",
+          "bytes": 79127,
+          "sha256": "498c1aa08996c2a67d7e0bf0b3ace4a98fb83e14ff8d3361bfd0a2b1e6be3fe0"
+        },
+        {
+          "path": "claude-rehearsal-kit/campaign-workspace.html",
+          "bytes": 748024,
+          "sha256": "2305b397a4c6ae0198f122a05e759ee4c976968f6a41eb3d034288fe295e59e0"
+        },
+        {
+          "path": "claude-rehearsal-kit/skill-zips/account-brief-builder.zip",
+          "bytes": 11404,
+          "sha256": "09a782817fe675c0571ac1e207d15c407be2d80f1de234bba028183057495bdf"
+        },
+        {
+          "path": "claude-rehearsal-kit/skill-zips/buyer-group-ad-creative.zip",
+          "bytes": 11083,
+          "sha256": "bae80704a35f4b8c33978ada6bcdb6c26b115972bfe10029f83eca998d858e39"
+        },
+        {
+          "path": "claude-rehearsal-kit/skill-zips/buyer-group-email-copy.zip",
+          "bytes": 10988,
+          "sha256": "d340fa6cff9d8d8b03d07ba82579e41862c18035eb816495f04496a7c4acd0f2"
+        },
+        {
+          "path": "claude-rehearsal-kit/skill-zips/buyer-group-mapper.zip",
+          "bytes": 11699,
+          "sha256": "00ef925d6e31e210ccd1f1cb57c00da6b8b60b7acdc0226f0278592a8a4d8cba"
+        },
+        {
+          "path": "claude-rehearsal-kit/skill-zips/campaign-segmentation.zip",
+          "bytes": 11114,
+          "sha256": "80a563a6518f7b6cabf435d7ab5a5e6381c3997a4825466155e961c2893b0d18"
+        },
+        {
+          "path": "claude-rehearsal-kit/skill-zips/campaign-workspace.zip",
+          "bytes": 286114,
+          "sha256": "a4caf8ae6e78bb18c7bc1aff91bbc3f4f42b4b458128cf2476a7837f9c5691ff"
+        },
+        {
+          "path": "claude-rehearsal-kit/skill-zips/company-brain-builder.zip",
+          "bytes": 16418,
+          "sha256": "c2ffd14f98afccf0eed92e4beb49e20b339a2d960b8beb435a70c9bb15b1056b"
+        },
+        {
+          "path": "claude-rehearsal-kit/skill-zips/tools-data-setup.zip",
+          "bytes": 13973,
+          "sha256": "02d4651ebc905247f17dfce6a79db586acef431588aeda74b9303e82d1d834fa"
+        }
+      ]
+    },
+    {
+      "name": "folloze-ai-webinar-skills.zip",
+      "bytes": 384663,
+      "sha256": "9c2692df26924ccc51e33bb966f7ace57d92df4da8d664bee53aeb3f4f46c2e1",
+      "fileCount": 60,
+      "files": [
+        {
+          "path": "folloze-ai-webinar-skills/CLAUDE-REHEARSAL.md",
+          "bytes": 18099,
+          "sha256": "0e0c14b6c0fb675a162e642e1eb20b18634eafe4f662e863c9f3270deb8787dc"
+        },
+        {
           "path": "folloze-ai-webinar-skills/START-HERE.md",
-          "bytes": 1818,
-          "sha256": "debb6843225c0ae3b6f05feab1de2743a051ad62176a72d5f17a3b8e84bc8d1f"
+          "bytes": 2127,
+          "sha256": "264a43bb14fe47c4b34a93dc9eaf981add328451174f47081e529b866b5a19de"
         },
         {
           "path": "folloze-ai-webinar-skills/skills/account-brief-builder/QUICKSTART.md",

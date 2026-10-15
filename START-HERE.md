@@ -1,5 +1,7 @@
 # Build your campaign
 
+For Claude, use the [rehearsal guide](CLAUDE-REHEARSAL.md): exact setup, a fresh-campaign starter, and 15 walkthrough prompts. The [Claude kit](https://github.com/0xTrey/folloze-ai-webinar-skills/raw/refs/heads/main/downloads/claude-rehearsal-kit.zip) contains eight individual ZIPs for its skill installer.
+
 1. Download and unzip the full pack. Each folder inside `skills/` is a complete skill. Use your AI tool's supported installer, or attach `SKILL.md` and its referenced files in the same chat.
 2. Open [Campaign Workspace](skills/campaign-workspace/QUICKSTART.md) to see the campaign map. Start with no company files linked.
 3. Use [Tools & Data Setup](skills/tools-data-setup/QUICKSTART.md) and [Company Brain Builder](skills/company-brain-builder/QUICKSTART.md). Bring your company URL, known tool names, and approved documents when available.
