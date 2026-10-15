@@ -1,6 +1,6 @@
 # Buyer Group Ad Creative
 
-Role-specific ad copy and visual build briefs. An authorized image tool can create a visual review draft; otherwise preview generation remains pending.
+Buyer-group ad copy, LinkedIn feed images, 6sense display banners and a review handoff.
 
 ## Install or open
 
@@ -10,17 +10,17 @@ In another approved AI tool, attach `SKILL.md` and all reference files in the sa
 
 ## Bring this
 
-Company voice, product context, and a buyer group. Add a channel, approved assets, and desired action when known. Uploaded documents and approved excerpts work when your storage connection is unavailable.
+Company Brain, buyer groups, approved brand assets, supported proof, useful content and campaign board URL. Uploaded documents and approved excerpts work when your storage connection is unavailable.
 
 ## Start here
 
-> Use $buyer-group-ad-creative with my Company Brain and buyer-group map. Draft two distinct ad concepts per group for {channel or channel-neutral use}. Give copy, layout, asset needs, and image prompts. Use approved proof only and keep all assets pending review.
+> Use $buyer-group-ad-creative with my Company Brain, buyer-group map, brand assets and board URL. Create one concept for marketing leaders and one for practitioners. Export LinkedIn 1200 x 628 images and 6sense 300 x 250, 300 x 600 and 728 x 90 banners. Include copy, editable sources, tracking links and handoff sheets. Keep everything in draft.
 
 In tools without skill invocation, replace the `$` name with the skill's title and attach its files.
 
 ## Use the result
 
-Review the actual output and its sources. Facts, inferred guidance, unknowns, and approval stay separate. Keep the same account, segment, and buyer-group IDs when moving to the next task.
+Review the actual exports at their placement size, their content offer and claim sources. Run the included PNG/manifest checker. Facts, inferred guidance, unknowns, and approval stay separate. Keep the same account, segment, and buyer-group IDs when moving to the next task.
 
 Choose Google Drive, OneDrive, or a local folder for the returned files. If the AI cannot save there, upload or save them manually. Use private company material only in your approved AI workspace.
 

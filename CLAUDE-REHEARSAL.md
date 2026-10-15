@@ -130,7 +130,7 @@ Use Buyer Group Mapper for those same accounts and segment. Map role families, b
 ### 11. Draft buyer-group ad concepts
 
 ```text
-Use Buyer Group Ad Creative. Draft two distinct ad concepts for each of two priority buyer groups. Use our reviewed voice, supported capabilities, and approved proof. Include copy, CTA, visual brief, source notes, and a learning question. Return buyer-group-ads.md. Keep unverified destinations and production specs pending. If no design tool is available, return build briefs and label them as unrendered concepts.
+Use Buyer Group Ad Creative with two priority buyer groups, our reviewed voice, approved brand assets, content catalog and board URL. Create one concept per group. Export LinkedIn 1200 x 628 images and 6sense 300 x 250, 300 x 600 and 728 x 90 banners. Include editable sources, platform copy, board tracking links, handoff sheets and ad-creatives.json. Run the included export checker and inspect the images. Return buyer-group-ads.md with source notes and one learning question per concept. If rendering is unavailable, mark the visuals unrendered. Keep every new creative in Draft; do not upload or launch ads.
 ```
 
 **Show:** The difference between the buyer groups and between a brief and a rendered asset. Keep the ads in review until the messages handoff is complete.

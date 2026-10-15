@@ -1761,13 +1761,9 @@ Identify missing persona approval, capability evidence, coverage, and content. G
 Check every group against seller personas, account relevance, and the actual buying work. Show duplicate people, outdated affiliations, unresolved authority, and content gaps. Distinguish accounts with role coverage from accounts with verified people; a role map is useful even without contact coverage.
 
 Return a draft map, coverage plan, source register, and usage receipt when an authorized operation ran. Preserve IDs for Buyer Group Ad Creative and Buyer Group Email Copy. Record participant review and contact eligibility as pending unless supported. Stop before credit purchases, CRM writes, or communication.
-`,sha256:"347b8ceaa6f8310adf391c16056806fbe3c21123f58a34532e301518514e68a1"}}},{name:"buyer-group-ad-creative",title:"Buyer Group Ad Creative",step:"messages",description:"Create reviewable ad concepts, copy, and visual briefs for distinct B2B buyer groups using approved company context, account briefs, and supported proof. Generate a visual draft when an authorized image tool is available, without launching ads.",files:{"agents/openai.yaml":{text:`interface:
-  display_name: "Buyer Group Ad Creative"
-  short_description: "Draft ads for the roles in your buyer groups"
-  default_prompt: "Use $buyer-group-ad-creative with my company brain and supplied campaign context to prepare a review draft."
-`,sha256:"fd0526b0f70efb8ecf735e82aeb4e04baced47445e837162cc1eb3230d2bc5e8"},"QUICKSTART.md":{text:`# Buyer Group Ad Creative
+`,sha256:"347b8ceaa6f8310adf391c16056806fbe3c21123f58a34532e301518514e68a1"}}},{name:"buyer-group-ad-creative",title:"Buyer Group Ad Creative",step:"messages",description:"Create B2B ad copy and rendered creative for LinkedIn single-image ads and 6sense display banners from company context and buyer groups. Return channel-sized assets, board destinations and review files without launching ads.",files:{"QUICKSTART.md":{text:`# Buyer Group Ad Creative
 
-Role-specific ad copy and visual build briefs. An authorized image tool can create a visual review draft; otherwise preview generation remains pending.
+Buyer-group ad copy, LinkedIn feed images, 6sense display banners and a review handoff.
 
 ## Install or open
 
@@ -1777,24 +1773,72 @@ In another approved AI tool, attach \`SKILL.md\` and all reference files in the 
 
 ## Bring this
 
-Company voice, product context, and a buyer group. Add a channel, approved assets, and desired action when known. Uploaded documents and approved excerpts work when your storage connection is unavailable.
+Company Brain, buyer groups, approved brand assets, supported proof, useful content and campaign board URL. Uploaded documents and approved excerpts work when your storage connection is unavailable.
 
 ## Start here
 
-> Use $buyer-group-ad-creative with my Company Brain and buyer-group map. Draft two distinct ad concepts per group for {channel or channel-neutral use}. Give copy, layout, asset needs, and image prompts. Use approved proof only and keep all assets pending review.
+> Use $buyer-group-ad-creative with my Company Brain, buyer-group map, brand assets and board URL. Create one concept for marketing leaders and one for practitioners. Export LinkedIn 1200 x 628 images and 6sense 300 x 250, 300 x 600 and 728 x 90 banners. Include copy, editable sources, tracking links and handoff sheets. Keep everything in draft.
 
 In tools without skill invocation, replace the \`$\` name with the skill's title and attach its files.
 
 ## Use the result
 
-Review the actual output and its sources. Facts, inferred guidance, unknowns, and approval stay separate. Keep the same account, segment, and buyer-group IDs when moving to the next task.
+Review the actual exports at their placement size, their content offer and claim sources. Run the included PNG/manifest checker. Facts, inferred guidance, unknowns, and approval stay separate. Keep the same account, segment, and buyer-group IDs when moving to the next task.
 
 Choose Google Drive, OneDrive, or a local folder for the returned files. If the AI cannot save there, upload or save them manually. Use private company material only in your approved AI workspace.
 
 ## Bring your tool map
 
 Attach \`tool-map.md\` from Tools & Data Setup with your company context. The skill checks the route in this workspace and records its map version. Without a map, it can use approved files or build a small provisional map; charged usage stays at zero until specifically authorized. Owned tools without a connection use manual export/upload instructions.
-`,sha256:"f27c79ec2d35a6ce567dc5aa9824753ed00d0792bc5cff93de5145d09a8662a3"},"references/context-and-evidence.md":{text:`# Company context and evidence
+`,sha256:"f4617d0ca14390cc9a60ccdfb725092c04bcf261fe54d2cf30a12ef0557537d2"},"SKILL.md":{text:`---
+name: buyer-group-ad-creative
+description: "Create B2B ad copy and rendered creative for LinkedIn single-image ads and 6sense display banners from company context and buyer groups. Return channel-sized assets, board destinations and review files without launching ads."
+---
+
+# Buyer Group Ad Creative
+
+Turn the buyer group's work into a useful content offer, ad copy and visual files. Use the same campaign context as the sales email skill. Adapt the argument and layout to each placement.
+
+Read [context-and-evidence.md](references/context-and-evidence.md). Use [platform-formats.md](references/platform-formats.md) for LinkedIn and 6sense, then [output-template.md](references/output-template.md) for the handoff. Start from supplied files. Read [tool-map-use.md](references/tool-map-use.md) when a connected operation is needed.
+
+## 1. Read the group and brand
+
+Use the Company Brain's voice, positioning, approved capabilities and proof. Add account briefs, buyer groups, useful content, approved brand assets and the campaign destination. Preserve their IDs and source dates. Company research is sufficient when individual research is absent.
+
+Infer routine choices. Ask only when missing seller, audience, content or placement details materially change the output. Default to one concept for marketing leaders and one for practitioners when those groups exist, adapted to both requested platforms. Follow a supplied count or buyer map instead.
+
+## 2. Connect the problem and offer
+
+Choose one recognizable work problem and one useful story, guide or campaign example. Leaders may care about account relevance and useful sales context; practitioners may care about reusing approved content and getting campaigns live. Tie the choice to the actual persona rather than treating these examples as facts about an account.
+
+Use supported capabilities when approved outcome proof is unavailable. Preserve customer-story scope and qualifiers. Do not invent metrics, testimonials, customer emotion, familiarity or adoption. Keep private research and intent signals outside the ad. An account audience is not a named-person audience.
+
+## 3. Write for the placement
+
+Write one outcome headline, minimal supporting copy and one content CTA. For LinkedIn, separate the introductory text and platform headline from the words inside the image. For 6sense static banners, the copy lives in the image; do not apply native-ad title limits to a banner.
+
+Keep approved elevator pitches intact in the source library. Ads can use a supported short capability statement; do not silently rewrite the approved pitch itself. Prefer a useful resource or campaign-page offer over a meeting request for a resource-led campaign.
+
+Use the supplied campaign board as the click destination. Record its resource ID and verify that the offer is available there. A content source URL belongs in review notes, not as a substitute landing page. Code adds approved attribution parameters while preserving existing query values. Paid ads use non-personal channel/creative attribution, never invented recipient tokens or contact parameters. See [platform-formats.md](references/platform-formats.md).
+
+## 4. Render and inspect
+
+Use the real approved logo, brand colors and typography. Start with one primary headline. Avoid an eyebrow-headline-dek stack, em dashes, leading-zero labels, fake dashboards and unsupported proof.
+
+Create actual editable source and raster exports with an available authorized design tool. Typography and workflow diagrams can use SVG, HTML or canvas; use an available image tool for photographic or illustrated concepts. Keep exact text and logos under deterministic control where practical. Recompose each aspect ratio instead of shrinking one master. A paid operation still needs a verified cost and scoped allowance.
+
+Inspect the exported files at their actual placement size. Check legibility, unclipped text, logo proportions, contrast, dimensions and bytes. Use the bundled [export checker](scripts/check_ad_exports.py) for PNG files and the JSON manifest. It checks files and structure, not claims, design quality, platform acceptance or sending permission. When rendering is unavailable, return a complete brief and mark assets unrendered.
+
+## 5. Review and hand off
+
+Return the copy, actual visual files, editable sources, platform handoff, evidence notes and learning question. Keep the JSON manifest and each asset in the same portable folder. Use stable concept and buyer-group IDs. New creative remains Draft until reviewed, even when its source claims are approved.
+
+Record local generation separately from external upload, ad-account setup, audience validation, budget approval and launch. This skill creates no ad connection, budget or permission to launch. For another placement, verify its current official specs rather than extending these defaults by assumption.
+`,sha256:"c2000e2a81bc9723fad04f0016c1faffca516955b05a4435ff963388dc3edaaf"},"agents/openai.yaml":{text:`interface:
+  display_name: "Buyer Group Ad Creative"
+  short_description: "Create LinkedIn and 6sense ad creative for buyer groups"
+  default_prompt: "Use $buyer-group-ad-creative with my Company Brain, buyer groups and campaign board URL to create LinkedIn and 6sense ad drafts and review files."
+`,sha256:"67307caa4c03eadfd85f0dac04513933f9dd004908193a37528f65ba5da9d592"},"references/context-and-evidence.md":{text:`# Company context and evidence
 
 Use the seller's company context to guide work about target accounts. A target company's website is not the seller's ICP, persona approval, brand guide, or proof register.
 
@@ -1879,7 +1923,74 @@ Return \`buyer-group-ads.md\`, plus visual draft files if generated. A build bri
 | {IDs} | {finding} | {finding} | {approved basis or held} | {rights or missing} | {verified/pending} | {checked or not generated} | {owner/action} |
 
 Keep rendered copy separate from private rationale and sources. Record local generation, external upload, ad setup, and launch separately. Only local drafts are part of this workflow.
-`,sha256:"bdba313be5a4360a61495af9ba020ddf7866f65fd0a173ad5ceb9613680da4b8"},"references/tool-map-use.md":{text:`# Use the participant's tool map
+
+## Platform files and export manifest
+
+Return editable sources, PNG exports, \`linkedin-ads.csv\`, \`6sense-display.csv\`, and \`ad-creatives.json\` when both channels are requested. Use the columns in [platform-formats.md](platform-formats.md). Include only the requested platforms. These files are review handoffs, not proof of import or launch.
+
+The manifest lives beside its files. Use relative image paths. Each format is one row with a unique creative ID. Example fields:
+
+\`\`\`json
+{
+  "destination_url": "https://example.com/campaign",
+  "creatives": [{
+    "id": "leader-relevance-linkedin-1200x628",
+    "concept_id": "leader-relevance", "buyer_group_id": "marketing-leader",
+    "platform": "linkedin", "width": 1200, "height": 628,
+    "image_file": "leader-relevance-linkedin-1200x628.png",
+    "source_file": "leader-relevance-linkedin-1200x628.svg",
+    "introductory_text": "Explore an example of relevant content for different buying roles.",
+    "headline": "Give buyers relevant content", "cta": "Learn More",
+    "destination_url": "https://example.com/campaign?utm_source=linkedin&utm_medium=paid_social&utm_campaign=campaign-review&utm_content=leader-relevance-1200x628",
+    "resource_id": "campaign-example", "source_ids": ["approved-capability-1"],
+    "review_state": "draft"
+  }]
+}
+\`\`\`
+
+Use your own approved context and actual exported files. For 6sense rows, set \`platform\` to \`6sense\`, use a checked banner size and \`utm_medium=display\`. Run:
+
+\`\`\`text
+python3 \x3cskill-directory>/scripts/check_ad_exports.py \x3cad-creatives.json>
+\`\`\`
+
+The checker reads local files only. It validates PNG headers, dimensions, byte limits, required LinkedIn copy, board URL, known identity fields and attribution. It does not decode the PNG, approve claims or verify platform acceptance. Inspect the real image separately.
+`,sha256:"2a45cab1f3d96fe36bdc06f1e7174aed731a676b0ed95e21b1753f7fb7500bea"},"references/platform-formats.md":{text:`# LinkedIn and 6sense handoffs
+
+Checked October 14, 2026. Recheck official specifications before a new production handoff. These defaults cover static creative only.
+
+## LinkedIn single-image ads
+
+- PNG or JPG, at most 5 MB. Default landscape export: 1200 x 628 pixels. Optional square: 1200 x 1200.
+- Keep introductory text within the recommended 150 characters and platform headline within 70. These are recommendations, not a claim about hard input limits.
+- Use a supported platform CTA such as Learn More. Inside the image, a more specific label may identify the content offer.
+- Return \`linkedin-ads.csv\`: \`creative_id\`, \`buyer_group_id\`, \`ad_name\`, \`introductory_text\`, \`headline\`, \`cta\`, \`destination_url\`, \`image_file\`, \`alt_text\`, \`review_state\`.
+- The CSV is a handoff sheet, not a promised bulk-import schema. Inspect the actual Campaign Manager preview before a separately authorized launch.
+
+Source: [LinkedIn single-image specifications](https://business.linkedin.com/advertise/ads/sponsored-content/single-image-ads-specs).
+
+## 6sense static display banners
+
+- JPEG, JPG or PNG. Accepted sizes: 160 x 600, 300 x 250, 300 x 600, 320 x 480, 320 x 50 and 728 x 90 pixels.
+- Official accepted file size: 1 KB minimum, 150 KB maximum. Use a conservative 150,000-byte ceiling and 1,024-byte floor in the checker.
+- Default first set: 300 x 250, 300 x 600 and 728 x 90. Use a placement-specific headline, logo and readable CTA. Leave out supporting copy when the small format needs space.
+- Return \`6sense-display.csv\`: \`creative_id\`, \`buyer_group_id\`, \`ad_name\`, \`width\`, \`height\`, \`image_file\`, \`click_url\`, \`review_state\`.
+- These are handoff columns, not an automatic import contract. A static image does not include a click URL; the operator sets that URL on the ad record. Native and HTML5 formats have different requirements.
+
+Sources: [6sense ad types](https://support.6sense.com/docs/6sense-campaign-ad-types-and-sizes), [official static-banner specification image](https://cdn.us.document360.io/0e2cd0a2-b3b3-495b-80df-96f8381febea/Images/Documentation/image-1773314176191.png).
+
+## Board links and identity
+
+Keep the supplied board host/path and any approved query parameters. Use code to add \`utm_source\` (\`linkedin\` or \`6sense\`), \`utm_medium\` (\`paid_social\` or \`display\`), an agreed \`utm_campaign\`, and a stable creative/format \`utm_content\`. Encode values with a URL library.
+
+An anonymous ad click does not establish a named person's identity. Never add \`em\`, \`fn\`, \`ln\`, \`co\`, \`ro\`, a recipient token, or a contact ID to a general paid-ad URL. If a supplied URL already contains those fields, request a public ad destination. Valid existing first-party recognition can operate independently; do not claim it was verified by the ad export.
+
+If an approved campaign requires a deep link, use its verified board-item URL. Do not guess a hash anchor or use the external source article instead. Platform click identifiers and macros require verification in the actual destination tool.
+
+## Measurement
+
+Choose one learning question per concept. Compare board visits and useful content engagement by creative, then account or buyer signals where actually available. Keep platform impressions, clicks, human board engagement and sales outcomes separate. Do not invent predicted CTR, conversions or attribution.
+`,sha256:"c8f2d10c4f1b2bc3bf76854df77b957a860bd07783a2a67fd1b45e09a22fb41c"},"references/tool-map-use.md":{text:`# Use the participant's tool map
 
 Read the supplied \`tool-map.md\` before selecting data, research, enrichment, creative, or storage operations. Record its ID/version and the route IDs used in the output's review notes. The map is participant context; it is not bundled inside a skill and does not require access to another chat.
 
@@ -1920,7 +2031,90 @@ An unknown-cost or unapproved route remains held while draft work continues from
 ## Optional arithmetic check
 
 When Python is available, use the bundled [check_tool_budget.py](../scripts/check_tool_budget.py) with a documented next-call snapshot. It checks separate provider, pool, and task limits per \`pool|unit\` dimension, readiness flags, and unresolved outcomes. It makes no provider call or reservation and cannot grant permission or enforce provider billing. Follow the rules above before execution; otherwise keep the route manual. The snapshot schema is available from Tools & Data Setup, or inspect this self-contained script to construct it.
-`,sha256:"1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"},"scripts/check_tool_budget.py":{text:`#!/usr/bin/env python3
+`,sha256:"1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"},"scripts/check_ad_exports.py":{text:`#!/usr/bin/env python3
+"""Read-only PNG dimensions, copy and board-link checks for an ad handoff."""
+import argparse
+import json
+from pathlib import Path
+import struct
+from urllib.parse import parse_qs, urlsplit
+
+SIZES = {(160, 600), (300, 250), (300, 600), (320, 480), (320, 50), (728, 90)}
+IDENTITY = {'em', 'fn', 'ln', 'co', 'ro', 'token', 'recipient_id', 'contact_id'}
+
+
+def check_exports(manifest, folder):
+    if not isinstance(manifest, dict) or not isinstance(manifest.get('creatives'), list) or not manifest['creatives']:
+        raise ValueError('Manifest needs a nonempty creatives list')
+    base = urlsplit(manifest.get('destination_url', ''))
+    errors, warnings, ids = [], [], set()
+    boundary = Path(folder).resolve()
+    for row in manifest['creatives']:
+        ref = row.get('id', 'missing-id')
+        def issue(message):
+            errors.append({'creative_id': ref, 'issue': message})
+        if ref == 'missing-id' or ref in ids:
+            issue('Missing or duplicate creative ID')
+        ids.add(ref)
+        platform = row.get('platform')
+        if platform not in {'linkedin', '6sense'}:
+            issue('Unsupported platform')
+        if row.get('review_state') != 'draft' or not row.get('buyer_group_id'):
+            issue('New creative needs draft state and buyer-group ID')
+        target = urlsplit(row.get('destination_url', ''))
+        params = parse_qs(target.query, keep_blank_values=True)
+        if base.scheme != 'https' or not base.netloc or (target.scheme, target.netloc, target.path.rstrip('/')) != (base.scheme, base.netloc, base.path.rstrip('/')):
+            issue('Destination must use the supplied HTTPS campaign board')
+        if any(key.casefold() in IDENTITY for key in params):
+            issue('General paid-ad URL contains recipient identity')
+        if params.get('utm_source') != [platform] or params.get('utm_medium') != [('paid_social' if platform == 'linkedin' else 'display')] or not params.get('utm_campaign') or not params.get('utm_content'):
+            issue('Missing or inconsistent channel/creative attribution')
+        for key, values in parse_qs(base.query, keep_blank_values=True).items():
+            if params.get(key) != values:
+                issue('Existing destination query values changed')
+        if platform == 'linkedin':
+            for field, limit in [('introductory_text', 150), ('headline', 70)]:
+                value = row.get(field, '')
+                if not isinstance(value, str) or not value.strip():
+                    issue(f'Missing {field}')
+                elif len(value) > limit:
+                    warnings.append({'creative_id': ref, 'issue': f'{field} exceeds recommended {limit} characters'})
+        name = row.get('image_file', '')
+        path = (boundary / name).resolve()
+        if not name or not path.is_relative_to(boundary) or path.suffix.lower() != '.png' or not path.is_file():
+            issue('PNG file missing or outside handoff folder')
+            continue
+        data = path.read_bytes()
+        if len(data) \x3c 33 or data[:8] != b'\\x89PNG\\r\\n\\x1a\\n' or data[12:16] != b'IHDR':
+            issue('Invalid PNG header')
+            continue
+        size = struct.unpack('>II', data[16:24])
+        if size != (row.get('width'), row.get('height')):
+            issue('PNG dimensions differ from manifest')
+        if platform == '6sense' and (size not in SIZES or not 1024 \x3c= len(data) \x3c= 150000):
+            issue('6sense static dimensions or file weight outside checked limits')
+        if platform == 'linkedin' and (size not in {(1200, 628), (1200, 1200)} or len(data) > 5000000):
+            issue('Outside this handoff checker\\'s LinkedIn export presets')
+    return {'state': 'needs_revision' if errors else 'ready_for_creative_review', 'creative_count': len(manifest['creatives']),
+            'errors': errors, 'warnings': warnings, 'launch_authorized': False,
+            'limits': 'PNG headers and manifest checks only; inspect decoded images, claims, design and platform preview separately.'}
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('manifest', type=Path)
+    args = parser.parse_args()
+    try:
+        result = check_exports(json.loads(args.manifest.read_text()), args.manifest.parent)
+    except (KeyError, TypeError, ValueError, OSError) as exc:
+        parser.exit(2, f'Invalid handoff: {exc}\\n')
+    print(json.dumps(result, indent=2))
+    raise SystemExit(1 if result['errors'] else 0)
+
+
+if __name__ == '__main__':
+    main()
+`,sha256:"06659d00e3e12d8782ad58a0473268cd47305b46a4534dee145b6eeb1f1a2e88"},"scripts/check_tool_budget.py":{text:`#!/usr/bin/env python3
 """Check a documented next-call budget snapshot offline. No provider calls or writes."""
 
 import json
@@ -1936,7 +2130,7 @@ def amount(value):
         result = Decimal(str(value))
     except (InvalidOperation, ValueError) as error:
         raise ValueError("Amount must be a known nonnegative number") from error
-    if not result.is_finite() or result < 0:
+    if not result.is_finite() or result \x3c 0:
         raise ValueError("Amount must be a known nonnegative number")
     return result
 
@@ -2016,51 +2210,7 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
-`,sha256:"952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"},"SKILL.md":{text:`---
-name: buyer-group-ad-creative
-description: "Create reviewable ad concepts, copy, and visual briefs for distinct B2B buyer groups using approved company context, account briefs, and supported proof. Generate a visual draft when an authorized image tool is available, without launching ads."
----
-
-# Buyer Group Ad Creative
-
-Give each buyer group a relevant ad idea and an executable visual brief. Keep the seller's brand and product limits visible in the work.
-
-Read [context-and-evidence.md](references/context-and-evidence.md) and use [output-template.md](references/output-template.md).
-
-Read [tool-map-use.md](references/tool-map-use.md). Use \`tool-map.md\` for asset retrieval, image/design operations, specification lookup, and storage. Record map version and selected routes. A paid image operation needs its own verified cost and scoped allowance; otherwise return the visual build brief with preview pending.
-
-## 1. Read the group and brand
-
-Use Company Brain Branding + Voice, messaging, positioning, and proof. Read the buyer-group job, questions, objections, and approved account facts. Preserve segment, account, and buyer-group IDs.
-
-Ask for the group or seller context if missing. Ask for channel/placement and campaign action only when the answer changes the output; otherwise return a channel-neutral concept and label the CTA as proposed. A role-level brief works without named contacts.
-
-## 2. Choose a focused angle
-
-Make one problem, supported value, and next step clear for each group. Select approved proof with its qualifiers or use a capability claim when outcome proof is missing. Do not invent statistics, testimonials, logos, guarantees, urgency, or familiarity.
-
-Vary the role's problem and proof need, not just the job title in identical copy. Do not reveal private account research, intent scores, or contact data in the ad.
-
-## 3. Create the ad concepts
-
-Default to two genuinely different concepts per group unless the participant requests another count. Include headline, body, CTA, visual idea, and a short reason the concept fits the group. Keep source notes outside rendered copy.
-
-Use one primary headline. Put supporting information in the body, graphic, or caption. Avoid an eyebrow-headline-dek stack, em dashes, leading-zero labels, and inflated language.
-
-For a named placement, verify current official format and length limits before calling the copy placement-ready. If the specs cannot be checked, provide editable copy and mark production specifications pending instead of guessing dimensions.
-
-## 4. Make the visual usable
-
-Specify hierarchy, layout, approved asset roles, visual style, image prompt, and alt text. Use actual approved brand assets when supplied; if a logo or token is missing, leave a clear asset gap rather than creating an imitation.
-
-When an authorized image tool is available, create a visual review draft for the selected concept and inspect its text, assets, hierarchy, and claims. Do not initiate a paid service or external upload without authorization. If image generation or approved assets are unavailable, return a complete build brief and label the preview not generated.
-
-## 5. Review and hand off
-
-Check each claim against the proof register, and each group angle against its source persona. Inspect the actual preview if generated; distinguish a rendering flaw from a strategy gap. Mark pending specifications, links, assets, and approval clearly.
-
-Return concepts, visual briefs or generated files, evidence notes, and review state. Compare concepts by intended learning question, not invented predicted performance. Stop before ad-account writes, budgets, upload, scheduling, or launch.
-`,sha256:"dc8a321dce877bf85e3360336390d51f285f87787bdd55e89a8bedec64f072f0"}}},{name:"buyer-group-email-copy",title:"Buyer Group Email Copy",step:"messages",description:"Draft B2B sales emails using value subjects, problem or customer-story openings, role relevance, fixed approved pitches and content CTAs. Prepare AgentMail or Smartlead handoffs from company context and buyer groups, without sending or enrolling contacts.",files:{"QUICKSTART.md":{text:`# Buyer Group Email Copy
+`,sha256:"952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"}}},{name:"buyer-group-email-copy",title:"Buyer Group Email Copy",step:"messages",description:"Draft B2B sales emails using value subjects, problem or customer-story openings, role relevance, fixed approved pitches and content CTAs. Prepare AgentMail or Smartlead handoffs from company context and buyer groups, without sending or enrolling contacts.",files:{"QUICKSTART.md":{text:`# Buyer Group Email Copy
 
 One writing skill for AgentMail, Smartlead or another sender. It turns company context, approved pitches and buyer roles into reviewable email drafts and platform handoffs.
 

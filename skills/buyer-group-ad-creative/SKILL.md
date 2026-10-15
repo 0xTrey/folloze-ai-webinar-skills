@@ -1,44 +1,44 @@
 ---
 name: buyer-group-ad-creative
-description: "Create reviewable ad concepts, copy, and visual briefs for distinct B2B buyer groups using approved company context, account briefs, and supported proof. Generate a visual draft when an authorized image tool is available, without launching ads."
+description: "Create B2B ad copy and rendered creative for LinkedIn single-image ads and 6sense display banners from company context and buyer groups. Return channel-sized assets, board destinations and review files without launching ads."
 ---
 
 # Buyer Group Ad Creative
 
-Give each buyer group a relevant ad idea and an executable visual brief. Keep the seller's brand and product limits visible in the work.
+Turn the buyer group's work into a useful content offer, ad copy and visual files. Use the same campaign context as the sales email skill. Adapt the argument and layout to each placement.
 
-Read [context-and-evidence.md](references/context-and-evidence.md) and use [output-template.md](references/output-template.md).
-
-Read [tool-map-use.md](references/tool-map-use.md). Use `tool-map.md` for asset retrieval, image/design operations, specification lookup, and storage. Record map version and selected routes. A paid image operation needs its own verified cost and scoped allowance; otherwise return the visual build brief with preview pending.
+Read [context-and-evidence.md](references/context-and-evidence.md). Use [platform-formats.md](references/platform-formats.md) for LinkedIn and 6sense, then [output-template.md](references/output-template.md) for the handoff. Start from supplied files. Read [tool-map-use.md](references/tool-map-use.md) when a connected operation is needed.
 
 ## 1. Read the group and brand
 
-Use Company Brain Branding + Voice, messaging, positioning, and proof. Read the buyer-group job, questions, objections, and approved account facts. Preserve segment, account, and buyer-group IDs.
+Use the Company Brain's voice, positioning, approved capabilities and proof. Add account briefs, buyer groups, useful content, approved brand assets and the campaign destination. Preserve their IDs and source dates. Company research is sufficient when individual research is absent.
 
-Ask for the group or seller context if missing. Ask for channel/placement and campaign action only when the answer changes the output; otherwise return a channel-neutral concept and label the CTA as proposed. A role-level brief works without named contacts.
+Infer routine choices. Ask only when missing seller, audience, content or placement details materially change the output. Default to one concept for marketing leaders and one for practitioners when those groups exist, adapted to both requested platforms. Follow a supplied count or buyer map instead.
 
-## 2. Choose a focused angle
+## 2. Connect the problem and offer
 
-Make one problem, supported value, and next step clear for each group. Select approved proof with its qualifiers or use a capability claim when outcome proof is missing. Do not invent statistics, testimonials, logos, guarantees, urgency, or familiarity.
+Choose one recognizable work problem and one useful story, guide or campaign example. Leaders may care about account relevance and useful sales context; practitioners may care about reusing approved content and getting campaigns live. Tie the choice to the actual persona rather than treating these examples as facts about an account.
 
-Vary the role's problem and proof need, not just the job title in identical copy. Do not reveal private account research, intent scores, or contact data in the ad.
+Use supported capabilities when approved outcome proof is unavailable. Preserve customer-story scope and qualifiers. Do not invent metrics, testimonials, customer emotion, familiarity or adoption. Keep private research and intent signals outside the ad. An account audience is not a named-person audience.
 
-## 3. Create the ad concepts
+## 3. Write for the placement
 
-Default to two genuinely different concepts per group unless the participant requests another count. Include headline, body, CTA, visual idea, and a short reason the concept fits the group. Keep source notes outside rendered copy.
+Write one outcome headline, minimal supporting copy and one content CTA. For LinkedIn, separate the introductory text and platform headline from the words inside the image. For 6sense static banners, the copy lives in the image; do not apply native-ad title limits to a banner.
 
-Use one primary headline. Put supporting information in the body, graphic, or caption. Avoid an eyebrow-headline-dek stack, em dashes, leading-zero labels, and inflated language.
+Keep approved elevator pitches intact in the source library. Ads can use a supported short capability statement; do not silently rewrite the approved pitch itself. Prefer a useful resource or campaign-page offer over a meeting request for a resource-led campaign.
 
-For a named placement, verify current official format and length limits before calling the copy placement-ready. If the specs cannot be checked, provide editable copy and mark production specifications pending instead of guessing dimensions.
+Use the supplied campaign board as the click destination. Record its resource ID and verify that the offer is available there. A content source URL belongs in review notes, not as a substitute landing page. Code adds approved attribution parameters while preserving existing query values. Paid ads use non-personal channel/creative attribution, never invented recipient tokens or contact parameters. See [platform-formats.md](references/platform-formats.md).
 
-## 4. Make the visual usable
+## 4. Render and inspect
 
-Specify hierarchy, layout, approved asset roles, visual style, image prompt, and alt text. Use actual approved brand assets when supplied; if a logo or token is missing, leave a clear asset gap rather than creating an imitation.
+Use the real approved logo, brand colors and typography. Start with one primary headline. Avoid an eyebrow-headline-dek stack, em dashes, leading-zero labels, fake dashboards and unsupported proof.
 
-When an authorized image tool is available, create a visual review draft for the selected concept and inspect its text, assets, hierarchy, and claims. Do not initiate a paid service or external upload without authorization. If image generation or approved assets are unavailable, return a complete build brief and label the preview not generated.
+Create actual editable source and raster exports with an available authorized design tool. Typography and workflow diagrams can use SVG, HTML or canvas; use an available image tool for photographic or illustrated concepts. Keep exact text and logos under deterministic control where practical. Recompose each aspect ratio instead of shrinking one master. A paid operation still needs a verified cost and scoped allowance.
+
+Inspect the exported files at their actual placement size. Check legibility, unclipped text, logo proportions, contrast, dimensions and bytes. Use the bundled [export checker](scripts/check_ad_exports.py) for PNG files and the JSON manifest. It checks files and structure, not claims, design quality, platform acceptance or sending permission. When rendering is unavailable, return a complete brief and mark assets unrendered.
 
 ## 5. Review and hand off
 
-Check each claim against the proof register, and each group angle against its source persona. Inspect the actual preview if generated; distinguish a rendering flaw from a strategy gap. Mark pending specifications, links, assets, and approval clearly.
+Return the copy, actual visual files, editable sources, platform handoff, evidence notes and learning question. Keep the JSON manifest and each asset in the same portable folder. Use stable concept and buyer-group IDs. New creative remains Draft until reviewed, even when its source claims are approved.
 
-Return concepts, visual briefs or generated files, evidence notes, and review state. Compare concepts by intended learning question, not invented predicted performance. Stop before ad-account writes, budgets, upload, scheduling, or launch.
+Record local generation separately from external upload, ad-account setup, audience validation, budget approval and launch. This skill creates no ad connection, budget or permission to launch. For another placement, verify its current official specs rather than extending these defaults by assumption.

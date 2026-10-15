@@ -1,4 +1,4 @@
 interface:
   display_name: "Buyer Group Ad Creative"
-  short_description: "Draft ads for the roles in your buyer groups"
-  default_prompt: "Use $buyer-group-ad-creative with my company brain and supplied campaign context to prepare a review draft."
+  short_description: "Create LinkedIn and 6sense ad creative for buyer groups"
+  default_prompt: "Use $buyer-group-ad-creative with my Company Brain, buyer groups and campaign board URL to create LinkedIn and 6sense ad drafts and review files."

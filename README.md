@@ -14,12 +14,14 @@ Build campaign context, map your audience, and create reviewable drafts with eig
 | [Campaign Segmentation](skills/campaign-segmentation/SKILL.md) | Turn your account list into explainable groups | [ZIP](downloads/campaign-segmentation.zip?raw=1) |
 | [Account Brief Builder](skills/account-brief-builder/SKILL.md) | Connect account evidence to campaign hypotheses | [ZIP](downloads/account-brief-builder.zip?raw=1) |
 | [Buyer Group Mapper](skills/buyer-group-mapper/SKILL.md) | Map roles, known contacts, and coverage gaps | [ZIP](downloads/buyer-group-mapper.zip?raw=1) |
-| [Buyer Group Ad Creative](skills/buyer-group-ad-creative/SKILL.md) | Draft group-specific ads and visual briefs | [ZIP](downloads/buyer-group-ad-creative.zip?raw=1) |
+| [Buyer Group Ad Creative](skills/buyer-group-ad-creative/SKILL.md) | Create LinkedIn images and 6sense banners with review handoffs | [ZIP](downloads/buyer-group-ad-creative.zip?raw=1) |
 | [Buyer Group Email Copy](skills/buyer-group-email-copy/SKILL.md) | Draft five-part sales emails with AgentMail or Smartlead handoffs | [ZIP](downloads/buyer-group-email-copy.zip?raw=1) |
 
 Start with your company URL and the tools you already use. Add approved documents and an account list when available. Each skill includes instructions, a quick start, and its required references. Campaign Workspace also includes a standalone HTML app.
 
 Use your AI tool's supported skill-installation flow. For a file-based chat, attach the skill instructions and referenced files together. Your documents, contacts, connections, and credentials belong in your own approved workspace.
+
+The ad skill creates buyer-group concepts, LinkedIn single-image exports, 6sense static banners, and platform handoff sheets. It checks dimensions, file weight and board attribution. Supply your own approved brand assets; campaign creative is kept in your workspace.
 
 The email skill combines a value subject, problem or customer story, role relevance, a fixed approved pitch, and a content CTA. It includes same-company duplicate checks and AgentMail or Smartlead handoffs. Bring your own Company Brain, pitch library, content, and board URL.
 
