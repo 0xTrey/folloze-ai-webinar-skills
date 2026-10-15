@@ -20,7 +20,7 @@ The prompts cover: account review, segmentation, briefs, buyer groups, Channel A
 | [Account Brief Builder](skills/account-brief-builder/SKILL.md) | Connect account evidence to campaign hypotheses | [ZIP](downloads/account-brief-builder.zip?raw=1) |
 | [Buyer Group Mapper](skills/buyer-group-mapper/SKILL.md) | Map roles, known contacts, and coverage gaps | [ZIP](downloads/buyer-group-mapper.zip?raw=1) |
 | [Buyer Group Ad Creative](skills/buyer-group-ad-creative/SKILL.md) | Create LinkedIn images and 6sense banners with review handoffs | [ZIP](downloads/buyer-group-ad-creative.zip?raw=1) |
-| [Buyer Group Email Copy](skills/buyer-group-email-copy/SKILL.md) | Draft five-part sales emails with AgentMail or Smartlead handoffs | [ZIP](downloads/buyer-group-email-copy.zip?raw=1) |
+| [Buyer Group Email Copy](skills/buyer-group-email-copy/SKILL.md) | Draft relevant emails and LinkedIn messages with platform handoffs | [ZIP](downloads/buyer-group-email-copy.zip?raw=1) |
 | [Engagement & Follow-up](skills/follow-up-measurement/SKILL.md) | Read actual engagement and draft useful next actions | [ZIP](downloads/follow-up-measurement.zip?raw=1) |
 
 Start with your company URL and the tools you already use. Add approved documents and an account list when available. Each skill includes instructions, a quick start, and its required references. Campaign Workspace also includes a standalone HTML app.
@@ -29,7 +29,7 @@ Use your AI tool's supported skill-installation flow. For a file-based chat, att
 
 The ad skill can reuse supplied artwork, build a webinar gallery, or create LinkedIn images, 6sense banners, and platform handoff sheets. It checks dimensions, file weight and board attribution. Supply your own approved brand assets; campaign creative is kept in your workspace.
 
-The email skill combines a value subject, problem or customer story, role relevance, a fixed approved pitch, and a content CTA. It includes same-company duplicate checks and AgentMail or Smartlead handoffs. Bring your own Company Brain, pitch library, content, and board URL.
+The email skill drafts sales emails and LinkedIn messages with verified triggers or company context, role relevance, fixed approved pitches and content CTAs. It includes personal-hook freshness checks, proof-led follow-ups, same-company duplicate review and AgentMail or Smartlead handoffs. Bring your own Company Brain, pitch library, content, and board URL.
 
 Marketo builds, live sales sending, and cadence setup remain separate workflows. New creative and strategy need your review.
 

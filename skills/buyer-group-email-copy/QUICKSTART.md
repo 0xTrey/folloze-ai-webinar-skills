@@ -1,6 +1,6 @@
 # Buyer Group Email Copy
 
-One writing skill for AgentMail, Smartlead or another sender. It turns company context, approved pitches and buyer roles into reviewable email drafts and platform handoffs.
+One writing skill for email and LinkedIn. It turns company context, approved pitches and buyer roles into reviewable messages, with AgentMail or Smartlead handoffs when requested.
 
 ## Install or open
 
@@ -14,9 +14,11 @@ Company Brain or seller summary, approved pitch library, account brief, buyer ro
 
 ## Start here
 
-> Use $buyer-group-email-copy with my Company Brain, account brief, approved pitches and content catalog. Draft five role-specific emails for this account using value subjects, problem or customer-story openings and content CTAs. Prepare an AgentMail handoff for review. Do not send.
+> Use $buyer-group-email-copy with my Company Brain, account brief, approved pitches and content catalog. Draft five role-specific emails and LinkedIn companions. Use a relevant verified trigger or company context, preserve the approved pitches, and point content CTAs to my campaign board. Return sources, trigger dates and link gaps separately. Do not send.
 
-For Smartlead, replace “AgentMail handoff” with “Smartlead CSV and sequence template.” Supply your own approved pitches, content and campaign board URL.
+Request an “AgentMail handoff” or “Smartlead CSV and sequence template” when you need provider files. Personal posts, promotions, new roles and certificates need dates within four calendar months. Without a suitable hook, company research is sufficient. Ask for a shorter proof-led follow-up when needed; it adds a new resource or supported proof without repeating the first hook.
+
+Supply your own approved pitches, content and campaign board URL.
 
 In tools without skill invocation, replace the `$` name with the skill's title and attach its files.
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Buyer Group Email Copy"
-  short_description: "Write role-based emails for AgentMail or Smartlead"
-  default_prompt: "Use $buyer-group-email-copy with my company brain, approved pitches and account briefs to draft role-specific sales emails and a review handoff for my email platform."
+  short_description: "Draft relevant sales emails and LinkedIn messages"
+  default_prompt: "Use $buyer-group-email-copy with my company brain, approved pitches and account briefs to draft relevant sales emails and LinkedIn messages. Use verified triggers or company context, preserve exact pitches and link to my campaign board. Keep sources and link gaps separate."

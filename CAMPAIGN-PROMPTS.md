@@ -176,7 +176,7 @@ Show each pitch's exact text, intended use, source basis, version and approval s
 **Get:** Five review drafts and the requested AgentMail or Smartlead handoff.
 
 ```text
-Use Buyer Group Email Copy for {selected account and five representative buyers}. Write a value subject, problem or sourced customer-story opening, company-and-role bridge, exact approved pitch and content CTA to {campaign board URL}.
+Use Buyer Group Email Copy for {selected account and five representative buyers}. Write a 2-6 word value subject, a relevant opening under 15 words, company-and-role bridge, exact approved pitch and content CTA to {campaign board URL}. Use a verified personal trigger dated within four calendar months or fall back to sourced company context. Aim for 70-110 body words.
 
 Company research is sufficient when individual research is absent. Make subjects, openings and complete messages meaningfully distinct within a company, including supplied prior Outreach, AgentMail and Smartlead messages. Pitches may repeat. Use resolved names and my supplied signature and footer policy. Return five drafts, evidence notes and email-drafts.json; run the bundled checker. After I review them, prepare the requested batch and {AgentMail JSON or Smartlead CSV/template} as unsent files. Keep unresolved recipient links flagged.
 ```
@@ -197,14 +197,14 @@ Give me subject and preheader options, a clear content-led message, one primary 
 ### 14. Write the LinkedIn conversation
 
 **Stage:** 5. Channel Activation
-**Skill:** Workflow prompt
+**Skill:** [Buyer Group Email Copy](https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/buyer-group-email-copy)
 **Bring:** Buyer roles; account brief; optional individual research; content offer; board URL.
 **Get:** A connection note and two useful message drafts.
 
 ```text
-Use these buyer roles, account facts and approved content to draft LinkedIn outreach for {audience}. Write a short connection note, a first message offering something useful and one follow-up that adds a new reason to engage.
+Use Buyer Group Email Copy with these buyer roles, account facts, approved pitches and content to draft LinkedIn outreach for {audience}. Write a short connection note, a 45-80 word first message and a shorter proof-led follow-up that adds a new reason to engage. Preserve the selected approved pitch exactly.
 
-Adapt the opening for executive, manager and practitioner priorities. Use company context when personal research is unavailable, and do not invent familiarity or an observed pain. The connection note can omit a link; any content link must return to {campaign board URL} or a verified item there. Return the drafts with their evidence basis and unresolved personalization fields. Keep them as human-review messages, with no automated sending.
+Adapt the opening for function and executive, manager or practitioner priorities. Use personal hooks only with relevant dated evidence within four calendar months; otherwise use company context. Do not invent familiarity or an observed pain. Select customer proof by relevance first and verify the exact claim. Do not repeat the first hook. The connection note can omit a link; any content link must return to {campaign board URL} or a verified item there. Return the drafts with their evidence basis and unresolved personalization fields. Keep them as human-review messages, with no automated sending.
 ```
 
 ### 15. Create the LinkedIn ad creative
