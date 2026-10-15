@@ -1779,6 +1779,8 @@ Company Brain, buyer groups, approved brand assets, supported proof, useful cont
 
 > Use $buyer-group-ad-creative with my Company Brain, buyer-group map, brand assets and board URL. Create one concept for marketing leaders and one for practitioners. Export LinkedIn 1200 x 628 images and 6sense 300 x 250, 300 x 600 and 728 x 90 banners. Include copy, editable sources, tracking links and handoff sheets. Keep everything in draft.
 
+Already have an ad? Attach it and ask the skill to reuse its approved message and visual direction, correct errors, and adapt it to the requested placements.
+
 In tools without skill invocation, replace the \`$\` name with the skill's title and attach its files.
 
 ## Use the result
@@ -1790,7 +1792,7 @@ Choose Google Drive, OneDrive, or a local folder for the returned files. If the 
 ## Bring your tool map
 
 Attach \`tool-map.md\` from Tools & Data Setup with your company context. The skill checks the route in this workspace and records its map version. Without a map, it can use approved files or build a small provisional map; charged usage stays at zero until specifically authorized. Owned tools without a connection use manual export/upload instructions.
-`,sha256:"f4617d0ca14390cc9a60ccdfb725092c04bcf261fe54d2cf30a12ef0557537d2"},"SKILL.md":{text:`---
+`,sha256:"9f9f7c15a9496fafed587975829919cc1d91bb28fef5c0e8f7f1bfb977ced2ad"},"SKILL.md":{text:`---
 name: buyer-group-ad-creative
 description: "Create B2B ad copy and rendered creative for LinkedIn single-image ads and 6sense display banners from company context and buyer groups. Return channel-sized assets, board destinations and review files without launching ads."
 ---
@@ -1805,7 +1807,7 @@ Read [context-and-evidence.md](references/context-and-evidence.md). Use [platfor
 
 Use the Company Brain's voice, positioning, approved capabilities and proof. Add account briefs, buyer groups, useful content, approved brand assets and the campaign destination. Preserve their IDs and source dates. Company research is sufficient when individual research is absent.
 
-Infer routine choices. Ask only when missing seller, audience, content or placement details materially change the output. Default to one concept for marketing leaders and one for practitioners when those groups exist, adapted to both requested platforms. Follow a supplied count or buyer map instead.
+When the participant supplies an ad, inspect it and reuse it as the starting point. Preserve its approved message and visual direction. Propose only necessary copy corrections, CTA changes and placement adaptations. Create new concepts only when requested or when the supplied creative cannot serve the goal. Without supplied creative, default to one concept for marketing leaders and one for practitioners when those groups exist; follow a supplied count or buyer map instead. Ask only when missing context materially changes the output.
 
 ## 2. Connect the problem and offer
 
@@ -1827,14 +1829,18 @@ Use the real approved logo, brand colors and typography. Start with one primary 
 
 Create actual editable source and raster exports with an available authorized design tool. Typography and workflow diagrams can use SVG, HTML or canvas; use an available image tool for photographic or illustrated concepts. Keep exact text and logos under deterministic control where practical. Recompose each aspect ratio instead of shrinking one master. A paid operation still needs a verified cost and scoped allowance.
 
+For supplied raster creative, use an available image editing tool for content changes. Check spelling, generated interface text, CTA consistency and logo fidelity before resizing or exporting. Preserve explicit participant approval of a claim for its stated use.
+
 Inspect the exported files at their actual placement size. Check legibility, unclipped text, logo proportions, contrast, dimensions and bytes. Use the bundled [export checker](scripts/check_ad_exports.py) for PNG files and the JSON manifest. It checks files and structure, not claims, design quality, platform acceptance or sending permission. When rendering is unavailable, return a complete brief and mark assets unrendered.
+
+For a webinar or demonstration, build a clear gallery of supplied and generated concepts. Keep original artwork intact and label the view as a preview. Production exports and ad setup are optional unless requested.
 
 ## 5. Review and hand off
 
 Return the copy, actual visual files, editable sources, platform handoff, evidence notes and learning question. Keep the JSON manifest and each asset in the same portable folder. Use stable concept and buyer-group IDs. New creative remains Draft until reviewed, even when its source claims are approved.
 
 Record local generation separately from external upload, ad-account setup, audience validation, budget approval and launch. This skill creates no ad connection, budget or permission to launch. For another placement, verify its current official specs rather than extending these defaults by assumption.
-`,sha256:"c2000e2a81bc9723fad04f0016c1faffca516955b05a4435ff963388dc3edaaf"},"agents/openai.yaml":{text:`interface:
+`,sha256:"62581be40593a36fd5fbaf3fcbbbdcf617ecb9207173fcb547a9899b61964853"},"agents/openai.yaml":{text:`interface:
   display_name: "Buyer Group Ad Creative"
   short_description: "Create LinkedIn and 6sense ad creative for buyer groups"
   default_prompt: "Use $buyer-group-ad-creative with my Company Brain, buyer groups and campaign board URL to create LinkedIn and 6sense ad drafts and review files."

@@ -16,6 +16,8 @@ Company Brain, buyer groups, approved brand assets, supported proof, useful cont
 
 > Use $buyer-group-ad-creative with my Company Brain, buyer-group map, brand assets and board URL. Create one concept for marketing leaders and one for practitioners. Export LinkedIn 1200 x 628 images and 6sense 300 x 250, 300 x 600 and 728 x 90 banners. Include copy, editable sources, tracking links and handoff sheets. Keep everything in draft.
 
+Already have an ad? Attach it and ask the skill to reuse its approved message and visual direction, correct errors, and adapt it to the requested placements.
+
 In tools without skill invocation, replace the `$` name with the skill's title and attach its files.
 
 ## Use the result

@@ -21,7 +21,7 @@ Start with your company URL and the tools you already use. Add approved document
 
 Use your AI tool's supported skill-installation flow. For a file-based chat, attach the skill instructions and referenced files together. Your documents, contacts, connections, and credentials belong in your own approved workspace.
 
-The ad skill creates buyer-group concepts, LinkedIn single-image exports, 6sense static banners, and platform handoff sheets. It checks dimensions, file weight and board attribution. Supply your own approved brand assets; campaign creative is kept in your workspace.
+The ad skill can reuse supplied artwork, build a webinar gallery, or create LinkedIn images, 6sense banners, and platform handoff sheets. It checks dimensions, file weight and board attribution. Supply your own approved brand assets; campaign creative is kept in your workspace.
 
 The email skill combines a value subject, problem or customer story, role relevance, a fixed approved pitch, and a content CTA. It includes same-company duplicate checks and AgentMail or Smartlead handoffs. Bring your own Company Brain, pitch library, content, and board URL.
 

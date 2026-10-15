@@ -13,7 +13,7 @@ Read [context-and-evidence.md](references/context-and-evidence.md). Use [platfor
 
 Use the Company Brain's voice, positioning, approved capabilities and proof. Add account briefs, buyer groups, useful content, approved brand assets and the campaign destination. Preserve their IDs and source dates. Company research is sufficient when individual research is absent.
 
-Infer routine choices. Ask only when missing seller, audience, content or placement details materially change the output. Default to one concept for marketing leaders and one for practitioners when those groups exist, adapted to both requested platforms. Follow a supplied count or buyer map instead.
+When the participant supplies an ad, inspect it and reuse it as the starting point. Preserve its approved message and visual direction. Propose only necessary copy corrections, CTA changes and placement adaptations. Create new concepts only when requested or when the supplied creative cannot serve the goal. Without supplied creative, default to one concept for marketing leaders and one for practitioners when those groups exist; follow a supplied count or buyer map instead. Ask only when missing context materially changes the output.
 
 ## 2. Connect the problem and offer
 
@@ -35,7 +35,11 @@ Use the real approved logo, brand colors and typography. Start with one primary 
 
 Create actual editable source and raster exports with an available authorized design tool. Typography and workflow diagrams can use SVG, HTML or canvas; use an available image tool for photographic or illustrated concepts. Keep exact text and logos under deterministic control where practical. Recompose each aspect ratio instead of shrinking one master. A paid operation still needs a verified cost and scoped allowance.
 
+For supplied raster creative, use an available image editing tool for content changes. Check spelling, generated interface text, CTA consistency and logo fidelity before resizing or exporting. Preserve explicit participant approval of a claim for its stated use.
+
 Inspect the exported files at their actual placement size. Check legibility, unclipped text, logo proportions, contrast, dimensions and bytes. Use the bundled [export checker](scripts/check_ad_exports.py) for PNG files and the JSON manifest. It checks files and structure, not claims, design quality, platform acceptance or sending permission. When rendering is unavailable, return a complete brief and mark assets unrendered.
+
+For a webinar or demonstration, build a clear gallery of supplied and generated concepts. Keep original artwork intact and label the view as a preview. Production exports and ad setup are optional unless requested.
 
 ## 5. Review and hand off
 
