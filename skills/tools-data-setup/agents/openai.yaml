@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tools & Data Setup"
+  short_description: "Map your tools, data access, and credit limits"
+  default_prompt: "Use $tools-data-setup to map the tools I own and the operations available in this workspace, including contact enrichment, credit limits, and manual fallbacks."

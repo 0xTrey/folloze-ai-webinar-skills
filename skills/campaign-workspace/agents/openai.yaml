@@ -1,0 +1,4 @@
+interface:
+  display_name: "Folloze Campaign Workspace"
+  short_description: "Build a source-linked campaign and grow its skill pack"
+  default_prompt: "Use $campaign-workspace to open a fresh Folloze campaign, show missing inputs, and help me connect or build the next step."

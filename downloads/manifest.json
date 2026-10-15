@@ -1,0 +1,672 @@
+{
+  "version": "0.1.0",
+  "skillCount": 8,
+  "skillFileCount": 58,
+  "checks": [
+    "explicit file allowlist",
+    "portable paths",
+    "relative references",
+    "archive CRC",
+    "source byte parity",
+    "fresh extraction"
+  ],
+  "artifacts": [
+    {
+      "name": "tools-data-setup.zip",
+      "bytes": 13973,
+      "sha256": "02d4651ebc905247f17dfce6a79db586acef431588aeda74b9303e82d1d834fa",
+      "fileCount": 7,
+      "files": [
+        {
+          "path": "tools-data-setup/QUICKSTART.md",
+          "bytes": 1769,
+          "sha256": "4e3ec4e2d9a56c1ffa53ce7659dfb560faa16e7c668394e1794ad36a25689465"
+        },
+        {
+          "path": "tools-data-setup/SKILL.md",
+          "bytes": 5302,
+          "sha256": "6de1e38c10f5ad3a05e3946a45215e1f922d448abf3daf2b36c432afc8369085"
+        },
+        {
+          "path": "tools-data-setup/agents/openai.yaml",
+          "bytes": 298,
+          "sha256": "b86e676a1b7f17381ba9d0d85ed91cda1e89644b6000d4efbe5c098846b83f01"
+        },
+        {
+          "path": "tools-data-setup/references/enrichment-and-limits.md",
+          "bytes": 4829,
+          "sha256": "04556c19afe736d8a64f5a66f61cc5ac71169e18097f6ac9be9ea3283c24772b"
+        },
+        {
+          "path": "tools-data-setup/references/tool-map-template.md",
+          "bytes": 7779,
+          "sha256": "7fcebd1098024f343e427827cdea2568c067f103685be88546fc69c2110d1502"
+        },
+        {
+          "path": "tools-data-setup/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "tools-data-setup/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        }
+      ]
+    },
+    {
+      "name": "company-brain-builder.zip",
+      "bytes": 16418,
+      "sha256": "c2ffd14f98afccf0eed92e4beb49e20b339a2d960b8beb435a70c9bb15b1056b",
+      "fileCount": 8,
+      "files": [
+        {
+          "path": "company-brain-builder/QUICKSTART.md",
+          "bytes": 2968,
+          "sha256": "785e032810f0d0f93a1346e74e8e4575d0da7be28a58c25ce87904b374750065"
+        },
+        {
+          "path": "company-brain-builder/SKILL.md",
+          "bytes": 8504,
+          "sha256": "738a44029fd5431ed6a46ef232a7c8b9bafcafe199eb7b773ad31491212f4621"
+        },
+        {
+          "path": "company-brain-builder/agents/openai.yaml",
+          "bytes": 254,
+          "sha256": "ecfe035fc5465efb33c7dba0a973a5fa9ca6f3631b35e1ae1d6b262b8e0fe16d"
+        },
+        {
+          "path": "company-brain-builder/references/company-brain-template.md",
+          "bytes": 6106,
+          "sha256": "efe3a96d3e7395dda0024c280f85b7b282ad35544339d6ca9a4a12d000554749"
+        },
+        {
+          "path": "company-brain-builder/references/document-requests.md",
+          "bytes": 3691,
+          "sha256": "013aa4eba07f0a1e3ae1e9c0654586b8626c03636f072db3291365112c4e9408"
+        },
+        {
+          "path": "company-brain-builder/references/storage-and-use.md",
+          "bytes": 3791,
+          "sha256": "b04eef08743ff3161b674ff651839f78c00153272760431605aaf758d756b742"
+        },
+        {
+          "path": "company-brain-builder/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "company-brain-builder/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        }
+      ]
+    },
+    {
+      "name": "campaign-segmentation.zip",
+      "bytes": 11114,
+      "sha256": "80a563a6518f7b6cabf435d7ab5a5e6381c3997a4825466155e961c2893b0d18",
+      "fileCount": 7,
+      "files": [
+        {
+          "path": "campaign-segmentation/QUICKSTART.md",
+          "bytes": 1956,
+          "sha256": "f569f197a71929f1c94cd6d3412e8539a758295db66c8f22ac8c4c979ba04b0a"
+        },
+        {
+          "path": "campaign-segmentation/SKILL.md",
+          "bytes": 4213,
+          "sha256": "e42f844084e590a914ece11550e16cb30daf521b3f282e29da4ef017787efa63"
+        },
+        {
+          "path": "campaign-segmentation/agents/openai.yaml",
+          "bytes": 248,
+          "sha256": "d152510ccc78e15286aa6b31545c8ba041befe1c3c00f1d05cde34be68648231"
+        },
+        {
+          "path": "campaign-segmentation/references/context-and-evidence.md",
+          "bytes": 4103,
+          "sha256": "3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"
+        },
+        {
+          "path": "campaign-segmentation/references/output-template.md",
+          "bytes": 2072,
+          "sha256": "ce12c5608f8324cfd21e9ea4a517c364783cc21897178b057f51abfdef438f6b"
+        },
+        {
+          "path": "campaign-segmentation/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "campaign-segmentation/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        }
+      ]
+    },
+    {
+      "name": "account-brief-builder.zip",
+      "bytes": 11404,
+      "sha256": "09a782817fe675c0571ac1e207d15c407be2d80f1de234bba028183057495bdf",
+      "fileCount": 7,
+      "files": [
+        {
+          "path": "account-brief-builder/QUICKSTART.md",
+          "bytes": 2046,
+          "sha256": "28e7e6c0271776fd92a0fe8dea21a7be557a930cf166021852b36e7735a2057c"
+        },
+        {
+          "path": "account-brief-builder/SKILL.md",
+          "bytes": 3970,
+          "sha256": "dbcae9167d1d44f0683e597c2268ffdc07d8d9ee7367497d8602a0b3fed9a717"
+        },
+        {
+          "path": "account-brief-builder/agents/openai.yaml",
+          "bytes": 244,
+          "sha256": "7ad3026a6a005809e8ffa5619d43fdcf14df35cc8bbb3e08decc0c027a654aff"
+        },
+        {
+          "path": "account-brief-builder/references/context-and-evidence.md",
+          "bytes": 4103,
+          "sha256": "3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"
+        },
+        {
+          "path": "account-brief-builder/references/output-template.md",
+          "bytes": 2667,
+          "sha256": "800dda1e39af799786923d01cdab4100a5f83704b0c8e25a1f6253459b4bfc44"
+        },
+        {
+          "path": "account-brief-builder/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "account-brief-builder/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        }
+      ]
+    },
+    {
+      "name": "buyer-group-mapper.zip",
+      "bytes": 11699,
+      "sha256": "00ef925d6e31e210ccd1f1cb57c00da6b8b60b7acdc0226f0278592a8a4d8cba",
+      "fileCount": 7,
+      "files": [
+        {
+          "path": "buyer-group-mapper/QUICKSTART.md",
+          "bytes": 2345,
+          "sha256": "1a416b7e87376cd2c3f66087dd891d1e7d1608b5b1b29b77c8dde25dfd2995b4"
+        },
+        {
+          "path": "buyer-group-mapper/SKILL.md",
+          "bytes": 4593,
+          "sha256": "347b8ceaa6f8310adf391c16056806fbe3c21123f58a34532e301518514e68a1"
+        },
+        {
+          "path": "buyer-group-mapper/agents/openai.yaml",
+          "bytes": 242,
+          "sha256": "bbd1cdbbf1ab40825a862e58332917edfbc0153b85187513e41538ce62c38b68"
+        },
+        {
+          "path": "buyer-group-mapper/references/context-and-evidence.md",
+          "bytes": 4103,
+          "sha256": "3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"
+        },
+        {
+          "path": "buyer-group-mapper/references/output-template.md",
+          "bytes": 2834,
+          "sha256": "ec332c2ee55ac6066cfb38b125636676b881b5adc9e75a97a44612505fbc3980"
+        },
+        {
+          "path": "buyer-group-mapper/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "buyer-group-mapper/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        }
+      ]
+    },
+    {
+      "name": "buyer-group-ad-creative.zip",
+      "bytes": 11083,
+      "sha256": "bae80704a35f4b8c33978ada6bcdb6c26b115972bfe10029f83eca998d858e39",
+      "fileCount": 7,
+      "files": [
+        {
+          "path": "buyer-group-ad-creative/QUICKSTART.md",
+          "bytes": 2042,
+          "sha256": "f27c79ec2d35a6ce567dc5aa9824753ed00d0792bc5cff93de5145d09a8662a3"
+        },
+        {
+          "path": "buyer-group-ad-creative/SKILL.md",
+          "bytes": 3670,
+          "sha256": "dc8a321dce877bf85e3360336390d51f285f87787bdd55e89a8bedec64f072f0"
+        },
+        {
+          "path": "buyer-group-ad-creative/agents/openai.yaml",
+          "bytes": 249,
+          "sha256": "fd0526b0f70efb8ecf735e82aeb4e04baced47445e837162cc1eb3230d2bc5e8"
+        },
+        {
+          "path": "buyer-group-ad-creative/references/context-and-evidence.md",
+          "bytes": 4103,
+          "sha256": "3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"
+        },
+        {
+          "path": "buyer-group-ad-creative/references/output-template.md",
+          "bytes": 2066,
+          "sha256": "bdba313be5a4360a61495af9ba020ddf7866f65fd0a173ad5ceb9613680da4b8"
+        },
+        {
+          "path": "buyer-group-ad-creative/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "buyer-group-ad-creative/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        }
+      ]
+    },
+    {
+      "name": "buyer-group-email-copy.zip",
+      "bytes": 10988,
+      "sha256": "d340fa6cff9d8d8b03d07ba82579e41862c18035eb816495f04496a7c4acd0f2",
+      "fileCount": 7,
+      "files": [
+        {
+          "path": "buyer-group-email-copy/QUICKSTART.md",
+          "bytes": 1949,
+          "sha256": "12900227a6fcc46615892a8d5aa5551e8c70209e39a0148174cd9db4151b844c"
+        },
+        {
+          "path": "buyer-group-email-copy/SKILL.md",
+          "bytes": 3902,
+          "sha256": "f46d2103a5f7c81d96b3524af4483bba28c964e3d983cbdc31b1bc7f80a859d2"
+        },
+        {
+          "path": "buyer-group-email-copy/agents/openai.yaml",
+          "bytes": 247,
+          "sha256": "d580f1517d0267723ab3558b47df2e9cd1e680351bc7c914cc500e3dbaa99982"
+        },
+        {
+          "path": "buyer-group-email-copy/references/context-and-evidence.md",
+          "bytes": 4103,
+          "sha256": "3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"
+        },
+        {
+          "path": "buyer-group-email-copy/references/output-template.md",
+          "bytes": 1749,
+          "sha256": "74128a6bc8af8fc41a5b9fe4ccd3c6ec19d3278b76844b46009656414932687b"
+        },
+        {
+          "path": "buyer-group-email-copy/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "buyer-group-email-copy/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        }
+      ]
+    },
+    {
+      "name": "campaign-workspace.zip",
+      "bytes": 286114,
+      "sha256": "a4caf8ae6e78bb18c7bc1aff91bbc3f4f42b4b458128cf2476a7837f9c5691ff",
+      "fileCount": 8,
+      "files": [
+        {
+          "path": "campaign-workspace/QUICKSTART.md",
+          "bytes": 995,
+          "sha256": "4e7aa5a8b4c3d52c951f42e836c17192438828953668d5f782119ab46d245f88"
+        },
+        {
+          "path": "campaign-workspace/SKILL.md",
+          "bytes": 4207,
+          "sha256": "7baca9a86a97cadc5ffe64149853ce826ebb441498a3b5bbf173bcddffa38145"
+        },
+        {
+          "path": "campaign-workspace/agents/openai.yaml",
+          "bytes": 277,
+          "sha256": "958a4c6526a16e1f79b3725501374dd20430b65c5a8abffab7b9bfc4fe9c9081"
+        },
+        {
+          "path": "campaign-workspace/assets/OpenSans-OFL.txt",
+          "bytes": 4389,
+          "sha256": "fbbbcfef55318de350562559b671360de6d597112ecc5c73881b05092db89602"
+        },
+        {
+          "path": "campaign-workspace/assets/THIRD_PARTY_NOTICES.txt",
+          "bytes": 79127,
+          "sha256": "498c1aa08996c2a67d7e0bf0b3ace4a98fb83e14ff8d3361bfd0a2b1e6be3fe0"
+        },
+        {
+          "path": "campaign-workspace/assets/campaign-workspace.html",
+          "bytes": 748024,
+          "sha256": "2305b397a4c6ae0198f122a05e759ee4c976968f6a41eb3d034288fe295e59e0"
+        },
+        {
+          "path": "campaign-workspace/references/result-contract.md",
+          "bytes": 1127,
+          "sha256": "cff26de885fee1b3a3c07478652b83a26201dd7ddc0bf8aea5a4efbffeb422f7"
+        },
+        {
+          "path": "campaign-workspace/references/runtime.md",
+          "bytes": 1545,
+          "sha256": "ea1ce5a5a03c4d048abcf765f80e5a2fee13c5f1459b483fec765064242aeabb"
+        }
+      ]
+    },
+    {
+      "name": "folloze-ai-webinar-skills.zip",
+      "bytes": 377518,
+      "sha256": "18ebc7d921d8a4c226e5f9b63303bf6d7c744116a06f0483a464e7f22755a852",
+      "fileCount": 59,
+      "files": [
+        {
+          "path": "folloze-ai-webinar-skills/START-HERE.md",
+          "bytes": 1818,
+          "sha256": "debb6843225c0ae3b6f05feab1de2743a051ad62176a72d5f17a3b8e84bc8d1f"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/account-brief-builder/QUICKSTART.md",
+          "bytes": 2046,
+          "sha256": "28e7e6c0271776fd92a0fe8dea21a7be557a930cf166021852b36e7735a2057c"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/account-brief-builder/SKILL.md",
+          "bytes": 3970,
+          "sha256": "dbcae9167d1d44f0683e597c2268ffdc07d8d9ee7367497d8602a0b3fed9a717"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/account-brief-builder/agents/openai.yaml",
+          "bytes": 244,
+          "sha256": "7ad3026a6a005809e8ffa5619d43fdcf14df35cc8bbb3e08decc0c027a654aff"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/account-brief-builder/references/context-and-evidence.md",
+          "bytes": 4103,
+          "sha256": "3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/account-brief-builder/references/output-template.md",
+          "bytes": 2667,
+          "sha256": "800dda1e39af799786923d01cdab4100a5f83704b0c8e25a1f6253459b4bfc44"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/account-brief-builder/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/account-brief-builder/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-ad-creative/QUICKSTART.md",
+          "bytes": 2042,
+          "sha256": "f27c79ec2d35a6ce567dc5aa9824753ed00d0792bc5cff93de5145d09a8662a3"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-ad-creative/SKILL.md",
+          "bytes": 3670,
+          "sha256": "dc8a321dce877bf85e3360336390d51f285f87787bdd55e89a8bedec64f072f0"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-ad-creative/agents/openai.yaml",
+          "bytes": 249,
+          "sha256": "fd0526b0f70efb8ecf735e82aeb4e04baced47445e837162cc1eb3230d2bc5e8"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-ad-creative/references/context-and-evidence.md",
+          "bytes": 4103,
+          "sha256": "3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-ad-creative/references/output-template.md",
+          "bytes": 2066,
+          "sha256": "bdba313be5a4360a61495af9ba020ddf7866f65fd0a173ad5ceb9613680da4b8"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-ad-creative/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-ad-creative/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-email-copy/QUICKSTART.md",
+          "bytes": 1949,
+          "sha256": "12900227a6fcc46615892a8d5aa5551e8c70209e39a0148174cd9db4151b844c"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-email-copy/SKILL.md",
+          "bytes": 3902,
+          "sha256": "f46d2103a5f7c81d96b3524af4483bba28c964e3d983cbdc31b1bc7f80a859d2"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-email-copy/agents/openai.yaml",
+          "bytes": 247,
+          "sha256": "d580f1517d0267723ab3558b47df2e9cd1e680351bc7c914cc500e3dbaa99982"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-email-copy/references/context-and-evidence.md",
+          "bytes": 4103,
+          "sha256": "3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-email-copy/references/output-template.md",
+          "bytes": 1749,
+          "sha256": "74128a6bc8af8fc41a5b9fe4ccd3c6ec19d3278b76844b46009656414932687b"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-email-copy/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-email-copy/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-mapper/QUICKSTART.md",
+          "bytes": 2345,
+          "sha256": "1a416b7e87376cd2c3f66087dd891d1e7d1608b5b1b29b77c8dde25dfd2995b4"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-mapper/SKILL.md",
+          "bytes": 4593,
+          "sha256": "347b8ceaa6f8310adf391c16056806fbe3c21123f58a34532e301518514e68a1"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-mapper/agents/openai.yaml",
+          "bytes": 242,
+          "sha256": "bbd1cdbbf1ab40825a862e58332917edfbc0153b85187513e41538ce62c38b68"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-mapper/references/context-and-evidence.md",
+          "bytes": 4103,
+          "sha256": "3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-mapper/references/output-template.md",
+          "bytes": 2834,
+          "sha256": "ec332c2ee55ac6066cfb38b125636676b881b5adc9e75a97a44612505fbc3980"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-mapper/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/buyer-group-mapper/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-segmentation/QUICKSTART.md",
+          "bytes": 1956,
+          "sha256": "f569f197a71929f1c94cd6d3412e8539a758295db66c8f22ac8c4c979ba04b0a"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-segmentation/SKILL.md",
+          "bytes": 4213,
+          "sha256": "e42f844084e590a914ece11550e16cb30daf521b3f282e29da4ef017787efa63"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-segmentation/agents/openai.yaml",
+          "bytes": 248,
+          "sha256": "d152510ccc78e15286aa6b31545c8ba041befe1c3c00f1d05cde34be68648231"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-segmentation/references/context-and-evidence.md",
+          "bytes": 4103,
+          "sha256": "3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-segmentation/references/output-template.md",
+          "bytes": 2072,
+          "sha256": "ce12c5608f8324cfd21e9ea4a517c364783cc21897178b057f51abfdef438f6b"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-segmentation/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-segmentation/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-workspace/QUICKSTART.md",
+          "bytes": 995,
+          "sha256": "4e7aa5a8b4c3d52c951f42e836c17192438828953668d5f782119ab46d245f88"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-workspace/SKILL.md",
+          "bytes": 4207,
+          "sha256": "7baca9a86a97cadc5ffe64149853ce826ebb441498a3b5bbf173bcddffa38145"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-workspace/agents/openai.yaml",
+          "bytes": 277,
+          "sha256": "958a4c6526a16e1f79b3725501374dd20430b65c5a8abffab7b9bfc4fe9c9081"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-workspace/assets/OpenSans-OFL.txt",
+          "bytes": 4389,
+          "sha256": "fbbbcfef55318de350562559b671360de6d597112ecc5c73881b05092db89602"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-workspace/assets/THIRD_PARTY_NOTICES.txt",
+          "bytes": 79127,
+          "sha256": "498c1aa08996c2a67d7e0bf0b3ace4a98fb83e14ff8d3361bfd0a2b1e6be3fe0"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-workspace/assets/campaign-workspace.html",
+          "bytes": 748024,
+          "sha256": "2305b397a4c6ae0198f122a05e759ee4c976968f6a41eb3d034288fe295e59e0"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-workspace/references/result-contract.md",
+          "bytes": 1127,
+          "sha256": "cff26de885fee1b3a3c07478652b83a26201dd7ddc0bf8aea5a4efbffeb422f7"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/campaign-workspace/references/runtime.md",
+          "bytes": 1545,
+          "sha256": "ea1ce5a5a03c4d048abcf765f80e5a2fee13c5f1459b483fec765064242aeabb"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/company-brain-builder/QUICKSTART.md",
+          "bytes": 2968,
+          "sha256": "785e032810f0d0f93a1346e74e8e4575d0da7be28a58c25ce87904b374750065"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/company-brain-builder/SKILL.md",
+          "bytes": 8504,
+          "sha256": "738a44029fd5431ed6a46ef232a7c8b9bafcafe199eb7b773ad31491212f4621"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/company-brain-builder/agents/openai.yaml",
+          "bytes": 254,
+          "sha256": "ecfe035fc5465efb33c7dba0a973a5fa9ca6f3631b35e1ae1d6b262b8e0fe16d"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/company-brain-builder/references/company-brain-template.md",
+          "bytes": 6106,
+          "sha256": "efe3a96d3e7395dda0024c280f85b7b282ad35544339d6ca9a4a12d000554749"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/company-brain-builder/references/document-requests.md",
+          "bytes": 3691,
+          "sha256": "013aa4eba07f0a1e3ae1e9c0654586b8626c03636f072db3291365112c4e9408"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/company-brain-builder/references/storage-and-use.md",
+          "bytes": 3791,
+          "sha256": "b04eef08743ff3161b674ff651839f78c00153272760431605aaf758d756b742"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/company-brain-builder/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/company-brain-builder/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/tools-data-setup/QUICKSTART.md",
+          "bytes": 1769,
+          "sha256": "4e3ec4e2d9a56c1ffa53ce7659dfb560faa16e7c668394e1794ad36a25689465"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/tools-data-setup/SKILL.md",
+          "bytes": 5302,
+          "sha256": "6de1e38c10f5ad3a05e3946a45215e1f922d448abf3daf2b36c432afc8369085"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/tools-data-setup/agents/openai.yaml",
+          "bytes": 298,
+          "sha256": "b86e676a1b7f17381ba9d0d85ed91cda1e89644b6000d4efbe5c098846b83f01"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/tools-data-setup/references/enrichment-and-limits.md",
+          "bytes": 4829,
+          "sha256": "04556c19afe736d8a64f5a66f61cc5ac71169e18097f6ac9be9ea3283c24772b"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/tools-data-setup/references/tool-map-template.md",
+          "bytes": 7779,
+          "sha256": "7fcebd1098024f343e427827cdea2568c067f103685be88546fc69c2110d1502"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/tools-data-setup/references/tool-map-use.md",
+          "bytes": 5637,
+          "sha256": "1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/skills/tools-data-setup/scripts/check_tool_budget.py",
+          "bytes": 4253,
+          "sha256": "952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"
+        }
+      ]
+    }
+  ]
+}

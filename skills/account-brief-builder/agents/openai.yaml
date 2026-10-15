@@ -1,0 +1,4 @@
+interface:
+  display_name: "Account Brief Builder"
+  short_description: "Build cited briefs for your target accounts"
+  default_prompt: "Use $account-brief-builder with my company brain and supplied campaign context to prepare a review draft."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Company Brain Builder"
+  short_description: "Build reusable company context in five steps"
+  default_prompt: "Use $company-brain-builder to build my company brain from my company URL and any approved documents I can provide."

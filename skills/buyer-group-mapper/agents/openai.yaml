@@ -1,0 +1,4 @@
+interface:
+  display_name: "Buyer Group Mapper"
+  short_description: "Map account buyers from ICP and persona context"
+  default_prompt: "Use $buyer-group-mapper with my company brain and supplied campaign context to prepare a review draft."

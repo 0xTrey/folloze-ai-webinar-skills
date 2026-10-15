@@ -1,0 +1,4 @@
+interface:
+  display_name: "Buyer Group Email Copy"
+  short_description: "Write concise unsent emails for buyer groups"
+  default_prompt: "Use $buyer-group-email-copy with my company brain and supplied campaign context to prepare a review draft."

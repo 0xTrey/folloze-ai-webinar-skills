@@ -1,0 +1,4 @@
+interface:
+  display_name: "Buyer Group Ad Creative"
+  short_description: "Draft ads for the roles in your buyer groups"
+  default_prompt: "Use $buyer-group-ad-creative with my company brain and supplied campaign context to prepare a review draft."

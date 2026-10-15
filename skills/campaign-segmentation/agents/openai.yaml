@@ -1,0 +1,4 @@
+interface:
+  display_name: "Campaign Segmentation"
+  short_description: "Segment an existing account list for one-to-few"
+  default_prompt: "Use $campaign-segmentation with my company brain and supplied campaign context to prepare a review draft."
