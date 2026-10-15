@@ -7,7 +7,7 @@ description: Open or update the Folloze Campaign Workspace, connect a Company Br
 
 Use the packaged Folloze app to make a campaign's inputs, outputs, and next actions visible. The skill pack can remain incomplete. Read [the result contract](references/result-contract.md) when recording outputs and [runtime guidance](references/runtime.md) when opening or connecting the app.
 
-This public skill includes the standalone HTML app and seven bundled webinar skills. Folder access and automatic updates need a separately configured connector. In browser mode, use uploads, copied skill requests, and named output files. The connector operations below apply only when those tools are exposed in the current workspace.
+This public skill includes the standalone HTML app and nine bundled campaign skills. Folder access and automatic updates need a separately configured connector. In browser mode, use uploads, copied skill requests, and named output files. The connector operations below apply only when those tools are exposed in the current workspace.
 
 ## Open or resume
 

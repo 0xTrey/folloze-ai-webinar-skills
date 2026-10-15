@@ -1,6 +1,6 @@
 # Open the workspace
 
-The public skill includes `assets/campaign-workspace.html`, a standalone Folloze app with seven bundled webinar skills. Open it in a browser or use an AI tool that supports interactive HTML. The app supports text uploads, account CSVs, local browser progress, skill attachment, and campaign-record export.
+The public skill includes `assets/campaign-workspace.html`, a standalone Folloze app with nine bundled campaign skills. Open it in a browser or use an AI tool that supports interactive HTML. The app supports text uploads, account CSVs, local browser progress, skill attachment, and campaign-record export.
 
 Start empty. Company documents and account lists come from the participant's own approved workspace. Missing tools or documents stay visible; use manual exports and uploads when a connector is unavailable.
 

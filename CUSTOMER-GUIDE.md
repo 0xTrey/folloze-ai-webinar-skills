@@ -1,6 +1,6 @@
 # Build your first campaign
 
-Use these eight skills to turn your company context and account list into campaign research, buyer groups, and draft creative. Start with one small campaign and your own inputs.
+Use these ten skills to turn your company context and account list into campaign research, buyer groups, and draft creative. Start with one small campaign and your own inputs.
 
 ## Bring these inputs
 
@@ -47,7 +47,7 @@ Use the [20 campaign prompts](https://github.com/0xTrey/folloze-ai-webinar-skill
 | Ad creative and email | Approved brand assets, pitches, content, and destination | Distinct messages for each buyer group and draft channel files |
 | Buyer experience and follow-up | Reviewed campaign work and real engagement data | A page draft or prototype, reviewed links, and useful next actions |
 
-The eight included skills cover the campaign map, tool setup, Company Brain, segmentation, account briefs, buyer groups, ad creative, and email copy. Other prompt cards describe general workflows; they are not additional installed skills or automatic integrations.
+The ten included skills cover the campaign map, tool setup, Company Brain, account-list building, segmentation, account briefs, buyer groups, ad creative, email copy, and engagement follow-up. Other prompt cards describe general workflows; they are not additional installed skills or automatic integrations.
 
 ## 4. Keep your work connected
 

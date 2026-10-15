@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engagement & Follow-up"
+  short_description: "Read engagement and prepare useful follow-up"
+  default_prompt: "Use $follow-up-measurement to analyze my campaign export and prepare evidence-backed, unsent next actions."

@@ -1,6 +1,6 @@
 # Open your campaign map
 
-Open `assets/campaign-workspace.html` in your browser, or ask your AI tool to display it. Start a new campaign and open Skills to see the seven included webinar skills.
+Open `assets/campaign-workspace.html` in your browser, or ask your AI tool to display it. Start a new campaign and open Skills to see the nine included campaign skills.
 
 Use this prompt with the complete skill folder available:
 

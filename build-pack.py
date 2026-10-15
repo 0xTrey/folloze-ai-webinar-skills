@@ -16,11 +16,13 @@ FOLLOW_UP = BASE + ('references/context-and-evidence.md', 'references/output-tem
 SKILLS = {
     'tools-data-setup': BASE + ('references/tool-map-template.md', 'references/enrichment-and-limits.md'),
     'company-brain-builder': BASE + ('references/company-brain-template.md', 'references/document-requests.md', 'references/storage-and-use.md'),
+    'account-list-builder': FOLLOW_UP,
     'campaign-segmentation': FOLLOW_UP,
     'account-brief-builder': FOLLOW_UP,
     'buyer-group-mapper': FOLLOW_UP,
     'buyer-group-ad-creative': FOLLOW_UP + ('references/platform-formats.md', 'scripts/check_ad_exports.py'),
     'buyer-group-email-copy': FOLLOW_UP + ('references/messaging-framework.md', 'references/delivery-handoffs.md', 'scripts/check_email_batch.py'),
+    'follow-up-measurement': FOLLOW_UP,
     'campaign-workspace': ('SKILL.md', 'QUICKSTART.md', 'agents/openai.yaml',
         'references/runtime.md', 'references/result-contract.md',
         'assets/campaign-workspace.html', 'assets/OpenSans-OFL.txt',
@@ -34,6 +36,57 @@ ALLOWED = SKILL_FILES | GUIDES | {'README.md', '.gitignore', '.gitattributes', '
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
+
+
+def build_embedded_skills():
+    """Refresh the standalone app's actual instructions from this release."""
+    stages = {
+        'company-brain-builder': ('Company Brain Builder', 'brain'),
+        'tools-data-setup': ('Tools & Data Setup', 'tools'),
+        'account-list-builder': ('Build the Right Account List', 'accounts'),
+        'campaign-segmentation': ('Campaign Segmentation', 'segments'),
+        'account-brief-builder': ('Account Brief Builder', 'briefs'),
+        'buyer-group-mapper': ('Buyer Group Mapper', 'buyers'),
+        'buyer-group-ad-creative': ('Buyer Group Ad Creative', 'messages'),
+        'buyer-group-email-copy': ('Buyer Group Email Copy', 'messages'),
+        'follow-up-measurement': ('Engagement & Follow-up', 'followup'),
+    }
+    if set(stages) != set(SKILLS) - {'campaign-workspace'}:
+        raise ValueError('Embedded skill stage mapping differs from the pack')
+    bundled = []
+    for name, (title, step) in stages.items():
+        folder = ROOT / 'skills' / name
+        entry = (folder / 'SKILL.md').read_text()
+        description = re.search(r'^description: (.+)$', entry, re.M)
+        if not description:
+            raise ValueError(f'Missing skill description: {name}')
+        description = description[1].strip()
+        if description.startswith('"'):
+            description = json.loads(description)
+        resources = {}
+        for relative in SKILLS[name]:
+            data = (folder / relative).read_bytes()
+            resources[relative] = {'text': data.decode('utf-8'), 'sha256': sha(data)}
+        bundled.append({'name': name, 'title': title, 'step': step,
+                        'description': description, 'files': resources})
+    payload = json.dumps({'version': 2, 'source': 'Folloze customer campaign skills',
+                          'skills': bundled}, ensure_ascii=True, separators=(',', ':'))
+    payload = payload.replace('<', '\\u003c').replace('>', '\\u003e')
+    app = ROOT / 'skills/campaign-workspace/assets/campaign-workspace.html'
+    before = app.read_text()
+    start = '<script>(()=>{var co='
+    end = ';var ht=co.skills;'
+    if before.count(start) != 1 or before.count(end) != 1:
+        raise ValueError('Standalone app bundle boundary is ambiguous')
+    left = before.index(start) + len(start)
+    right = before.index(end, left)
+    output = before[:left] + payload + before[right:]
+    library_copy = r'(?:Seven webinar|[0-9]+ campaign) skills are included with their references\.'
+    output, count = re.subn(library_copy, f'{len(bundled)} campaign skills are included with their references.', output)
+    if count != 1:
+        raise ValueError('Standalone skill library count label is ambiguous')
+    app.write_text(output)
+    return len(bundled)
 
 
 def build_prompt_browser():
@@ -158,6 +211,7 @@ def archive(name, members):
 
 def main():
     prompt_count = build_prompt_browser()
+    embedded_count = build_embedded_skills()
     unexpected = inventory(ROOT) - ALLOWED
     if unexpected:
         raise ValueError(f'Unexpected files outside public allowlist: {sorted(unexpected)}')
@@ -193,7 +247,7 @@ def main():
     archives.append(archive('claude-rehearsal-kit.zip', claude_kit))
     full = {f'folloze-ai-webinar-skills/{name}': (ROOT / name).read_bytes() for name in SKILL_FILES | GUIDES}
     archives.append(archive('folloze-ai-webinar-skills.zip', full))
-    manifest = {'version': '0.2.0', 'skillCount': len(SKILLS), 'skillFileCount': len(SKILL_FILES), 'promptCount': prompt_count,
+    manifest = {'version': '0.3.0', 'skillCount': len(SKILLS), 'embeddedSkillCount': embedded_count, 'skillFileCount': len(SKILL_FILES), 'promptCount': prompt_count,
                 'checks': ['customer onboarding content', 'explicit file allowlist', 'portable paths', 'relative references', 'archive CRC', 'source byte parity', 'fresh extraction'],
                 'artifacts': archives}
     (ROOT / 'downloads/manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')

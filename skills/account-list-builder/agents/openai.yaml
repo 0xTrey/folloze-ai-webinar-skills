@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build the Right Account List"
+  short_description: "Build and prioritize a reviewable account list"
+  default_prompt: "Use $account-list-builder to build a sourced account list from my ICP and approved company sources."

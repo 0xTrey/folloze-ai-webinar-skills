@@ -4,7 +4,7 @@ Copy a prompt into your AI workspace. Replace the braces and attach the listed i
 
 Start with your own company, accounts and content. These prompts distill the build decisions from the Folloze webinar into reusable work. They include no working campaign data.
 
-**Included skill** links point to the eight-skill pack. **Workflow prompt** means there is no dedicated operational skill for that action in this pack; the prompt works from your files and any tools actually available.
+**Included skill** links point to the ten-skill pack. **Workflow prompt** means there is no dedicated operational skill for that action in this pack; the prompt works from your files and any tools actually available.
 
 Ask for sources and inspect the result. New copy, creative and pages stay drafts. A tool connection does not authorize spending, sending, publishing or an ad launch. Choose your approved workspace for private inputs.
 
@@ -54,12 +54,12 @@ Check which connections are actually available with a small read-only test. Map 
 ### 3. Turn the account list into something we can work with
 
 **Stage:** 1. Account list
-**Skill:** Workflow prompt
+**Skill:** [Build the Right Account List](https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/account-list-builder)
 **Bring:** Account CSV or spreadsheet; Company Brain; available relationship records.
 **Get:** accounts-reviewed.csv and account-review.md.
 
 ```text
-Use this account list and our Company Brain to prepare the target universe for {campaign goal}. Preserve the original rows. Normalize company names and domains, flag likely duplicates, and retain parent and subsidiary distinctions.
+Use Account List Builder with this account list and our Company Brain to prepare the target universe for {campaign goal}. Preserve the original rows. Normalize company names and domains, flag likely duplicates, and retain parent and subsidiary distinctions.
 
 Use supplied relationship records to distinguish customers, former customers, open opportunities and unknowns. Apply my campaign rules: {inclusions, exclusions and holds}. Do not infer current status from an old association. Return accounts-reviewed.csv with stable IDs, original row references and a disposition for every row. In account-review.md, reconcile raw rows and unique accounts and show the decisions I still need to make.
 ```
@@ -262,12 +262,12 @@ Keep one campaign ID and consistent channel and creative labels. Preserve existi
 ### 19. Read the engagement and show what happened
 
 **Stage:** 7. Sales follow-up
-**Skill:** Workflow prompt; works with a Folloze export
+**Skill:** [Engagement & Follow-up](https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/follow-up-measurement)
 **Bring:** Board URL or ID; date range; engagement export or accessible analytics connection; channel map.
 **Get:** engagement-summary.md and a reconciled engagement table.
 
 ```text
-Analyze engagement for {Folloze board URL or ID} during {date range and timezone}. Use the connected analytics tools if available; otherwise work from the exports I attach. First show the sources, fields, filters and coverage actually available.
+Use Engagement & Follow-up to analyze engagement for {Folloze board URL or ID} during {date range and timezone}. Use the connected analytics tools if available; otherwise work from the exports I attach. First show the sources, fields, filters and coverage actually available.
 
 Summarize people and accounts that visited the board, content explored, repeat visits, engagement time and meaningful CTAs where those fields exist. Separate known buyers, anonymous account signals, suspected automation and unknown classification. Reconcile duplicates and explain the counting unit. Compare channels and creatives only where attribution supports it. Return engagement-summary.md and a table of useful signals, source records and limits. Keep email delivery, ad clicks and human board engagement distinct; do not infer buying intent from a visit.
 ```
@@ -275,12 +275,12 @@ Summarize people and accounts that visited the board, content explored, repeat v
 ### 20. Turn engagement into useful sales follow-up
 
 **Stage:** 7. Sales follow-up
-**Skill:** [Buyer Group Email Copy](https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/buyer-group-email-copy) for email; workflow prompt for the full handoff
+**Skill:** [Engagement & Follow-up](https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/follow-up-measurement); Buyer Group Email Copy can support email drafts
 **Bring:** Engagement report; account brief; buyer context; content catalog; owner and relationship rules.
 **Get:** sales-follow-up.md with context, drafts and next actions.
 
 ```text
-Use this engagement report, account brief and buyer context to prepare sales follow-up. For a known buyer, explain the useful topic, what the evidence does and does not establish, the owner or proposed owner, and the next helpful action.
+Use Engagement & Follow-up with this engagement report, account brief and buyer context to prepare sales follow-up. For a known buyer, explain the useful topic, what the evidence does and does not establish, the owner or proposed owner, and the next helpful action.
 
 Use Buyer Group Email Copy for a concise email, plus draft a LinkedIn message and a phone opener where appropriate. Offer a relevant next resource on {campaign board URL}. Do not tell someone we observed behavior unless that wording is appropriate and supported. For anonymous account activity, propose an account-level action without assigning the visit to a person. Return sales-follow-up.md with source records, drafts, holds and a proposed follow-up test. Leave outreach unsent.
 ```
