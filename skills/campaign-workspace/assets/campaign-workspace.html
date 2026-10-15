@@ -2060,13 +2060,9 @@ When an authorized image tool is available, create a visual review draft for the
 Check each claim against the proof register, and each group angle against its source persona. Inspect the actual preview if generated; distinguish a rendering flaw from a strategy gap. Mark pending specifications, links, assets, and approval clearly.
 
 Return concepts, visual briefs or generated files, evidence notes, and review state. Compare concepts by intended learning question, not invented predicted performance. Stop before ad-account writes, budgets, upload, scheduling, or launch.
-`,sha256:"dc8a321dce877bf85e3360336390d51f285f87787bdd55e89a8bedec64f072f0"}}},{name:"buyer-group-email-copy",title:"Buyer Group Email Copy",step:"messages",description:"Draft concise unsent emails for distinct B2B buyer groups using approved company voice, account context, personas, and proof. Return role-specific copy, personalization evidence, and review gaps without sending or enrolling contacts.",files:{"agents/openai.yaml":{text:`interface:
-  display_name: "Buyer Group Email Copy"
-  short_description: "Write concise unsent emails for buyer groups"
-  default_prompt: "Use $buyer-group-email-copy with my company brain and supplied campaign context to prepare a review draft."
-`,sha256:"d580f1517d0267723ab3558b47df2e9cd1e680351bc7c914cc500e3dbaa99982"},"QUICKSTART.md":{text:`# Buyer Group Email Copy
+`,sha256:"dc8a321dce877bf85e3360336390d51f285f87787bdd55e89a8bedec64f072f0"}}},{name:"buyer-group-email-copy",title:"Buyer Group Email Copy",step:"messages",description:"Draft B2B sales emails using value subjects, problem or customer-story openings, role relevance, fixed approved pitches and content CTAs. Prepare AgentMail or Smartlead handoffs from company context and buyer groups, without sending or enrolling contacts.",files:{"QUICKSTART.md":{text:`# Buyer Group Email Copy
 
-Short email drafts by group, source notes, link state, and review gaps. No email is sent or enrolled.
+One writing skill for AgentMail, Smartlead or another sender. It turns company context, approved pitches and buyer roles into reviewable email drafts and platform handoffs.
 
 ## Install or open
 
@@ -2076,24 +2072,78 @@ In another approved AI tool, attach \`SKILL.md\` and all reference files in the 
 
 ## Bring this
 
-Seller voice/product context, a buyer group, and one desired action. Named recipients are optional. Uploaded documents and approved excerpts work when your storage connection is unavailable.
+Company Brain or seller summary, approved pitch library, account brief, buyer roles, useful content and campaign destination. Named recipients are optional. Uploaded files work without a connected storage tool.
 
 ## Start here
 
-> Use $buyer-group-email-copy with my Company Brain, account briefs, and buyer-group map. Draft one concise unsent email per group with up to two subjects and one ask. Keep personalization evidence outside the copy and omit held claims.
+> Use $buyer-group-email-copy with my Company Brain, account brief, approved pitches and content catalog. Draft five role-specific emails for this account using value subjects, problem or customer-story openings and content CTAs. Prepare an AgentMail handoff for review. Do not send.
+
+For Smartlead, replace “AgentMail handoff” with “Smartlead CSV and sequence template.” Supply your own approved pitches, content and campaign board URL.
 
 In tools without skill invocation, replace the \`$\` name with the skill's title and attach its files.
 
 ## Use the result
 
-Review the actual output and its sources. Facts, inferred guidance, unknowns, and approval stay separate. Keep the same account, segment, and buyer-group IDs when moving to the next task.
+Review the actual output and its sources. The five sections are value subject, problem/story opening, company-and-role bridge, fixed approved pitch and useful content CTA. Keep the same account, segment and buyer-group IDs. The offline checker catches structural gaps and exact same-company repeats across supplied platform history; a reviewer checks claims and near duplicates.
+
+The skill installs in Codex or another supported AI workspace. It does not install inside AgentMail or Smartlead, create a connection, import contacts or activate sending. Use the approved sending workflow after reviewing the draft packet.
 
 Choose Google Drive, OneDrive, or a local folder for the returned files. If the AI cannot save there, upload or save them manually. Use private company material only in your approved AI workspace.
 
 ## Bring your tool map
 
 Attach \`tool-map.md\` from Tools & Data Setup with your company context. The skill checks the route in this workspace and records its map version. Without a map, it can use approved files or build a small provisional map; charged usage stays at zero until specifically authorized. Owned tools without a connection use manual export/upload instructions.
-`,sha256:"12900227a6fcc46615892a8d5aa5551e8c70209e39a0148174cd9db4151b844c"},"references/context-and-evidence.md":{text:`# Company context and evidence
+`,sha256:"0181dc504dddbc1fd67defd30598a910af57eaa9f292152bc26f71fdcc0e8ad1"},"SKILL.md":{text:`---
+name: buyer-group-email-copy
+description: "Draft B2B sales emails using value subjects, problem or customer-story openings, role relevance, fixed approved pitches and content CTAs. Prepare AgentMail or Smartlead handoffs from company context and buyer groups, without sending or enrolling contacts."
+---
+
+# Buyer Group Email Copy
+
+Turn company context and buyer roles into reviewable sales emails. The same writing framework works with AgentMail, Smartlead or another sender. This skill runs in the AI workspace; it does not install inside an email platform.
+
+Read [context-and-evidence.md](references/context-and-evidence.md). Use [messaging-framework.md](references/messaging-framework.md) for the five sections and role choices, then [output-template.md](references/output-template.md) for the handoff.
+
+Start with supplied files. When connected research or storage is needed, read [tool-map-use.md](references/tool-map-use.md) and the participant's map. Drafting needs no contact enrichment or sending operation.
+
+## 1. Read the message context
+
+Use the Company Brain's voice, personas, product limits, approved pitches and proof. Add the account brief, buyer map, content catalog and campaign destination when supplied. Keep their IDs and source dates. Company research is sufficient when individual research is absent.
+
+Infer routine choices; ask only for context that materially changes the message. Default to one unsent initial email per group. Add named recipients, follow-ups or platform exports when requested. Supply your own approved pitches, content catalog and campaign board URL; this download includes no working campaign data.
+
+## 2. Choose the problem and content together
+
+Choose one buyer problem, one useful content offer and one compatible pitch. The opening is a direct work problem or a sourced customer story. Connect the same problem to the recipient's function and seniority. Do not assert an inferred pain as a known account problem.
+
+Keep historical examples at their actual date. Do not invent customer emotions, outcomes, personal behavior, technology adoption or familiarity. Account-level intent is not an individual's behavior. Keep private CRM and intent details out of buyer copy.
+
+## 3. Draft for each group
+
+Write: value subject, problem/story opening, company-and-role bridge, exact approved pitch, then a useful content CTA. Aim near 70-110 body words when practical. A resource-led campaign offers a story, guide or personalized page on its supplied board rather than asking for a meeting. Other campaign goals use the participant's stated action.
+
+Select pitch text from the supplied library without rewriting it. New pitch wording is a separate review proposal. Use approved qualitative capability context when numeric proof is unavailable. Avoid em dashes, generic corporate phrasing and unsupported promises. End with the supplied signature and honor the campaign's footer policy.
+
+For company batches, vary the relevant angle, subject and opening across sales recipients. Check AgentMail and Smartlead drafts together, including supplied prior messages. Pitches may repeat; complete messages must differ within a company/campaign/touch. Do not fill a quota with cosmetic variants or irrelevant angles. Rich account-level Marketing Emails use separate variation rules.
+
+## 4. Check personalization and links
+
+Trace account and customer claims to sources. The named story must match the content offer. Keep unresolved identities and eligibility in review notes; do not invent names, addresses or research. Role-only templates can retain explicit placeholders.
+
+Keep one CTA destination. In a board-led campaign, every click returns to the supplied board or a verified item on that board. Code owns recipient identity, URL encoding and tokens. Without a resolved URL, retain the destination as a review gap. Do not invent a token or substitute an external case-study link.
+
+For a named-recipient draft, preserve supplied suppressions, affiliation gaps and communication constraints. Missing eligibility does not block role-copy preparation.
+
+## 5. Review the drafts
+
+Review the whole message: does the subject promise the value offered, and do opening, bridge, pitch and CTA address the same problem? Check claim support, fixed pitch text, role relevance and account-level duplication. Use the offline [batch checker](scripts/check_email_batch.py) for the JSON contract; it checks structure and exact duplicates, not factual truth or sending eligibility.
+
+For an AgentMail or Smartlead handoff, read only that provider's section in [delivery-handoffs.md](references/delivery-handoffs.md). Return actual copy, sources, review gaps and the requested files. All messages remain drafts. Importing, creating mailbox drafts, activating campaigns and sending require their own authorization and available tools. Skill installation creates no connection or permission to send.
+`,sha256:"b788c4d1867e9b672e0c5e2915764ba528b402c5dc37a407ac42a03356934489"},"agents/openai.yaml":{text:`interface:
+  display_name: "Buyer Group Email Copy"
+  short_description: "Write role-based emails for AgentMail or Smartlead"
+  default_prompt: "Use $buyer-group-email-copy with my company brain, approved pitches and account briefs to draft role-specific sales emails and a review handoff for my email platform."
+`,sha256:"9f6f0135d6bfad48dc00ad15f43d09eafd2dd3140db56208e1ce389d8a9dc6e4"},"references/context-and-evidence.md":{text:`# Company context and evidence
 
 Use the seller's company context to guide work about target accounts. A target company's website is not the seller's ICP, persona approval, brand guide, or proof register.
 
@@ -2135,7 +2185,107 @@ Without a connection, ask for approved exports or relevant excerpts. Return name
 Use only the participant's approved AI workspace for private material. Keep names and relationship history private; pass only approved, appropriate facts into buyer-facing assets. Do not include secrets, raw personal data, or restricted customer material.
 
 These skills prepare local drafts. Specific contact discovery or enrichment may run only with an explicit scoped allowance and the safeguards in \`tool-map-use.md\`. A saved map or general role-mapping request does not authorize charges. Account connection, colleague messages, CRM writes, ad spend, mailbox changes, publication, and sending require separate authorization.
-`,sha256:"3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"},"references/output-template.md":{text:`# Buyer-group email template
+`,sha256:"3bc009afbd773a2521031ae90932a370669edc02a16e43cb558805700216737d"},"references/delivery-handoffs.md":{text:`# Email platform handoffs
+
+Choose the requested provider. Prepare files only unless the participant separately authorizes an available operation. No connection, credential or sending permission comes with this skill.
+
+Keep a single canonical draft ID, company/campaign/touch, pitch version, resource ID and review state across platforms. The sender owns recipient identity, suppressions, schedule, mailbox capacity and unique attempt reservations. Do not enroll the same person in both platforms as a side effect of producing two exports.
+
+## AgentMail
+
+Return a protected \`agentmail-messages.json\` with one recipient per message, sender/inbox reference and subject, plain text and lightweight HTML. Use the actual resolved first name. Use one human CTA label in HTML and preserve the exact supplied identity-bearing URL in its href. Do not construct a Folloze-issued token with a language model.
+
+The payload shape is \`to: [resolved_email]\`, \`subject\`, \`text\`, \`html\`, and \`track_opens: false\` unless an approved campaign explicitly requires tracking. Keep mapping-only review fields outside the provider payload. Without a recipient or resolved URL, return the draft and its gap rather than a send-ready payload.
+
+Hand reviewed drafts to your approved AgentMail campaign workflow. Do not repurpose a live campaign's configuration or ledger. If no approved sender workflow is available, end with the files.
+
+After separately authorized sending, actual message and thread IDs establish provider acceptance. Stored-message readback checks rendered names, exact copy and links. Delivery and human engagement require their own receipts.
+
+Official field reference, checked October 14, 2026: [AgentMail send message](https://docs.agentmail.to/api-reference/inboxes/messages/send). Recheck the current API when implementing transport.
+
+## Smartlead
+
+Return \`smartlead-leads.csv\` and \`smartlead-sequence-template.html\` for a paused review campaign. The CSV maps standard recipient columns plus these example custom variables for touch 1:
+
+- \`flz_subject_t1\`
+- \`flz_greeting_t1\`
+- \`flz_opening_t1\`
+- \`flz_bridge_t1\`
+- \`flz_pitch_t1\`
+- \`flz_cta_t1\`
+- \`flz_board_url_t1\`
+- \`flz_signature_t1\`
+
+These are custom fields defined by this handoff, not built-in Smartlead field names. Subject: \`{{flz_subject_t1}}\`. Put the body variables into simple paragraphs, and use \`{{flz_board_url_t1}}\` as the CTA href with \`{{flz_cta_t1}}\` as visible text. The greeting includes the resolved first name. Keep real newlines in text/CSV values, and use the destination's supported escaping for text and hrefs. Additional requested touches get distinct field suffixes and useful new angles.
+
+Map the CSV headers to custom variables in the target campaign. Smartlead supports custom variables in both subject and body. Inspect actual lead previews before activation, especially HTML escaping, the signature, platform-added footer settings and the identity link. Do not assume an arbitrary full-HTML custom field is rendered as markup. If mapping or HTML substitution cannot be verified, return the exact unresolved gap.
+
+Do not import, replace an existing sequence or activate a campaign merely to verify this handoff. Use the existing approved workflow when available, or provide manual instructions. Producing a CSV is not an imported, scheduled or delivered campaign.
+
+Official references, checked October 14, 2026: [CSV column mapping](https://helpcenter.smartlead.ai/en/articles/409-how-to-map-csv-columns-in-smartlead-campaigns), [custom variables](https://helpcenter.smartlead.ai/en/articles/159-what-are-variables-and-how-to-use-them-effectively-to-personalize-emails-on-smartlead), [campaign preparation and preview](https://helpcenter.smartlead.ai/en/articles/34-creating-a-cold-email-campaign).
+
+## Identity-bearing board links
+
+Use a verified URL supplied by the protected link workflow. Preserve its values and attribution when adapting the draft. For a configured Folloze parameter-link workflow, code maps \`em\`, \`fn\`, \`ln\`, \`co\` and \`ro\`; platform-issued Individual Links are a different mechanism and must come from Folloze. Content selection and identity construction remain outside model-written copy. Keep recipient URLs out of public examples and aggregate reports.
+
+Keep the campaign's plain-text identity policy explicit. A clean public fallback loses parameter identity in that MIME part; never silently substitute it when the campaign requires identity on every click. Check the actual stored message after an authorized send.
+`,sha256:"0066be62abce9dd01a2052febc529016cb71e08b64a8dca184f191735d67c0eb"},"references/messaging-framework.md":{text:`# The sales message framework
+
+## Five connected sections
+
+| Section | Rule |
+|---|---|
+| Subject | Name the useful value. Example: Giving Sellers More Insights. A topic label is insufficient. Aim for 2-8 words and at most 70 characters; honor stricter destination limits. |
+| Opening | State one recognizable work problem or tell a sourced customer story about it. Do not lead with a generic discovery question or invent customer emotions. |
+| Company and role bridge | Explain why that same problem matters to this account and job. Public company research is enough. Keep assumptions conditional. |
+| Approved pitch | Insert one exact pitch from the supplied approved library. Preserve its ID, version and approval state. Propose new wording separately. |
+| Content CTA | Offer the story, guide or personalized page that answers the opening. The named customer must match the content offer. |
+
+Write near 70-110 body words when practical. Use one CTA and the supplied signature. Keep claims, evidence and review notes outside the buyer's email. Do not append invented footer copy.
+
+## Choose for the buyer's work
+
+| Role | Emphasis |
+|---|---|
+| CMO / VP | Business outcome, account relevance and useful context for sales |
+| Director / manager | Program consistency, team execution and handoff |
+| Practitioner | The task they own, work it removes and an example they can apply |
+
+Choose the function first, then seniority, account evidence, useful content and within-company variety. Example angles:
+
+| Angle | Useful problem | Typical content |
+|---|---|---|
+| Product explanation | Different buying roles need different proof | Personalized campaign example |
+| Existing content | Approved assets sit unused while campaigns are rebuilt | Small-team customer story |
+| Campaign reuse | Audience changes create more builds and reviews | Campaign example |
+| Event follow-up | An attendee list does not explain the next useful topic | Event engagement case study |
+| Buying groups | One asset rarely answers every account stakeholder | Role-relevant experience |
+| Demand conversion | The click's destination leaves the next question unanswered | Campaign example |
+| Brand consistency | More teams create more variation in campaign execution | Governed campaign example |
+| Engagement context | Visit totals do not show what a buyer found useful | Sales-insight customer story |
+| Account scale | Every account needs relevance with finite production capacity | Scale-with-small-team story |
+| Seller insight | Sellers lack context for the next conversation | Strategic-account customer story |
+| AI deployment | Generated content still needs a live campaign experience | Deployment guide |
+| Agent infrastructure | Hosting, brand, integrations and personalization still need management | AI campaign guide |
+
+Use the supplied seller's capabilities and resources. These angles do not establish product claims or permission to reuse a customer story. Supply your own approved pitch and content library.
+
+## Three passes
+
+**Plan:** Select buyer problem, desired value, framework ID, opening approach, pitch ID, resource ID and source IDs. Record the role hypothesis and missing facts. Choose content before writing the CTA.
+
+**Write:** Return subject, opening, bridge, exact pitch and CTA as separate fields, plus the complete draft. A customer story requires a supported claim. Without one, use a direct problem. Company context may replace unavailable individual research. Account-level intent never becomes an individual's behavior.
+
+**Review:** Check the whole argument. Does the subject promise the value the content provides? Do all five sections address the same problem? Are claims sourced and the pitch unchanged? Does the CTA point to the promised content on the reviewed board? Keep a draft's wording approval separate from sending eligibility.
+
+## Same-company variation
+
+Group sales drafts and supplied prior messages by company, campaign and touch across AgentMail, Smartlead and other sales senders. Require distinct normalized subjects, openings and complete messages in that group. Compare the meaningful copy, excluding greetings and recipient URL parameters.
+
+Reuse approved pitches. Reuse across different companies is allowed. Change a relevant angle, role implication or content offer, rather than names, punctuation or cosmetic synonyms. If relevant options run out, return a review gap. Rich account-level Marketing Emails may share copy and use their own rules.
+
+The bundled checker catches exact normalized repeats. A reviewer still checks semantic similarity. Its read-only comparison file is not a persistent reservation or send-attempt ledger. Variation does not establish inbox placement.
+`,sha256:"d4a56226a028a2565a13d1e212a1397a5a64723e907144a7b032b84ed5d1d7a7"},"references/output-template.md":{text:`# Buyer-group email template
 
 Return \`buyer-group-emails.md\`. Keep content grouped by stable IDs, so a campaign builder can select the right message without relying on a person's name.
 
@@ -2175,7 +2325,41 @@ Return \`buyer-group-emails.md\`. Keep content grouped by stable IDs, so a campa
 \`\`\`
 
 Add a short source register if the source IDs are not already attached. Record claim approval for the stated use separately from approval of the new email. A word-count check or mailbox draft is not delivery evidence.
-`,sha256:"74128a6bc8af8fc41a5b9fe4ccd3c6ec19d3278b76844b46009656414932687b"},"references/tool-map-use.md":{text:`# Use the participant's tool map
+
+## Optional machine-readable batch
+
+For a requested company batch, also return \`email-drafts.json\`. \`pitches\` is the supplied library, not a model approval. \`company_key\` is a consistent domain or source account ID. All rows remain drafts.
+
+\`\`\`json
+{
+  "campaign_id": "campaign-review",
+  "destination_url": "https://example.com/campaign",
+  "footer_policy": "signature_only",
+  "pitches": [{"id": "P1", "text": "Exact supplied pitch", "approval": "approved"}],
+  "drafts": [{
+    "id": "D1", "company_key": "example-company", "touch": 1,
+    "recipient_ref": "source-contact-1", "function": "abm", "seniority": "manager",
+    "subject": "Give each buyer relevant proof",
+    "opening": "One asset rarely answers every question inside a target account.",
+    "bridge": "Different buying roles may need different proof before moving forward.",
+    "pitch_id": "P1", "pitch_text": "Exact supplied pitch",
+    "cta": "Explore the campaign example.", "board_url": "https://example.com/campaign",
+    "resource_id": "campaign-example", "source_ids": [], "review_state": "draft"
+  }],
+  "prior_messages": []
+}
+\`\`\`
+
+Run the bundled checker from the skill's actual directory:
+
+\`\`\`text
+python3 \x3cskill-directory>/scripts/check_email_batch.py \x3cemail-drafts.json>
+\`\`\`
+
+It reads only the local JSON. It checks required sections, fixed pitch text, campaign destination, signature-only footer policy and normalized subject/opening/body duplicates against current and supplied prior messages. It cannot approve claims, find unsupplied historical sends, reserve variants, validate recipient eligibility or contact an email platform. Review near duplicates and factual claims separately.
+
+Add the selected provider handoff only when requested. Keep actual recipient addresses and identity URLs in protected files. Do not use the example domain, draft IDs or placeholder recipient references as real transport values.
+`,sha256:"dc044ee650fd9a4497686762c23b17542e0182b48adfc61b0f73d7609abd8dbc"},"references/tool-map-use.md":{text:`# Use the participant's tool map
 
 Read the supplied \`tool-map.md\` before selecting data, research, enrichment, creative, or storage operations. Record its ID/version and the route IDs used in the output's review notes. The map is participant context; it is not bundled inside a skill and does not require access to another chat.
 
@@ -2216,7 +2400,106 @@ An unknown-cost or unapproved route remains held while draft work continues from
 ## Optional arithmetic check
 
 When Python is available, use the bundled [check_tool_budget.py](../scripts/check_tool_budget.py) with a documented next-call snapshot. It checks separate provider, pool, and task limits per \`pool|unit\` dimension, readiness flags, and unresolved outcomes. It makes no provider call or reservation and cannot grant permission or enforce provider billing. Follow the rules above before execution; otherwise keep the route manual. The snapshot schema is available from Tools & Data Setup, or inspect this self-contained script to construct it.
-`,sha256:"1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"},"scripts/check_tool_budget.py":{text:`#!/usr/bin/env python3
+`,sha256:"1521aa88f9d3d91a2787f759ba0bc3744f87059060d70a4176c1a10a85304ad2"},"scripts/check_email_batch.py":{text:`#!/usr/bin/env python3
+"""Read-only structural and same-company duplicate checks for email drafts."""
+import argparse
+from collections import defaultdict
+import json
+from pathlib import Path
+import re
+from urllib.parse import urlsplit
+
+
+def normal(value):
+    return re.sub(r'[^\\w]+', ' ', str(value).casefold(), flags=re.UNICODE).strip()
+
+
+def check_batch(batch):
+    if not isinstance(batch, dict):
+        raise ValueError('Batch must be a JSON object')
+    errors, warnings = [], []
+    drafts = batch.get('drafts', [])
+    if not isinstance(drafts, list) or not drafts:
+        return {'state': 'needs_revision', 'draft_count': 0, 'errors': [{'draft_id': None, 'issue': 'No draft rows'}], 'warnings': []}
+    pitches = {p['id']: p for p in batch.get('pitches', [])}
+    destination = urlsplit(batch.get('destination_url', ''))
+    seen = defaultdict(dict)
+    prior = batch.get('prior_messages', [])
+    if not isinstance(prior, list):
+        raise ValueError('prior_messages must be a list')
+    for i, row in enumerate(prior + drafts):
+        if not isinstance(row, dict):
+            raise ValueError('Each message must be a JSON object')
+        is_new = i >= len(prior)
+        ref = row.get('id', f'row-{i+1}')
+        def issue(message):
+            errors.append({'draft_id': ref, 'issue': message})
+        campaign = row.get('campaign_id', batch.get('campaign_id'))
+        company = row.get('company_key')
+        touch = row.get('touch', 1)
+        pitch_text = row.get('pitch_text', row.get('pitch', ''))
+        if is_new:
+            for field in ('subject', 'opening', 'bridge', 'cta', 'resource_id'):
+                if not isinstance(row.get(field), str) or not row[field].strip():
+                    issue(f'Missing {field}')
+            if not campaign or not company or not isinstance(touch, int) or isinstance(touch, bool) or touch \x3c 1:
+                issue('Missing or invalid company/campaign/touch scope')
+            if normal(row.get('review_state', '')) != 'draft':
+                issue('New messages must remain draft')
+            pitch = pitches.get(row.get('pitch_id'))
+            if not pitch or pitch.get('text') != pitch_text:
+                issue('Pitch differs from the supplied library')
+            elif pitch.get('approval') != 'approved':
+                warnings.append({'draft_id': ref, 'issue': 'Pitch wording is not approved'})
+            target = urlsplit(row.get('board_url', row.get('url', '')))
+            if (destination.scheme != 'https' or not destination.netloc or
+                target.scheme != destination.scheme or target.netloc != destination.netloc or
+                target.path.rstrip('/') != destination.path.rstrip('/')):
+                issue('CTA must use the supplied campaign board')
+            visible = '\\n'.join(str(row.get(f, '')) for f in ('subject', 'opening', 'bridge', 'cta'))
+            subject = row.get('subject', '')
+            if isinstance(subject, str) and (not 2 \x3c= len(subject.split()) \x3c= 8 or len(subject) > 70 or re.search(r'[\\r\\n]', subject)):
+                issue('Subject must have 2-8 words, at most 70 characters and no newlines')
+            if re.search(r'\\{\\{|\\[first.?name\\]', visible, re.I):
+                issue('Unresolved copy placeholder')
+            if re.search(r'https?://', visible):
+                issue('Keep the URL in board_url, outside the visible copy sections')
+            body = '\\n'.join((str(row.get('body', visible + '\\n' + pitch_text)), str(row.get('signature', ''))))
+            if re.search(r'\\{\\{|\\[first.?name\\]', body, re.I):
+                issue('Unresolved rendered-body placeholder')
+            if batch.get('footer_policy') == 'signature_only' and re.search(
+                    r'Advertisement from|Not relevant\\?|reply no|unsubscribe here|Folloze, Inc\\.', body, re.I):
+                issue('Remove the appended footer')
+        group = (normal(company), str(campaign), touch)
+        copy = ' '.join((row.get('opening', ''), row.get('bridge', ''), pitch_text, row.get('cta', '')))
+        for field, value in (('subject', row.get('subject')), ('opening', row.get('opening')), ('body', copy)):
+            normalized = normal(value or '')
+            if not normalized:
+                continue
+            key = (field, normalized)
+            if is_new and key in seen[group]:
+                issue(f'Duplicate {field} within company/campaign/touch, including supplied history')
+            seen[group][key] = ref
+    return {'state': 'needs_revision' if errors else 'ready_for_copy_review', 'draft_count': len(drafts),
+            'errors': errors, 'warnings': warnings, 'sending_authorized': False,
+            'limits': 'Structural checks and supplied exact-duplicate history only; factual and semantic review remain.'}
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('batch', type=Path)
+    args = parser.parse_args()
+    try:
+        result = check_batch(json.loads(args.batch.read_text()))
+    except (KeyError, TypeError, ValueError) as exc:
+        parser.exit(2, f'Invalid batch: {exc}\\n')
+    print(json.dumps(result, indent=2))
+    raise SystemExit(1 if result['errors'] else 0)
+
+
+if __name__ == '__main__':
+    main()
+`,sha256:"0046359baae157529d38eb5323c64514f6f5cd12ef514ab769e0e3a7a4ce3cfd"},"scripts/check_tool_budget.py":{text:`#!/usr/bin/env python3
 """Check a documented next-call budget snapshot offline. No provider calls or writes."""
 
 import json
@@ -2232,7 +2515,7 @@ def amount(value):
         result = Decimal(str(value))
     except (InvalidOperation, ValueError) as error:
         raise ValueError("Amount must be a known nonnegative number") from error
-    if not result.is_finite() or result < 0:
+    if not result.is_finite() or result \x3c 0:
         raise ValueError("Amount must be a known nonnegative number")
     return result
 
@@ -2312,53 +2595,7 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
-`,sha256:"952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"},"SKILL.md":{text:`---
-name: buyer-group-email-copy
-description: "Draft concise unsent emails for distinct B2B buyer groups using approved company voice, account context, personas, and proof. Return role-specific copy, personalization evidence, and review gaps without sending or enrolling contacts."
----
-
-# Buyer Group Email Copy
-
-Write copy that reflects the buyer group's work. A draft can start with a role group; a named recipient is optional and does not become eligible to contact through this skill.
-
-Read [context-and-evidence.md](references/context-and-evidence.md) and use [output-template.md](references/output-template.md).
-
-Read [tool-map-use.md](references/tool-map-use.md). Use \`tool-map.md\` for approved context, current-role or verification evidence when already authorized, optional URL checks, and file storage. Record map version and selected routes. Preparing role-level copy needs no email reveal or contact enrichment; never select a sending operation for this draft workflow.
-
-## 1. Read the message context
-
-Use the Company Brain's voice, messaging, personas, product limits, and approved proof. Read the account brief and buyer-group map if supplied. Keep account, segment, and group IDs consistent.
-
-Ask only for missing seller context, buyer group, and desired action when they change the draft. Default to one unsent initial email per group. Do not add a sequence, Gmail draft, or recipient list unless specifically requested.
-
-## 2. Choose an honest opener
-
-Use a verified, relevant professional observation when available. Otherwise start with the role's work and a direct reason to write. Inferred pain must not be phrased as a known problem at the account.
-
-Keep historical relationships at their actual date and employer. Do not invent a prior conversation, referral, customer relationship, reply thread, intent signal, or personal familiarity. Exclude private research and sensitive personal details from copy.
-
-## 3. Draft for each group
-
-Write up to two short subject options and one concise body per group. Default to no more than 100 body words; adapt when the participant supplies a different limit. Structure around observation or role problem, relevant value, supported credibility, and one ask.
-
-Use approved capability context when outcome proof is missing. Keep qualifiers intact. Do not add unsupported metrics, superiority, guaranteed results, or fake urgency. Avoid em dashes and generic corporate phrasing.
-
-Make groups meaningfully different through their job, question, objection, or proof need. Do not create variants by swapping a title into the same body. Place evidence and assumptions outside the email.
-
-## 4. Check personalization and links
-
-Trace account-specific statements and proof to sources. Keep unresolved names, current role, authority, and contact eligibility outside the rendered draft. Use neutral placeholders where necessary; do not invent an email address.
-
-Check a supplied CTA destination with a read-only tool when available. If no destination is provided, return a reply-based ask or label a proposed link as unverified. Do not submit a form or book a meeting to verify a link.
-
-For a requested named-recipient draft, show known suppressions, current-affiliation gaps, relationship conflicts, and participant communication constraints. Missing eligibility does not prevent neutral group-copy preparation, but the named contact remains held for use.
-
-## 5. Review the drafts
-
-Check voice, role relevance, claim support, personalization, one CTA, and concise length. Show the participant actual copy, evidence notes, and missing decisions. All new emails remain Draft even when their source context is approved.
-
-Return named files or Markdown with review owner, state, and next action. Keep local copy creation, mailbox draft creation, enrollment, and sending separate. This workflow ends with unsent local drafts and does not launch outreach.
-`,sha256:"f46d2103a5f7c81d96b3524af4483bba28c964e3d983cbdc31b1bc7f80a859d2"}}}]};var ht=co.skills;function Dr(t,e="SKILL.md"){if(typeof e!="string"||e.startsWith("/")||e.includes("\\")||e.split("/").includes(".."))throw new Error("Use a relative path inside this skill.");let n=ht.find(o=>o.name===t);if(!n||!Object.hasOwn(n.files,e))throw new Error("Bundled skill resource not found.");return{name:e,...n.files[e]}}function Cn(t){for(let e of ht){let n=t.skills.findIndex(a=>a.id===e.name),o=t.skills[n];if(o?.availability==="attached"&&!o.bundleName)continue;let r={id:e.name,skillName:e.name,title:e.title,step:e.step,description:e.description,availability:"attached",sourceId:`bundled-${e.name}`,bundleName:e.name};n<0?t.skills.push(r):t.skills[n]=r}return t}function lo(t,e){let n=t.skills.find(r=>r.sourceId===e&&r.bundleName);if(!n)return null;let o=Dr(n.bundleName);return{source:{id:e,name:"SKILL.md",origin:"bundled",kind:"skill",location:`Webinar pack: ${n.bundleName}/SKILL.md`,sha256:o.sha256,verification:"verified"},text:o.text,digestMatches:!0}}function po(t){let e=ht.find(n=>n.name===t);return e?Object.entries(e.files).filter(([n])=>n.endsWith(".md")).map(([n,o])=>`File: ${e.name}/${n}
+`,sha256:"952bf7f60053d934156153c9f00de729eeb7843231064fed30a2cf362bb03964"}}}]};var ht=co.skills;function Dr(t,e="SKILL.md"){if(typeof e!="string"||e.startsWith("/")||e.includes("\\")||e.split("/").includes(".."))throw new Error("Use a relative path inside this skill.");let n=ht.find(o=>o.name===t);if(!n||!Object.hasOwn(n.files,e))throw new Error("Bundled skill resource not found.");return{name:e,...n.files[e]}}function Cn(t){for(let e of ht){let n=t.skills.findIndex(a=>a.id===e.name),o=t.skills[n];if(o?.availability==="attached"&&!o.bundleName)continue;let r={id:e.name,skillName:e.name,title:e.title,step:e.step,description:e.description,availability:"attached",sourceId:`bundled-${e.name}`,bundleName:e.name};n<0?t.skills.push(r):t.skills[n]=r}return t}function lo(t,e){let n=t.skills.find(r=>r.sourceId===e&&r.bundleName);if(!n)return null;let o=Dr(n.bundleName);return{source:{id:e,name:"SKILL.md",origin:"bundled",kind:"skill",location:`Webinar pack: ${n.bundleName}/SKILL.md`,sha256:o.sha256,verification:"verified"},text:o.text,digestMatches:!0}}function po(t){let e=ht.find(n=>n.name===t);return e?Object.entries(e.files).filter(([n])=>n.endsWith(".md")).map(([n,o])=>`File: ${e.name}/${n}
 ${o.text}`).join(`
 
 `):""}var _r=1,q=[{id:"brain",title:"Company Brain",hint:"Brand, ICP, message, product, personas",deps:[],kind:"foundation"},{id:"tools",title:"Tools & Data",hint:"The capabilities this campaign needs",deps:[],kind:"foundation"},{id:"accounts",title:"Account list",hint:"A clear audience",deps:[],number:1},{id:"segments",title:"Segmentation",hint:"A reason for each group",deps:["brain","accounts"],number:2},{id:"briefs",title:"Account briefs",hint:"Facts and campaign angles",deps:["brain","segments"],number:3},{id:"buyers",title:"Buyer groups",hint:"Who needs what",deps:["brain","briefs"],number:4},{id:"messages",title:"Messages & creative",hint:"One story, distinct channel skills",deps:["brain","buyers"],number:5},{id:"experience",title:"Buyer experience",hint:"Content, proof, and a next step",deps:["brain","briefs"],number:6},{id:"followup",title:"Follow-up & measurement",hint:"Signals, owners, and next actions",deps:["experience"],number:7}],Ke=["Branding & voice","Ideal customer profile","Messaging","Product positioning","Buyer personas"],Tr=[["company-brain-builder","Company Brain Builder","brain"],["tools-data-setup","Tools & Data Setup","tools"],["account-list-builder","Account List Builder","accounts"],["campaign-segmentation","Campaign Segmentation","segments"],["account-brief-builder","Account Brief Builder","briefs"],["buyer-group-mapper","Buyer Group Mapper","buyers"],["marketo-marketing-email","Marketo marketing email","messages"],["sales-email","Sales email","messages"],["sales-cadence","Sales cadence","messages"],["buyer-group-ad-creative","Ad creative","messages"],["buyer-group-email-copy","Buyer Group Email Copy","messages"],["buyer-experience-builder","Buyer Experience Builder","experience"],["follow-up-measurement","Follow-up & Measurement","followup"]].map(([t,e,n])=>({id:t,title:e,step:n,availability:"pending",description:"Attach this skill when it is ready.",sourceId:null})),Ae=()=>new Date().toISOString();function uo(t,e="Untitled campaign"){let n=Ae();return Cn({schemaVersion:_r,id:t,name:e,revision:0,createdAt:n,updatedAt:n,sources:[],skills:structuredClone(Tr),steps:Object.fromEntries(q.map(o=>[o.id,{sourceIds:[],coverage:[],review:null,result:null,stale:!1}]))})}function Le(t,e){let n=q.find(s=>s.id===e),o=t.steps[e];if(!n||!o)return{state:"blocked",label:"Unknown step",missing:[]};let r=n.deps.filter(s=>Le(t,s).state!=="ready"),a=o.sourceIds.map(s=>t.sources.find(i=>i.id===s)).filter(Boolean);return o.stale||a.some(s=>s.verification==="stale"||s.verification==="unavailable")?{state:"review",label:"Needs recheck",missing:r}:!a.length&&!o.result?{state:r.length?"waiting":"missing",label:e==="brain"?"Not linked":e==="tools"?"Not checked":e==="accounts"?"No list added":r.length?"Waiting for inputs":"Not started",missing:r}:e==="brain"&&o.coverage.length<Ke.length?{state:"review",label:`${o.coverage.length} of ${Ke.length} areas found`,missing:r}:e==="tools"&&!o.result?.capabilities?.length?{state:"review",label:"Capabilities not checked",missing:r}:a.some(s=>s.verification!=="verified")?{state:"review",label:"Source check needed",missing:r}:o.result?.blockingGaps?.length?{state:"review",label:"Gaps to resolve",missing:r}:o.review?r.length?{state:"waiting",label:"Waiting for inputs",missing:r}:{state:"ready",label:e==="brain"?"Connected & reviewed":e==="tools"?"Capabilities checked":"Ready for next step",missing:[]}:{state:"review",label:"Review needed",missing:r}}function ze(t,e){for(let n of q.filter(o=>o.deps.includes(e))){let o=t.steps[n.id];(o.sourceIds.length||o.result||o.review)&&(o.stale=!0,o.review=null),ze(t,n.id)}}function fo(t,e,n=""){let o=t.skills.find(s=>s.id===e);if(!o)throw new Error("Skill not found.");let r=q.find(s=>s.id===o.step),a=Le(t,o.step);return[`Campaign: ${t.name} (${t.id}).`,`Step: ${r.title}.`,`Skill: ${o.title} (${o.id}).`,o.availability==="attached"?"Read the attached skill through read_campaign_skill before using it.":"This skill is pending. Find an installed matching skill or help prepare this step; do not claim it ran.",a.missing.length?`Check missing inputs: ${a.missing.map(s=>q.find(i=>i.id===s).title).join(", ")}.`:"Check the linked inputs and current scope.",n?`My request: ${n}`:"Reuse existing work first. If nothing exists, ask for the smallest useful input.","Return source-linked output and blocking gaps. Record it with record_campaign_result, then request review. If connector tools are unavailable, return named files for manual upload and review. Do not send, enroll, publish, spend, or change another campaign without explicit authorization.",o.bundleName?`Bundled skill instructions and Markdown references:

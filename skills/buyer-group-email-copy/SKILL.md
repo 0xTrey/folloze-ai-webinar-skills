@@ -1,46 +1,46 @@
 ---
 name: buyer-group-email-copy
-description: "Draft concise unsent emails for distinct B2B buyer groups using approved company voice, account context, personas, and proof. Return role-specific copy, personalization evidence, and review gaps without sending or enrolling contacts."
+description: "Draft B2B sales emails using value subjects, problem or customer-story openings, role relevance, fixed approved pitches and content CTAs. Prepare AgentMail or Smartlead handoffs from company context and buyer groups, without sending or enrolling contacts."
 ---
 
 # Buyer Group Email Copy
 
-Write copy that reflects the buyer group's work. A draft can start with a role group; a named recipient is optional and does not become eligible to contact through this skill.
+Turn company context and buyer roles into reviewable sales emails. The same writing framework works with AgentMail, Smartlead or another sender. This skill runs in the AI workspace; it does not install inside an email platform.
 
-Read [context-and-evidence.md](references/context-and-evidence.md) and use [output-template.md](references/output-template.md).
+Read [context-and-evidence.md](references/context-and-evidence.md). Use [messaging-framework.md](references/messaging-framework.md) for the five sections and role choices, then [output-template.md](references/output-template.md) for the handoff.
 
-Read [tool-map-use.md](references/tool-map-use.md). Use `tool-map.md` for approved context, current-role or verification evidence when already authorized, optional URL checks, and file storage. Record map version and selected routes. Preparing role-level copy needs no email reveal or contact enrichment; never select a sending operation for this draft workflow.
+Start with supplied files. When connected research or storage is needed, read [tool-map-use.md](references/tool-map-use.md) and the participant's map. Drafting needs no contact enrichment or sending operation.
 
 ## 1. Read the message context
 
-Use the Company Brain's voice, messaging, personas, product limits, and approved proof. Read the account brief and buyer-group map if supplied. Keep account, segment, and group IDs consistent.
+Use the Company Brain's voice, personas, product limits, approved pitches and proof. Add the account brief, buyer map, content catalog and campaign destination when supplied. Keep their IDs and source dates. Company research is sufficient when individual research is absent.
 
-Ask only for missing seller context, buyer group, and desired action when they change the draft. Default to one unsent initial email per group. Do not add a sequence, Gmail draft, or recipient list unless specifically requested.
+Infer routine choices; ask only for context that materially changes the message. Default to one unsent initial email per group. Add named recipients, follow-ups or platform exports when requested. Supply your own approved pitches, content catalog and campaign board URL; this download includes no working campaign data.
 
-## 2. Choose an honest opener
+## 2. Choose the problem and content together
 
-Use a verified, relevant professional observation when available. Otherwise start with the role's work and a direct reason to write. Inferred pain must not be phrased as a known problem at the account.
+Choose one buyer problem, one useful content offer and one compatible pitch. The opening is a direct work problem or a sourced customer story. Connect the same problem to the recipient's function and seniority. Do not assert an inferred pain as a known account problem.
 
-Keep historical relationships at their actual date and employer. Do not invent a prior conversation, referral, customer relationship, reply thread, intent signal, or personal familiarity. Exclude private research and sensitive personal details from copy.
+Keep historical examples at their actual date. Do not invent customer emotions, outcomes, personal behavior, technology adoption or familiarity. Account-level intent is not an individual's behavior. Keep private CRM and intent details out of buyer copy.
 
 ## 3. Draft for each group
 
-Write up to two short subject options and one concise body per group. Default to no more than 100 body words; adapt when the participant supplies a different limit. Structure around observation or role problem, relevant value, supported credibility, and one ask.
+Write: value subject, problem/story opening, company-and-role bridge, exact approved pitch, then a useful content CTA. Aim near 70-110 body words when practical. A resource-led campaign offers a story, guide or personalized page on its supplied board rather than asking for a meeting. Other campaign goals use the participant's stated action.
 
-Use approved capability context when outcome proof is missing. Keep qualifiers intact. Do not add unsupported metrics, superiority, guaranteed results, or fake urgency. Avoid em dashes and generic corporate phrasing.
+Select pitch text from the supplied library without rewriting it. New pitch wording is a separate review proposal. Use approved qualitative capability context when numeric proof is unavailable. Avoid em dashes, generic corporate phrasing and unsupported promises. End with the supplied signature and honor the campaign's footer policy.
 
-Make groups meaningfully different through their job, question, objection, or proof need. Do not create variants by swapping a title into the same body. Place evidence and assumptions outside the email.
+For company batches, vary the relevant angle, subject and opening across sales recipients. Check AgentMail and Smartlead drafts together, including supplied prior messages. Pitches may repeat; complete messages must differ within a company/campaign/touch. Do not fill a quota with cosmetic variants or irrelevant angles. Rich account-level Marketing Emails use separate variation rules.
 
 ## 4. Check personalization and links
 
-Trace account-specific statements and proof to sources. Keep unresolved names, current role, authority, and contact eligibility outside the rendered draft. Use neutral placeholders where necessary; do not invent an email address.
+Trace account and customer claims to sources. The named story must match the content offer. Keep unresolved identities and eligibility in review notes; do not invent names, addresses or research. Role-only templates can retain explicit placeholders.
 
-Check a supplied CTA destination with a read-only tool when available. If no destination is provided, return a reply-based ask or label a proposed link as unverified. Do not submit a form or book a meeting to verify a link.
+Keep one CTA destination. In a board-led campaign, every click returns to the supplied board or a verified item on that board. Code owns recipient identity, URL encoding and tokens. Without a resolved URL, retain the destination as a review gap. Do not invent a token or substitute an external case-study link.
 
-For a requested named-recipient draft, show known suppressions, current-affiliation gaps, relationship conflicts, and participant communication constraints. Missing eligibility does not prevent neutral group-copy preparation, but the named contact remains held for use.
+For a named-recipient draft, preserve supplied suppressions, affiliation gaps and communication constraints. Missing eligibility does not block role-copy preparation.
 
 ## 5. Review the drafts
 
-Check voice, role relevance, claim support, personalization, one CTA, and concise length. Show the participant actual copy, evidence notes, and missing decisions. All new emails remain Draft even when their source context is approved.
+Review the whole message: does the subject promise the value offered, and do opening, bridge, pitch and CTA address the same problem? Check claim support, fixed pitch text, role relevance and account-level duplication. Use the offline [batch checker](scripts/check_email_batch.py) for the JSON contract; it checks structure and exact duplicates, not factual truth or sending eligibility.
 
-Return named files or Markdown with review owner, state, and next action. Keep local copy creation, mailbox draft creation, enrollment, and sending separate. This workflow ends with unsent local drafts and does not launch outreach.
+For an AgentMail or Smartlead handoff, read only that provider's section in [delivery-handoffs.md](references/delivery-handoffs.md). Return actual copy, sources, review gaps and the requested files. All messages remain drafts. Importing, creating mailbox drafts, activating campaigns and sending require their own authorization and available tools. Skill installation creates no connection or permission to send.

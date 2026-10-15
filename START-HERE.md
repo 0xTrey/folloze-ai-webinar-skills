@@ -6,7 +6,7 @@ For Claude, use the [rehearsal guide](CLAUDE-REHEARSAL.md): exact setup, a fresh
 2. Open [Campaign Workspace](skills/campaign-workspace/QUICKSTART.md) to see the campaign map. Start with no company files linked.
 3. Use [Tools & Data Setup](skills/tools-data-setup/QUICKSTART.md) and [Company Brain Builder](skills/company-brain-builder/QUICKSTART.md). Bring your company URL, known tool names, and approved documents when available.
 4. Add your account list. Continue through [segmentation](skills/campaign-segmentation/QUICKSTART.md), [account briefs](skills/account-brief-builder/QUICKSTART.md), and [buyer groups](skills/buyer-group-mapper/QUICKSTART.md).
-5. Create [ad concepts](skills/buyer-group-ad-creative/QUICKSTART.md) and [email copy](skills/buyer-group-email-copy/QUICKSTART.md). Review claims, role assumptions, and creative before use.
+5. Create [ad concepts](skills/buyer-group-ad-creative/QUICKSTART.md) and [email copy](skills/buyer-group-email-copy/QUICKSTART.md). Supply approved pitches and content. Request AgentMail or Smartlead handoff files when needed. Review claims, role assumptions, and creative before use.
 
 Pass the same `tool-map.md`, reviewed Company Brain, and account, segment, and buyer-group IDs between skills. If a connection is unavailable, use approved exports or named Markdown blocks for manual saving.
 

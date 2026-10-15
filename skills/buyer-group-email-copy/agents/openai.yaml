@@ -1,4 +1,4 @@
 interface:
   display_name: "Buyer Group Email Copy"
-  short_description: "Write concise unsent emails for buyer groups"
-  default_prompt: "Use $buyer-group-email-copy with my company brain and supplied campaign context to prepare a review draft."
+  short_description: "Write role-based emails for AgentMail or Smartlead"
+  default_prompt: "Use $buyer-group-email-copy with my company brain, approved pitches and account briefs to draft role-specific sales emails and a review handoff for my email platform."

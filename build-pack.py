@@ -19,7 +19,7 @@ SKILLS = {
     'account-brief-builder': FOLLOW_UP,
     'buyer-group-mapper': FOLLOW_UP,
     'buyer-group-ad-creative': FOLLOW_UP,
-    'buyer-group-email-copy': FOLLOW_UP,
+    'buyer-group-email-copy': FOLLOW_UP + ('references/messaging-framework.md', 'references/delivery-handoffs.md', 'scripts/check_email_batch.py'),
     'campaign-workspace': ('SKILL.md', 'QUICKSTART.md', 'agents/openai.yaml',
         'references/runtime.md', 'references/result-contract.md',
         'assets/campaign-workspace.html', 'assets/OpenSans-OFL.txt',
@@ -129,7 +129,7 @@ def main():
     archives.append(archive('claude-rehearsal-kit.zip', rehearsal))
     full = {f'folloze-ai-webinar-skills/{name}': (ROOT / name).read_bytes() for name in SKILL_FILES | GUIDES}
     archives.append(archive('folloze-ai-webinar-skills.zip', full))
-    manifest = {'version': '0.1.1', 'skillCount': len(SKILLS), 'skillFileCount': len(SKILL_FILES),
+    manifest = {'version': '0.1.2', 'skillCount': len(SKILLS), 'skillFileCount': len(SKILL_FILES),
                 'checks': ['explicit file allowlist', 'portable paths', 'relative references', 'archive CRC', 'source byte parity', 'fresh extraction'],
                 'artifacts': archives}
     (ROOT / 'downloads/manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')

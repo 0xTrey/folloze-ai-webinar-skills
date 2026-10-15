@@ -10,7 +10,7 @@ Use these 15 prompts for one walkthrough: an empty Folloze Campaign Workspace, c
 4. Confirm these eight skills are enabled: Campaign Workspace, Tools & Data Setup, Company Brain Builder, Campaign Segmentation, Account Brief Builder, Buyer Group Mapper, Buyer Group Ad Creative, and Buyer Group Email Copy. If your organization blocks uploads, ask its owner to provision these same ZIPs.
 5. Prepare your own approved Company Brain files and a small account CSV in a private location. Use `Company` and `Domain` column headers; keep any other useful columns. Keep these files out of the public skills repository. For a short demo, use a list you can review on screen and research only three accounts. No company documents or contacts are included in this kit.
 
-The app includes seven campaign skills; Campaign Workspace is the eighth skill installed in Claude. Installing a skill in Claude and attaching instructions inside the app are separate actions. Marketo marketing email, sales email, sales cadence, Account List Builder, Buyer Experience Builder, and Follow-up & Measurement remain pending slots until their own skills are supplied.
+The app includes seven campaign skills; Campaign Workspace is the eighth skill installed in Claude. Installing a skill in Claude and attaching instructions inside the app are separate actions. Email copy and AgentMail or Smartlead handoff files are included. Marketo builds, live sales sending, cadence setup, Account List Builder, Buyer Experience Builder, and Follow-up & Measurement remain pending slots until their own skills are supplied.
 
 ## Start each rehearsal
 
@@ -138,7 +138,7 @@ Use Buyer Group Ad Creative. Draft two distinct ad concepts for each of two prio
 ### 12. Draft the emails and assemble the message handoff
 
 ```text
-Use Buyer Group Email Copy for the same two groups. Draft one unsent email per group, each with a short subject, a body under 100 words, and one CTA. Cite the approved claims and role context in review notes. Return buyer-group-emails.md and combine it with buyer-group-ads.md into messages-and-creative.md for app upload. Keep Marketo builds, sales email builds, and sales cadence skills pending. These are copy drafts only.
+Use Buyer Group Email Copy for the same two groups. Draft one unsent email per group: value subject, problem or sourced customer story, company-and-role bridge, exact approved pitch, and one content CTA to our campaign board. Aim near 70-110 body words. Cite claims and role context in review notes. Keep subjects and openings distinct within each account. Return buyer-group-emails.md and combine it with buyer-group-ads.md into messages-and-creative.md for app upload. If requested, also prepare AgentMail or Smartlead handoff files. Keep Marketo builds, live sending, and cadence setup pending.
 ```
 
 **Show:** Two different messages grounded in the same Company Brain. Upload the combined file to **Messages & creative**. Review the copy before recording the planning review. This does not configure a channel or establish outreach eligibility.
