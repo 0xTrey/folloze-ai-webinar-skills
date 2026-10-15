@@ -4,7 +4,11 @@ Build campaign context, map your audience, and create reviewable drafts with eig
 
 **[Download all eight skills](downloads/folloze-ai-webinar-skills.zip?raw=1)** · [Start here](START-HERE.md)
 
-**Rehearsing in Claude?** [Download the rehearsal kit](downloads/claude-rehearsal-kit.zip?raw=1) for eight installable skill ZIPs, the HTML app, and [15 copy-ready prompts with exact setup steps](CLAUDE-REHEARSAL.md).
+**[Get the 20 campaign prompts](CAMPAIGN-PROMPTS.md)** · [Prompt-only ZIP](downloads/campaign-prompts.zip?raw=1) · [Searchable HTML browser](CAMPAIGN-PROMPTS.html)
+
+The prompts cover: account review, segmentation, briefs, buyer groups, Channel Activation, the buyer experience, engagement and follow-up. Each card gives the inputs, matching skill and concrete result.
+
+**Using Claude?** [Download the Claude campaign kit](downloads/claude-campaign-kit.zip?raw=1) for eight individual skill ZIPs, the optional campaign app, all 20 prompts and the [customer setup guide](CUSTOMER-GUIDE.md).
 
 | Skill | What it helps you do | Download |
 |---|---|---|

@@ -1,8 +1,10 @@
 {
-  "version": "0.1.4",
+  "version": "0.2.0",
   "skillCount": 8,
   "skillFileCount": 63,
+  "promptCount": 20,
   "checks": [
+    "customer onboarding content",
     "explicit file allowlist",
     "portable paths",
     "relative references",
@@ -391,68 +393,174 @@
       ]
     },
     {
-      "name": "claude-rehearsal-kit.zip",
-      "bytes": 707904,
-      "sha256": "45cb71b52b38fef8c52e05c72850c416f6ff13a9dd2ce93dcdf16df159d4c193",
-      "fileCount": 12,
+      "name": "campaign-prompts.zip",
+      "bytes": 17863,
+      "sha256": "65f8c0311cad93756535fe4e72d3a1b6a27567c8b43b8bca439ffe6fc393310b",
+      "fileCount": 2,
       "files": [
         {
-          "path": "claude-rehearsal-kit/CLAUDE-REHEARSAL.md",
-          "bytes": 18532,
-          "sha256": "8fc96728f8dfbd23aa247a64b84d335248c4f305c16d9cc2e083c336ee8f4720"
+          "path": "campaign-prompts/CAMPAIGN-PROMPTS.html",
+          "bytes": 34871,
+          "sha256": "3cccf80c0cbfe4f34ae3f883acea0a644c4e96015c558b65a6357041188ddc83"
         },
         {
-          "path": "claude-rehearsal-kit/OpenSans-OFL.txt",
+          "path": "campaign-prompts/CAMPAIGN-PROMPTS.md",
+          "bytes": 22869,
+          "sha256": "e7c583b3e59b89f84699a705ab408bb85ed987c41100f3a156ac9c0bea623d91"
+        }
+      ]
+    },
+    {
+      "name": "claude-campaign-kit.zip",
+      "bytes": 721263,
+      "sha256": "793b6f4163c20026d397cd60b4d6ae182fb66b4d83a40e73ed8f1597d97d4424",
+      "fileCount": 14,
+      "files": [
+        {
+          "path": "claude-campaign-kit/CAMPAIGN-PROMPTS.html",
+          "bytes": 34871,
+          "sha256": "3cccf80c0cbfe4f34ae3f883acea0a644c4e96015c558b65a6357041188ddc83"
+        },
+        {
+          "path": "claude-campaign-kit/CAMPAIGN-PROMPTS.md",
+          "bytes": 22869,
+          "sha256": "e7c583b3e59b89f84699a705ab408bb85ed987c41100f3a156ac9c0bea623d91"
+        },
+        {
+          "path": "claude-campaign-kit/CUSTOMER-GUIDE.md",
+          "bytes": 5879,
+          "sha256": "4c220027d170635be1b8e9fbe7f74427b2c0a2512080416ec909a57381dfb66f"
+        },
+        {
+          "path": "claude-campaign-kit/OpenSans-OFL.txt",
           "bytes": 4389,
           "sha256": "fbbbcfef55318de350562559b671360de6d597112ecc5c73881b05092db89602"
         },
         {
-          "path": "claude-rehearsal-kit/THIRD_PARTY_NOTICES.txt",
+          "path": "claude-campaign-kit/THIRD_PARTY_NOTICES.txt",
           "bytes": 79127,
           "sha256": "498c1aa08996c2a67d7e0bf0b3ace4a98fb83e14ff8d3361bfd0a2b1e6be3fe0"
         },
         {
-          "path": "claude-rehearsal-kit/campaign-workspace.html",
+          "path": "claude-campaign-kit/campaign-workspace.html",
           "bytes": 778939,
           "sha256": "0b07ee6288b2977213f8b53e538985a0e1cbbd9975ff649e059c41f9250f6ccf"
         },
         {
-          "path": "claude-rehearsal-kit/skill-zips/account-brief-builder.zip",
+          "path": "claude-campaign-kit/skill-zips/account-brief-builder.zip",
           "bytes": 11404,
           "sha256": "09a782817fe675c0571ac1e207d15c407be2d80f1de234bba028183057495bdf"
         },
         {
-          "path": "claude-rehearsal-kit/skill-zips/buyer-group-ad-creative.zip",
+          "path": "claude-campaign-kit/skill-zips/buyer-group-ad-creative.zip",
           "bytes": 16698,
           "sha256": "347265bb12b2bfe06dac4ed30e8451f51a71cf8151428a34e3da2a2ed5a3b5e8"
         },
         {
-          "path": "claude-rehearsal-kit/skill-zips/buyer-group-email-copy.zip",
+          "path": "claude-campaign-kit/skill-zips/buyer-group-email-copy.zip",
           "bytes": 19270,
           "sha256": "73697fa2cdf7a73e8107c5d9cb138d7a2c8103ab345ef9fd78151905fc85830c"
         },
         {
-          "path": "claude-rehearsal-kit/skill-zips/buyer-group-mapper.zip",
+          "path": "claude-campaign-kit/skill-zips/buyer-group-mapper.zip",
           "bytes": 11699,
           "sha256": "00ef925d6e31e210ccd1f1cb57c00da6b8b60b7acdc0226f0278592a8a4d8cba"
         },
         {
-          "path": "claude-rehearsal-kit/skill-zips/campaign-segmentation.zip",
+          "path": "claude-campaign-kit/skill-zips/campaign-segmentation.zip",
           "bytes": 11114,
           "sha256": "80a563a6518f7b6cabf435d7ab5a5e6381c3997a4825466155e961c2893b0d18"
         },
         {
-          "path": "claude-rehearsal-kit/skill-zips/campaign-workspace.zip",
+          "path": "claude-campaign-kit/skill-zips/campaign-workspace.zip",
           "bytes": 305274,
           "sha256": "2ace84f7f6f837c1a62df7edce34687031fff4901c571e20fd36b26804b20033"
         },
         {
-          "path": "claude-rehearsal-kit/skill-zips/company-brain-builder.zip",
+          "path": "claude-campaign-kit/skill-zips/company-brain-builder.zip",
           "bytes": 16418,
           "sha256": "c2ffd14f98afccf0eed92e4beb49e20b339a2d960b8beb435a70c9bb15b1056b"
         },
         {
-          "path": "claude-rehearsal-kit/skill-zips/tools-data-setup.zip",
+          "path": "claude-campaign-kit/skill-zips/tools-data-setup.zip",
+          "bytes": 13973,
+          "sha256": "02d4651ebc905247f17dfce6a79db586acef431588aeda74b9303e82d1d834fa"
+        }
+      ]
+    },
+    {
+      "name": "claude-rehearsal-kit.zip",
+      "bytes": 721263,
+      "sha256": "793b6f4163c20026d397cd60b4d6ae182fb66b4d83a40e73ed8f1597d97d4424",
+      "fileCount": 14,
+      "files": [
+        {
+          "path": "claude-campaign-kit/CAMPAIGN-PROMPTS.html",
+          "bytes": 34871,
+          "sha256": "3cccf80c0cbfe4f34ae3f883acea0a644c4e96015c558b65a6357041188ddc83"
+        },
+        {
+          "path": "claude-campaign-kit/CAMPAIGN-PROMPTS.md",
+          "bytes": 22869,
+          "sha256": "e7c583b3e59b89f84699a705ab408bb85ed987c41100f3a156ac9c0bea623d91"
+        },
+        {
+          "path": "claude-campaign-kit/CUSTOMER-GUIDE.md",
+          "bytes": 5879,
+          "sha256": "4c220027d170635be1b8e9fbe7f74427b2c0a2512080416ec909a57381dfb66f"
+        },
+        {
+          "path": "claude-campaign-kit/OpenSans-OFL.txt",
+          "bytes": 4389,
+          "sha256": "fbbbcfef55318de350562559b671360de6d597112ecc5c73881b05092db89602"
+        },
+        {
+          "path": "claude-campaign-kit/THIRD_PARTY_NOTICES.txt",
+          "bytes": 79127,
+          "sha256": "498c1aa08996c2a67d7e0bf0b3ace4a98fb83e14ff8d3361bfd0a2b1e6be3fe0"
+        },
+        {
+          "path": "claude-campaign-kit/campaign-workspace.html",
+          "bytes": 778939,
+          "sha256": "0b07ee6288b2977213f8b53e538985a0e1cbbd9975ff649e059c41f9250f6ccf"
+        },
+        {
+          "path": "claude-campaign-kit/skill-zips/account-brief-builder.zip",
+          "bytes": 11404,
+          "sha256": "09a782817fe675c0571ac1e207d15c407be2d80f1de234bba028183057495bdf"
+        },
+        {
+          "path": "claude-campaign-kit/skill-zips/buyer-group-ad-creative.zip",
+          "bytes": 16698,
+          "sha256": "347265bb12b2bfe06dac4ed30e8451f51a71cf8151428a34e3da2a2ed5a3b5e8"
+        },
+        {
+          "path": "claude-campaign-kit/skill-zips/buyer-group-email-copy.zip",
+          "bytes": 19270,
+          "sha256": "73697fa2cdf7a73e8107c5d9cb138d7a2c8103ab345ef9fd78151905fc85830c"
+        },
+        {
+          "path": "claude-campaign-kit/skill-zips/buyer-group-mapper.zip",
+          "bytes": 11699,
+          "sha256": "00ef925d6e31e210ccd1f1cb57c00da6b8b60b7acdc0226f0278592a8a4d8cba"
+        },
+        {
+          "path": "claude-campaign-kit/skill-zips/campaign-segmentation.zip",
+          "bytes": 11114,
+          "sha256": "80a563a6518f7b6cabf435d7ab5a5e6381c3997a4825466155e961c2893b0d18"
+        },
+        {
+          "path": "claude-campaign-kit/skill-zips/campaign-workspace.zip",
+          "bytes": 305274,
+          "sha256": "2ace84f7f6f837c1a62df7edce34687031fff4901c571e20fd36b26804b20033"
+        },
+        {
+          "path": "claude-campaign-kit/skill-zips/company-brain-builder.zip",
+          "bytes": 16418,
+          "sha256": "c2ffd14f98afccf0eed92e4beb49e20b339a2d960b8beb435a70c9bb15b1056b"
+        },
+        {
+          "path": "claude-campaign-kit/skill-zips/tools-data-setup.zip",
           "bytes": 13973,
           "sha256": "02d4651ebc905247f17dfce6a79db586acef431588aeda74b9303e82d1d834fa"
         }
@@ -460,19 +568,34 @@
     },
     {
       "name": "folloze-ai-webinar-skills.zip",
-      "bytes": 418317,
-      "sha256": "58ba1ac6f04c124a3e16038b4535d9450fdd7afcd27e518f3de48ad482b4a6e8",
-      "fileCount": 65,
+      "bytes": 434268,
+      "sha256": "2b79684b032191677cfbd15a2123591013486d7e9e943b2da768503fb886b3c4",
+      "fileCount": 68,
       "files": [
         {
+          "path": "folloze-ai-webinar-skills/CAMPAIGN-PROMPTS.html",
+          "bytes": 34871,
+          "sha256": "3cccf80c0cbfe4f34ae3f883acea0a644c4e96015c558b65a6357041188ddc83"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/CAMPAIGN-PROMPTS.md",
+          "bytes": 22869,
+          "sha256": "e7c583b3e59b89f84699a705ab408bb85ed987c41100f3a156ac9c0bea623d91"
+        },
+        {
           "path": "folloze-ai-webinar-skills/CLAUDE-REHEARSAL.md",
-          "bytes": 18532,
-          "sha256": "8fc96728f8dfbd23aa247a64b84d335248c4f305c16d9cc2e083c336ee8f4720"
+          "bytes": 5879,
+          "sha256": "4c220027d170635be1b8e9fbe7f74427b2c0a2512080416ec909a57381dfb66f"
+        },
+        {
+          "path": "folloze-ai-webinar-skills/CUSTOMER-GUIDE.md",
+          "bytes": 5879,
+          "sha256": "4c220027d170635be1b8e9fbe7f74427b2c0a2512080416ec909a57381dfb66f"
         },
         {
           "path": "folloze-ai-webinar-skills/START-HERE.md",
-          "bytes": 2239,
-          "sha256": "e9d884f71954ac18b2433f8087ac10451f362b76bb623290926e8a1c0f2fc219"
+          "bytes": 1883,
+          "sha256": "238de918778a1e98abafe318c9f064d16b7720c103bb19b3545e414c872987d9"
         },
         {
           "path": "folloze-ai-webinar-skills/skills/account-brief-builder/QUICKSTART.md",

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="prompt-source-sha256" content="e7c583b3e59b89f84699a705ab408bb85ed987c41100f3a156ac9c0bea623d91"><title>20 campaign prompts | Folloze</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#071428;background:#f3f9fd;font-synthesis:none}*{box-sizing:border-box}body{margin:0}main{max-width:1080px;margin:auto;padding:48px 28px 60px}h1{font-size:clamp(29px,4vw,43px);line-height:1.12;letter-spacing:-1.2px;margin:0 0 22px}p{line-height:1.6}a{color:#005aca}header>p{max-width:800px;color:#2c3d59}.links{display:flex;gap:10px 24px;flex-wrap:wrap;margin:24px 0;font-size:14px}.toolbar{display:grid;grid-template-columns:1fr 1fr auto;gap:14px;align-items:end;padding:20px;background:white;border:1px solid #cce1f3;border-radius:6px;margin:28px 0 16px}.toolbar label{font-size:12px;font-weight:700;display:flex;gap:8px;flex-direction:column}input,select,button{font:inherit;border:1px solid #b8d2e8;border-radius:4px;color:inherit;background:white}input,select{padding:11px;width:100%;min-width:0;font-size:14px}button{cursor:pointer;padding:11px 16px;font-size:13px;font-weight:650}button:hover{border-color:#0077ff}button:focus-visible,summary:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,pre:focus-visible{outline:3px solid #0077ff;outline-offset:3px}#result-count,#copy-status{font-size:12px;color:#52627a;min-height:18px}#copy-status{color:#005aca}.prompt-card{border:1px solid #cce1f3;background:white;border-radius:6px;margin:11px 0}.prompt-card[hidden]{display:none}summary{display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;padding:19px 20px;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}summary>b{color:#005aca;font-size:13px}summary>span{font-size:16px;font-weight:700}summary>small{font-size:11px;max-width:160px;color:#52627a;text-align:right}.prompt-card[open]{border-color:#0077ff}.prompt-card[open] summary{border-bottom:1px solid #d8ecfa}.card-body{padding:22px}.skill{font-size:13px;margin:0 0 18px}.skill strong{margin-right:9px}dl{margin:0 0 22px;font-size:13px}dl>div{display:grid;grid-template-columns:55px 1fr;gap:12px;margin:10px 0}dt{font-weight:700}dd{margin:0;line-height:1.6}.copy{color:white;background:#0077ff;border-color:#0077ff}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.75 system-ui,-apple-system,sans-serif;background:#f3f9fd;border:1px solid #d8ecfa;padding:20px;border-radius:4px;margin:17px 0 0}footer{font-size:12px;color:#52627a;border-top:1px solid #cce1f3;margin-top:30px;padding-top:20px}#empty{padding:24px;background:white;border:1px solid #cce1f3;border-radius:6px}@media(max-width:650px){main{padding:30px 16px}.toolbar{grid-template-columns:1fr}.toolbar button{justify-self:start}summary{grid-template-columns:23px 1fr;padding:17px 14px}summary>small{grid-column:2;text-align:left;max-width:none}.card-body{padding:17px}pre{padding:16px}.links{gap:12px 18px}}@media print{body{background:white}main{max-width:none;padding:0}.toolbar,.copy,.links,#copy-status{display:none}.prompt-card{break-inside:avoid}pre{background:white}}
+</style></head><body><main>
+<header><h1>20 prompts for your next campaign.</h1><p>From company context to a useful sales conversation. Choose a prompt, attach its inputs and make something you can review. Each card can start a separate chat.</p>
+<nav class="links" aria-label="Downloads"><a href="CAMPAIGN-PROMPTS.md">Markdown handout</a><a href="https://github.com/0xTrey/folloze-ai-webinar-skills">Skills and downloads</a></nav></header>
+<section class="toolbar" aria-label="Find a prompt"><label for="search">Search prompts<input id="search" type="search" placeholder="Email, account brief, engagement..."></label><label for="stage">Campaign section<select id="stage"><option value="all">All sections</option><option value="Setup">Setup</option><option value="1. Account list">1. Account list</option><option value="2. Segmentation">2. Segmentation</option><option value="3. Account briefs">3. Account briefs</option><option value="4. Buyer groups">4. Buyer groups</option><option value="5. Channel Activation">5. Channel Activation</option><option value="6. Buyer experience">6. Buyer experience</option><option value="7. Sales follow-up">7. Sales follow-up</option></select></label><button type="button" id="expand">Expand all</button></section>
+<p id="result-count" aria-live="polite">20 prompts</p><p id="copy-status" role="status"></p>
+<section id="cards" aria-label="Campaign prompts"><details class="prompt-card" id="prompt-1" data-stage="Setup">
+<summary><b>1</b><span>Build the Company Brain</span><small>Setup</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/company-brain-builder" target="_blank" rel="noopener">Company Brain Builder</a></p>
+<dl><div><dt>Bring</dt><dd>Your company URL; any approved documents; a preferred storage location if known.</dd></div><div><dt>Get</dt><dd>A reusable Company Brain and a short document gap list.</dd></div></dl>
+<button type="button" class="copy" data-number="1" aria-label="Copy prompt 1">Copy prompt</button>
+<pre tabindex="0">Use Company Brain Builder for {company URL}. Start with public research, then incorporate the approved documents I attach or authorize you to read. Organize branding and voice, ICP, messaging, product positioning and buyer personas.
+
+Show what is sourced, inferred, missing or approved. For missing documents, tell me what to find and the role likely to own it; do not message anyone. Give me useful draft scaffolds so I can continue. Return the Company Brain files, proof-and-claims.md and a short gap list for {Google Drive, OneDrive or local folder}. If that storage is not connected, give me the files to save manually.</pre></div></details>
+<details class="prompt-card" id="prompt-2" data-stage="Setup">
+<summary><b>2</b><span>Map the tools and data we can actually use</span><small>Setup</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/tools-data-setup" target="_blank" rel="noopener">Tools &amp; Data Setup</a></p>
+<dl><div><dt>Bring</dt><dd>Tool names; permitted folders or exports; any approved usage limits.</dd></div><div><dt>Get</dt><dd>tool-map.md with working routes and practical fallbacks.</dd></div></dl>
+<button type="button" class="copy" data-number="2" aria-label="Copy prompt 2">Copy prompt</button>
+<pre tabindex="0">Use Tools &amp; Data Setup. Our stack is {document storage, CRM, research or intent tools, email platforms, design tools and Folloze, where applicable}.
+
+Check which connections are actually available with a small read-only test. Map where company context, account history, contacts, content and engagement data live. Separate access, operation permission and cost. Use only the usage limits I provide; otherwise start with zero charged operations. Return tool-map.md with verified routes, missing access and the exact export or upload that can substitute for each missing connection. Do not ask me to paste credentials into chat.</pre></div></details>
+<details class="prompt-card" id="prompt-3" data-stage="1. Account list">
+<summary><b>3</b><span>Turn the account list into something we can work with</span><small>1. Account list</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> Workflow prompt</p>
+<dl><div><dt>Bring</dt><dd>Account CSV or spreadsheet; Company Brain; available relationship records.</dd></div><div><dt>Get</dt><dd>accounts-reviewed.csv and account-review.md.</dd></div></dl>
+<button type="button" class="copy" data-number="3" aria-label="Copy prompt 3">Copy prompt</button>
+<pre tabindex="0">Use this account list and our Company Brain to prepare the target universe for {campaign goal}. Preserve the original rows. Normalize company names and domains, flag likely duplicates, and retain parent and subsidiary distinctions.
+
+Use supplied relationship records to distinguish customers, former customers, open opportunities and unknowns. Apply my campaign rules: {inclusions, exclusions and holds}. Do not infer current status from an old association. Return accounts-reviewed.csv with stable IDs, original row references and a disposition for every row. In account-review.md, reconcile raw rows and unique accounts and show the decisions I still need to make.</pre></div></details>
+<details class="prompt-card" id="prompt-4" data-stage="2. Segmentation">
+<summary><b>4</b><span>Segment the list around a shared buying problem</span><small>2. Segmentation</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/campaign-segmentation" target="_blank" rel="noopener">Campaign Segmentation</a></p>
+<dl><div><dt>Bring</dt><dd>Reviewed account list; Company Brain; tool map.</dd></div><div><dt>Get</dt><dd>Cohort rules, account assignments and exceptions.</dd></div></dl>
+<button type="button" class="copy" data-number="4" aria-label="Copy prompt 4">Copy prompt</button>
+<pre tabindex="0">Use Campaign Segmentation with our Company Brain, tool-map.md and reviewed account list. Propose a small set of cohorts based on a shared buying problem, use case or operating context. Explain when industry changes the message.
+
+Give each cohort an entry rule, exclusion rule, campaign premise, relevant buyer roles and evidence gaps. Assign one primary cohort to each included account and explain the fit. Keep relationship holds visible. Return campaign-segments.md, account-segments.csv and a review queue. Reconcile every original account as included, held, review, excluded or duplicate. Do not force uncertain accounts into a campaign.</pre></div></details>
+<details class="prompt-card" id="prompt-5" data-stage="2. Segmentation">
+<summary><b>5</b><span>Choose the first campaign wave</span><small>2. Segmentation</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/campaign-segmentation" target="_blank" rel="noopener">Campaign Segmentation</a></p>
+<dl><div><dt>Bring</dt><dd>Proposed segments; available content; campaign goal and constraints.</dd></div><div><dt>Get</dt><dd>first-wave-brief.md and the exact account set.</dd></div></dl>
+<button type="button" class="copy" data-number="5" aria-label="Copy prompt 5">Copy prompt</button>
+<pre tabindex="0">Use Campaign Segmentation to help me choose the first wave from these proposed cohorts. Compare audience fit, available proof, content relevance, relationship context and our ability to execute. Recommend one cohort and explain the tradeoffs.
+
+Build first-wave-brief.md with the campaign problem, buyer groups, useful content offer, account IDs, channel hypothesis and one learning question. Keep net-new, restart and customer motions distinct where our relationship rules require it. Show the exclusions and unresolved decisions. Treat your recommendation as a proposal for my review, then give me the exact account set to carry into research.</pre></div></details>
+<details class="prompt-card" id="prompt-6" data-stage="3. Account briefs">
+<summary><b>6</b><span>Build one account brief before we scale</span><small>3. Account briefs</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/account-brief-builder" target="_blank" rel="noopener">Account Brief Builder</a></p>
+<dl><div><dt>Bring</dt><dd>One target company and domain; Company Brain; first-wave brief; tool map.</dd></div><div><dt>Get</dt><dd>One sourced pilot brief and a campaign hypothesis.</dd></div></dl>
+<button type="button" class="copy" data-number="6" aria-label="Copy prompt 6">Copy prompt</button>
+<pre tabindex="0">Use Account Brief Builder for {target company and domain}. Use our Company Brain and first-wave brief to explain what this company does, who it sells to, why it fits and what may make the timing relevant.
+
+Reuse available relationship history. Add primary company research and any accessible engagement, intent or technology evidence, keeping their sources and dates distinct. Missing access is not zero activity. End with one campaign hypothesis, useful content, buyer-role implications and open questions. Return one account brief with its source register. Build only this pilot so I can review its depth before we expand.</pre></div></details>
+<details class="prompt-card" id="prompt-7" data-stage="3. Account briefs">
+<summary><b>7</b><span>Apply the reviewed brief to the rest of the wave</span><small>3. Account briefs</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/account-brief-builder" target="_blank" rel="noopener">Account Brief Builder</a></p>
+<dl><div><dt>Bring</dt><dd>Reviewed pilot; selected account IDs; Company Brain; tool map; review corrections.</dd></div><div><dt>Get</dt><dd>Individual briefs and an account comparison.</dd></div></dl>
+<button type="button" class="copy" data-number="7" aria-label="Copy prompt 7">Copy prompt</button>
+<pre tabindex="0">Use Account Brief Builder to apply this reviewed pilot structure to {selected account IDs}. My corrections to the pilot are {decisions}. Keep the same account and segment IDs and reuse existing research before collecting more.
+
+Write a distinct brief for each account. Preserve source dates, relationship context, observed signals and missing coverage. Tie each campaign hypothesis to that account&#x27;s facts and our supported capabilities. Return the individual briefs plus account-briefs-summary.md comparing why each account belongs, what changes the message and what still needs review. Stay within the named accounts and the tool map&#x27;s authorized usage limits.</pre></div></details>
+<details class="prompt-card" id="prompt-8" data-stage="4. Buyer groups">
+<summary><b>8</b><span>Map the buying group and what each role needs</span><small>4. Buyer groups</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/buyer-group-mapper" target="_blank" rel="noopener">Buyer Group Mapper</a></p>
+<dl><div><dt>Bring</dt><dd>Company Brain; account briefs; chosen campaign scope.</dd></div><div><dt>Get</dt><dd>Buyer groups with role jobs, questions and content needs.</dd></div></dl>
+<button type="button" class="copy" data-number="8" aria-label="Copy prompt 8">Copy prompt</button>
+<pre tabindex="0">Use Buyer Group Mapper with these account briefs and our Company Brain. Map the roles involved in evaluating, approving, implementing and using our offering. Group people by the work they do and the evidence they need.
+
+For each group, show the job, questions, objections, proof needs, useful content and message angle. Distinguish executive, manager and practitioner priorities. Preserve account and segment IDs and assign stable buyer-group IDs. Do not infer authority or reporting lines from a title. Return buyer-groups.md and a coverage table. A useful role-based map is enough where named contacts are unavailable.</pre></div></details>
+<details class="prompt-card" id="prompt-9" data-stage="4. Buyer groups">
+<summary><b>9</b><span>Find the relevant people and show the coverage gaps</span><small>4. Buyer groups</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/buyer-group-mapper" target="_blank" rel="noopener">Buyer Group Mapper</a></p>
+<dl><div><dt>Bring</dt><dd>Buyer map; account IDs; existing contacts or interaction exports; tool map.</dd></div><div><dt>Get</dt><dd>buyer-coverage.csv and a verification queue.</dd></div></dl>
+<button type="button" class="copy" data-number="9" aria-label="Copy prompt 9">Copy prompt</button>
+<pre tabindex="0">Use Buyer Group Mapper to populate our buyer groups for {account IDs}. First reuse supplied CRM contacts, past interactions and research. Then use available, authorized sources to fill the relevant gaps.
+
+Our desired coverage is {roles and approximate count per account}. Keep gaps when relevant people cannot be found. For every candidate, record current company and role evidence, source date, buyer-group fit, relationship history and what remains unverified. Keep historical employment separate from current affiliation. Return buyer-coverage.csv and a verification queue. Discovery, email verification and permission to contact are separate states. Use no charged lookup without an explicit allowance.</pre></div></details>
+<details class="prompt-card" id="prompt-10" data-stage="5. Channel Activation">
+<summary><b>10</b><span>Turn the campaign into a channel plan</span><small>5. Channel Activation</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> Workflow prompt</p>
+<dl><div><dt>Bring</dt><dd>First-wave brief; buyer groups; content catalog; board URL; tool map.</dd></div><div><dt>Get</dt><dd>channel-activation-plan.md.</dd></div></dl>
+<button type="button" class="copy" data-number="10" aria-label="Copy prompt 10">Copy prompt</button>
+<pre tabindex="0">Use our first-wave brief, buyer groups and content catalog to build a Channel Activation plan. The buyer-experience destination is {campaign board URL}.
+
+For Marketing Emails, individual sales email, LinkedIn messaging, LinkedIn ads and 6sense ads, recommend the audience, role, useful offer, message approach and proposed next action. Explain which channels to start with and what makes the others worthwhile. Distinguish account-level HTML marketing email from individually addressed sales outreach. Keep every click on the campaign board or a verified content item there. Return channel-activation-plan.md with dependencies, a suggested owner role and the evidence we will use to judge each channel.</pre></div></details>
+<details class="prompt-card" id="prompt-11" data-stage="5. Channel Activation">
+<summary><b>11</b><span>Build the pitch library we can approve once</span><small>5. Channel Activation</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/buyer-group-email-copy" target="_blank" rel="noopener">Buyer Group Email Copy</a></p>
+<dl><div><dt>Bring</dt><dd>Company Brain; product capabilities; usable proof; existing approved pitches.</dd></div><div><dt>Get</dt><dd>pitch-library.md and a clear wording review.</dd></div></dl>
+<button type="button" class="copy" data-number="11" aria-label="Copy prompt 11">Copy prompt</button>
+<pre tabindex="0">Use Buyer Group Email Copy with our Company Brain and product positioning. Reuse existing approved elevator pitches unchanged. If we do not have a library, propose five concise pitches covering distinct buyer problems and supported capabilities.
+
+Show each pitch&#x27;s exact text, intended use, source basis, version and approval state. Keep new wording in Draft for my review. Do not invent metrics or turn one customer&#x27;s result into a general promise. Return pitch-library.md. Once I approve a version, use that exact pitch in later sales drafts; personalize the opening and role bridge around it. Propose future pitch changes separately.</pre></div></details>
+<details class="prompt-card" id="prompt-12" data-stage="5. Channel Activation">
+<summary><b>12</b><span>Draft five sales emails, then prepare the batch</span><small>5. Channel Activation</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/buyer-group-email-copy" target="_blank" rel="noopener">Buyer Group Email Copy</a></p>
+<dl><div><dt>Bring</dt><dd>Account briefs; buyer roster; approved pitches; content catalog; board URL.</dd></div><div><dt>Get</dt><dd>Five review drafts and the requested AgentMail or Smartlead handoff.</dd></div></dl>
+<button type="button" class="copy" data-number="12" aria-label="Copy prompt 12">Copy prompt</button>
+<pre tabindex="0">Use Buyer Group Email Copy for {selected account and five representative buyers}. Write a value subject, problem or sourced customer-story opening, company-and-role bridge, exact approved pitch and content CTA to {campaign board URL}.
+
+Company research is sufficient when individual research is absent. Make subjects, openings and complete messages meaningfully distinct within a company, including supplied prior Outreach, AgentMail and Smartlead messages. Pitches may repeat. Use resolved names and my supplied signature and footer policy. Return five drafts, evidence notes and email-drafts.json; run the bundled checker. After I review them, prepare the requested batch and {AgentMail JSON or Smartlead CSV/template} as unsent files. Keep unresolved recipient links flagged.</pre></div></details>
+<details class="prompt-card" id="prompt-13" data-stage="5. Channel Activation">
+<summary><b>13</b><span>Build the account-level Marketing Email</span><small>5. Channel Activation</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> Workflow prompt</p>
+<dl><div><dt>Bring</dt><dd>Company Brain; account brief; approved brand assets; content offer; board URL.</dd></div><div><dt>Get</dt><dd>A rich HTML email draft, plain-text version and preview.</dd></div></dl>
+<button type="button" class="copy" data-number="13" aria-label="Copy prompt 13">Copy prompt</button>
+<pre tabindex="0">Build a rich HTML Marketing Email for {account or cohort} using our Company Brain, approved assets and this offer: {content offer}. Link the CTA to {campaign board URL}. This is the account-level marketing message, so it can share copy across people at the same company.
+
+Give me subject and preheader options, a clear content-led message, one primary CTA, lightweight email-compatible HTML and a plain-text version. Use the supplied sender, signature and footer policy. Keep merge fields explicit and separate them from resolved preview values. Return marketing-email.html, marketing-email.txt and a visual preview if available. Add Marketo mapping notes if relevant; do not claim an import or send.</pre></div></details>
+<details class="prompt-card" id="prompt-14" data-stage="5. Channel Activation">
+<summary><b>14</b><span>Write the LinkedIn conversation</span><small>5. Channel Activation</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> Workflow prompt</p>
+<dl><div><dt>Bring</dt><dd>Buyer roles; account brief; optional individual research; content offer; board URL.</dd></div><div><dt>Get</dt><dd>A connection note and two useful message drafts.</dd></div></dl>
+<button type="button" class="copy" data-number="14" aria-label="Copy prompt 14">Copy prompt</button>
+<pre tabindex="0">Use these buyer roles, account facts and approved content to draft LinkedIn outreach for {audience}. Write a short connection note, a first message offering something useful and one follow-up that adds a new reason to engage.
+
+Adapt the opening for executive, manager and practitioner priorities. Use company context when personal research is unavailable, and do not invent familiarity or an observed pain. The connection note can omit a link; any content link must return to {campaign board URL} or a verified item there. Return the drafts with their evidence basis and unresolved personalization fields. Keep them as human-review messages, with no automated sending.</pre></div></details>
+<details class="prompt-card" id="prompt-15" data-stage="5. Channel Activation">
+<summary><b>15</b><span>Create the LinkedIn ad creative</span><small>5. Channel Activation</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/buyer-group-ad-creative" target="_blank" rel="noopener">Buyer Group Ad Creative</a></p>
+<dl><div><dt>Bring</dt><dd>Buyer groups; Company Brain; approved logo and assets; supplied ads if any; board URL.</dd></div><div><dt>Get</dt><dd>Copy, actual visual drafts and a review gallery.</dd></div></dl>
+<button type="button" class="copy" data-number="15" aria-label="Copy prompt 15">Copy prompt</button>
+<pre tabindex="0">Use Buyer Group Ad Creative for LinkedIn with {priority buyer groups} and {campaign board URL}. Inspect any ads I supplied and reuse their approved message and visual direction. If we are starting fresh, propose two useful concepts based on the buyer&#x27;s work and our content offer.
+
+Return separate introductory text, platform headline and content CTA, plus actual visual drafts when a design tool is available. Check spelling, logo fidelity, supported claims and current LinkedIn specifications. Show a gallery so I can compare the concepts. Label webinar previews and production exports accurately. Include source notes and one learning question per concept. Do not upload or launch ads.</pre></div></details>
+<details class="prompt-card" id="prompt-16" data-stage="5. Channel Activation">
+<summary><b>16</b><span>Adapt the concept for 6sense account advertising</span><small>5. Channel Activation</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/buyer-group-ad-creative" target="_blank" rel="noopener">Buyer Group Ad Creative</a></p>
+<dl><div><dt>Bring</dt><dd>Reviewed creative; priority account group; content offer; board URL; intended use.</dd></div><div><dt>Get</dt><dd>6sense visual variants or a webinar preview gallery.</dd></div></dl>
+<button type="button" class="copy" data-number="16" aria-label="Copy prompt 16">Copy prompt</button>
+<pre tabindex="0">Use Buyer Group Ad Creative to adapt these reviewed concepts for 6sense account advertising. Preserve the approved message and brand. Recompose the layout for the requested display sizes rather than shrinking all the copy into one banner.
+
+Our use is {webinar showcase or production preparation}. For a showcase, keep supplied artwork intact and make a clear gallery. For production preparation, verify current 6sense dimensions and file limits, export the requested sizes and run the bundled checker. Point every click to {campaign board URL} with non-personal channel and creative attribution. Return the assets and handoff notes. Audience targetability, budget and launch remain separate decisions.</pre></div></details>
+<details class="prompt-card" id="prompt-17" data-stage="6. Buyer experience">
+<summary><b>17</b><span>Build a resource-first buyer experience</span><small>6. Buyer experience</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> Workflow prompt; use your Folloze builder if available</p>
+<dl><div><dt>Bring</dt><dd>Company Brain; campaign brief; buyer groups; approved content and assets; board URL if available.</dd></div><div><dt>Get</dt><dd>A saved Folloze draft or editable page prototype and content map.</dd></div></dl>
+<button type="button" class="copy" data-number="17" aria-label="Copy prompt 17">Copy prompt</button>
+<pre tabindex="0">Build a resource-first buyer experience from our Company Brain, campaign brief, buyer groups and approved content. Lead with something useful to read, watch or explore. Create a strong opening, role-relevant content paths, approved customer proof and a clear next step.
+
+Use the supplied visual references and real approved assets. Define an anonymous fallback and the account or persona variants we can support with evidence. If Folloze is connected, use its supported builder to save a draft at {board URL}. Otherwise return an editable HTML prototype and content map. Inspect the actual preview on desktop and mobile. Show what is built, what is proposed and what needs review before publication.</pre></div></details>
+<details class="prompt-card" id="prompt-18" data-stage="6. Buyer experience">
+<summary><b>18</b><span>Connect each channel to the right board link</span><small>6. Buyer experience</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> Workflow prompt; use the verified link workflow in your tool map</p>
+<dl><div><dt>Bring</dt><dd>Board URL; contact or merge-field mapping; channel plan; approved link rules.</dd></div><div><dt>Get</dt><dd>channel-links.csv and a link QA report.</dd></div></dl>
+<button type="button" class="copy" data-number="18" aria-label="Copy prompt 18">Copy prompt</button>
+<pre tabindex="0">Use our verified Folloze link workflow to connect these channel drafts to {campaign board URL}. Generate individually resolved links for named sales recipients, the documented merge-field pattern for Marketing Emails, and non-personal attribution links for public ads.
+
+Keep one campaign ID and consistent channel and creative labels. Preserve existing query values and encode values with code. Distinguish documented identity-parameter links from Folloze-issued Individual Links; never invent a token. Keep personal URLs in protected files and use synthetic examples in the review. Return channel-links.csv and a decoded-value QA report. If the link workflow is unavailable, return the mapping and exact missing step rather than claiming identity pass-through works.</pre></div></details>
+<details class="prompt-card" id="prompt-19" data-stage="7. Sales follow-up">
+<summary><b>19</b><span>Read the engagement and show what happened</span><small>7. Sales follow-up</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> Workflow prompt; works with a Folloze export</p>
+<dl><div><dt>Bring</dt><dd>Board URL or ID; date range; engagement export or accessible analytics connection; channel map.</dd></div><div><dt>Get</dt><dd>engagement-summary.md and a reconciled engagement table.</dd></div></dl>
+<button type="button" class="copy" data-number="19" aria-label="Copy prompt 19">Copy prompt</button>
+<pre tabindex="0">Analyze engagement for {Folloze board URL or ID} during {date range and timezone}. Use the connected analytics tools if available; otherwise work from the exports I attach. First show the sources, fields, filters and coverage actually available.
+
+Summarize people and accounts that visited the board, content explored, repeat visits, engagement time and meaningful CTAs where those fields exist. Separate known buyers, anonymous account signals, suspected automation and unknown classification. Reconcile duplicates and explain the counting unit. Compare channels and creatives only where attribution supports it. Return engagement-summary.md and a table of useful signals, source records and limits. Keep email delivery, ad clicks and human board engagement distinct; do not infer buying intent from a visit.</pre></div></details>
+<details class="prompt-card" id="prompt-20" data-stage="7. Sales follow-up">
+<summary><b>20</b><span>Turn engagement into useful sales follow-up</span><small>7. Sales follow-up</small></summary>
+<div class="card-body"><p class="skill"><strong>Skill</strong> <a href="https://github.com/0xTrey/folloze-ai-webinar-skills/tree/main/skills/buyer-group-email-copy" target="_blank" rel="noopener">Buyer Group Email Copy</a> for email; workflow prompt for the full handoff</p>
+<dl><div><dt>Bring</dt><dd>Engagement report; account brief; buyer context; content catalog; owner and relationship rules.</dd></div><div><dt>Get</dt><dd>sales-follow-up.md with context, drafts and next actions.</dd></div></dl>
+<button type="button" class="copy" data-number="20" aria-label="Copy prompt 20">Copy prompt</button>
+<pre tabindex="0">Use this engagement report, account brief and buyer context to prepare sales follow-up. For a known buyer, explain the useful topic, what the evidence does and does not establish, the owner or proposed owner, and the next helpful action.
+
+Use Buyer Group Email Copy for a concise email, plus draft a LinkedIn message and a phone opener where appropriate. Offer a relevant next resource on {campaign board URL}. Do not tell someone we observed behavior unless that wording is appropriate and supported. For anonymous account activity, propose an account-level action without assigning the visit to a person. Return sales-follow-up.md with source records, drafts, holds and a proposed follow-up test. Leave outreach unsent.</pre></div></details></section><p id="empty" hidden>No prompts match. Try another search or section.</p>
+<footer>Folloze AI webinar leave-behind. Replace the braces with your values. Included skills are linked on each card; workflow prompts use your files and available tools. Keep private inputs in your approved workspace. New copy, creative and pages stay drafts. Connections do not authorize spending or launch.</footer>
+</main><script>
+const cards=[...document.querySelectorAll('.prompt-card')],search=document.getElementById('search'),stage=document.getElementById('stage'),status=document.getElementById('copy-status');
+function filter(){const query=search.value.trim().toLowerCase();let count=0;for(const card of cards){card.hidden=(stage.value!=='all'&&card.dataset.stage!==stage.value)||(query&&!card.textContent.toLowerCase().includes(query));if(!card.hidden)count++;}document.getElementById('result-count').textContent=count+' of 20 prompts';document.getElementById('empty').hidden=!!count;}
+search.addEventListener('input',filter);stage.addEventListener('change',filter);
+document.getElementById('expand').addEventListener('click',event=>{const visible=cards.filter(card=>!card.hidden),open=visible.some(card=>!card.open);for(const card of visible)card.open=open;event.currentTarget.textContent=open?'Collapse all':'Expand all';});
+for(const button of document.querySelectorAll('.copy'))button.addEventListener('click',async()=>{const pre=button.closest('details').querySelector('pre');try{await navigator.clipboard.writeText(pre.textContent);button.textContent='Copied';status.textContent='Prompt '+button.dataset.number+' copied.';}catch{const selection=window.getSelection(),range=document.createRange();range.selectNodeContents(pre);selection.removeAllRanges();selection.addRange(range);pre.focus();status.textContent='Prompt '+button.dataset.number+' selected. Press Command+C or Ctrl+C to copy.';}});
+if(location.hash.startsWith('#prompt-')){const card=document.getElementById(location.hash.slice(1));if(card){card.open=true;card.scrollIntoView();}}
+window.addEventListener('beforeprint',()=>{for(const card of cards)card.open=true;});
+</script></body></html>

@@ -1,17 +1,17 @@
 # Build your campaign
 
-For Claude, use the [rehearsal guide](CLAUDE-REHEARSAL.md): exact setup, a fresh-campaign starter, and 15 walkthrough prompts. The [Claude kit](https://github.com/0xTrey/folloze-ai-webinar-skills/raw/refs/heads/main/downloads/claude-rehearsal-kit.zip) contains eight individual ZIPs for its skill installer.
+Bring your company URL, one campaign goal and a small account list. Add approved brand, product and customer-proof documents when available.
 
-1. Download and unzip the full pack. Each folder inside `skills/` is a complete skill. Use your AI tool's supported installer, or attach `SKILL.md` and its referenced files in the same chat.
-2. Open [Campaign Workspace](skills/campaign-workspace/QUICKSTART.md) to see the campaign map. Start with no company files linked.
-3. Use [Tools & Data Setup](skills/tools-data-setup/QUICKSTART.md) and [Company Brain Builder](skills/company-brain-builder/QUICKSTART.md). Bring your company URL, known tool names, and approved documents when available.
-4. Add your account list. Continue through [segmentation](skills/campaign-segmentation/QUICKSTART.md), [account briefs](skills/account-brief-builder/QUICKSTART.md), and [buyer groups](skills/buyer-group-mapper/QUICKSTART.md).
-5. Create [LinkedIn and 6sense creative](skills/buyer-group-ad-creative/QUICKSTART.md) and [email copy](skills/buyer-group-email-copy/QUICKSTART.md). Supply approved pitches and content. Request AgentMail or Smartlead handoff files when needed. Review claims, role assumptions, and creative before use.
+1. **Get set up.** Follow the [customer guide](CUSTOMER-GUIDE.md). For Claude, [download the campaign kit](https://github.com/0xTrey/folloze-ai-webinar-skills/raw/refs/heads/main/downloads/claude-campaign-kit.zip), enable code execution and install the individual skill ZIPs. The guide includes a starter prompt and setup links.
+2. **Build your context.** Use prompts 1-2 for the Company Brain and available tools.
+3. **Understand the audience.** Use prompts 3-9 for account review, segmentation, briefs and buyer groups.
+4. **Build the campaign.** Use prompts 10-18 for Channel Activation, the buyer experience and board links.
+5. **Learn and follow up.** Use prompts 19-20 with actual engagement data.
 
-Pass the same `tool-map.md`, reviewed Company Brain, and account, segment, and buyer-group IDs between skills. If a connection is unavailable, use approved exports or named Markdown blocks for manual saving.
+[Read the 20 prompts](CAMPAIGN-PROMPTS.md) or download the [prompt-only ZIP](https://github.com/0xTrey/folloze-ai-webinar-skills/raw/refs/heads/main/downloads/campaign-prompts.zip) and open `CAMPAIGN-PROMPTS.html` in your browser. Each card names the inputs, matching skill and result to review.
 
-In Campaign Workspace, select a skill and choose Use skill. Copy the prepared request into your AI chat. It includes the selected bundled instructions and Markdown references. Return the reviewed outputs to the map through uploads or a separately configured connector.
+Carry the latest Company Brain, tool map and relevant outputs between chats. Keep the same account, segment and buyer-group IDs. When a connection is unavailable, use approved exports and save the returned files manually.
 
-Green means ready for the next planning task. It does not establish sending, publication, or results. Paid enrichment needs a specific scope and allowance; setup starts with zero charged operations.
+[Campaign Workspace](skills/campaign-workspace/QUICKSTART.md) is an optional map for tracking the work. Upload source files and reviewed outputs separately from attaching them to your AI chat. Export your campaign record and save the original files in your approved private workspace.
 
-Keep company files, contact lists, API keys, and campaign exports in your approved private workspace. They do not belong in this public skills repository.
+Keep company files, contacts and credentials private. New copy, creative and pages remain drafts until reviewed. Sending, publishing, paid lookups and ad launches require the right access and your approval.
