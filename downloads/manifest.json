@@ -1,5 +1,5 @@
 {
-  "version": "0.3.2",
+  "version": "0.3.3",
   "skillCount": 10,
   "embeddedSkillCount": 9,
   "skillFileCount": 77,
@@ -332,8 +332,8 @@
     },
     {
       "name": "buyer-group-email-copy.zip",
-      "bytes": 23544,
-      "sha256": "a751aa21d1cda67911e6ca2d8ddb007adbfad7bbf4c4da02409e74f57098cad1",
+      "bytes": 23703,
+      "sha256": "8ba3e552b331c12d046f78a350e564512201d6639aa87186fdfbf33c30515b30",
       "fileCount": 10,
       "files": [
         {
@@ -343,8 +343,8 @@
         },
         {
           "path": "buyer-group-email-copy/SKILL.md",
-          "bytes": 6531,
-          "sha256": "91c78c1a45fb0acc573f3039d0303f1aa4e2702104c855b09e7fa1cc2d74002e"
+          "bytes": 6916,
+          "sha256": "2545dc5c7c4c9687966b54a794acdfccc93a117275260591c0c84470819196fc"
         },
         {
           "path": "buyer-group-email-copy/agents/openai.yaml",
@@ -433,8 +433,8 @@
     },
     {
       "name": "campaign-workspace.zip",
-      "bytes": 315718,
-      "sha256": "35b80e29eb54597ad2b6973e1092359462090aa3aa9038b23c3a2264a31cfe4b",
+      "bytes": 315859,
+      "sha256": "7d05d330e9498adcc6045c79d9c9e47d69176a1e6421a0ab529f5f63a207deab",
       "fileCount": 8,
       "files": [
         {
@@ -464,8 +464,8 @@
         },
         {
           "path": "campaign-workspace/assets/campaign-workspace.html",
-          "bytes": 839132,
-          "sha256": "a99dcb41319bc42b6ef7d9d9023f1af460580e773065d45bb358774be4a452b1"
+          "bytes": 839519,
+          "sha256": "bc8eac8e190c24f737ba4566d332152bc1481f36187fb43a2c418fcb08a9ce95"
         },
         {
           "path": "campaign-workspace/references/result-contract.md",
@@ -499,8 +499,8 @@
     },
     {
       "name": "claude-campaign-kit.zip",
-      "bytes": 766515,
-      "sha256": "f5ac1bdc0d74efc2c389e4c2493153bd0f6b55529dad871ebd6fbfbd52cc0516",
+      "bytes": 766920,
+      "sha256": "0c7c5048cbf45250fb5a94bf9475eb07a1d81aaed58dd0e29f65f600c0d98374",
       "fileCount": 16,
       "files": [
         {
@@ -530,8 +530,8 @@
         },
         {
           "path": "claude-campaign-kit/campaign-workspace.html",
-          "bytes": 839132,
-          "sha256": "a99dcb41319bc42b6ef7d9d9023f1af460580e773065d45bb358774be4a452b1"
+          "bytes": 839519,
+          "sha256": "bc8eac8e190c24f737ba4566d332152bc1481f36187fb43a2c418fcb08a9ce95"
         },
         {
           "path": "claude-campaign-kit/skill-zips/account-brief-builder.zip",
@@ -550,8 +550,8 @@
         },
         {
           "path": "claude-campaign-kit/skill-zips/buyer-group-email-copy.zip",
-          "bytes": 23544,
-          "sha256": "a751aa21d1cda67911e6ca2d8ddb007adbfad7bbf4c4da02409e74f57098cad1"
+          "bytes": 23703,
+          "sha256": "8ba3e552b331c12d046f78a350e564512201d6639aa87186fdfbf33c30515b30"
         },
         {
           "path": "claude-campaign-kit/skill-zips/buyer-group-mapper.zip",
@@ -565,8 +565,8 @@
         },
         {
           "path": "claude-campaign-kit/skill-zips/campaign-workspace.zip",
-          "bytes": 315718,
-          "sha256": "35b80e29eb54597ad2b6973e1092359462090aa3aa9038b23c3a2264a31cfe4b"
+          "bytes": 315859,
+          "sha256": "7d05d330e9498adcc6045c79d9c9e47d69176a1e6421a0ab529f5f63a207deab"
         },
         {
           "path": "claude-campaign-kit/skill-zips/company-brain-builder.zip",
@@ -587,8 +587,8 @@
     },
     {
       "name": "claude-rehearsal-kit.zip",
-      "bytes": 766515,
-      "sha256": "f5ac1bdc0d74efc2c389e4c2493153bd0f6b55529dad871ebd6fbfbd52cc0516",
+      "bytes": 766920,
+      "sha256": "0c7c5048cbf45250fb5a94bf9475eb07a1d81aaed58dd0e29f65f600c0d98374",
       "fileCount": 16,
       "files": [
         {
@@ -618,8 +618,8 @@
         },
         {
           "path": "claude-campaign-kit/campaign-workspace.html",
-          "bytes": 839132,
-          "sha256": "a99dcb41319bc42b6ef7d9d9023f1af460580e773065d45bb358774be4a452b1"
+          "bytes": 839519,
+          "sha256": "bc8eac8e190c24f737ba4566d332152bc1481f36187fb43a2c418fcb08a9ce95"
         },
         {
           "path": "claude-campaign-kit/skill-zips/account-brief-builder.zip",
@@ -638,8 +638,8 @@
         },
         {
           "path": "claude-campaign-kit/skill-zips/buyer-group-email-copy.zip",
-          "bytes": 23544,
-          "sha256": "a751aa21d1cda67911e6ca2d8ddb007adbfad7bbf4c4da02409e74f57098cad1"
+          "bytes": 23703,
+          "sha256": "8ba3e552b331c12d046f78a350e564512201d6639aa87186fdfbf33c30515b30"
         },
         {
           "path": "claude-campaign-kit/skill-zips/buyer-group-mapper.zip",
@@ -653,8 +653,8 @@
         },
         {
           "path": "claude-campaign-kit/skill-zips/campaign-workspace.zip",
-          "bytes": 315718,
-          "sha256": "35b80e29eb54597ad2b6973e1092359462090aa3aa9038b23c3a2264a31cfe4b"
+          "bytes": 315859,
+          "sha256": "7d05d330e9498adcc6045c79d9c9e47d69176a1e6421a0ab529f5f63a207deab"
         },
         {
           "path": "claude-campaign-kit/skill-zips/company-brain-builder.zip",
@@ -675,8 +675,8 @@
     },
     {
       "name": "folloze-ai-webinar-skills.zip",
-      "bytes": 471136,
-      "sha256": "17d10fd7e99abd91ba81d170253f6782d328b01c32a8217e9f7cf1068b7e3cc8",
+      "bytes": 471436,
+      "sha256": "5bbf3ba0d7b778873a1ee6442a76be7f7cf320def5efa37ce4477b4828e19c21",
       "fileCount": 82,
       "files": [
         {
@@ -826,8 +826,8 @@
         },
         {
           "path": "folloze-ai-webinar-skills/skills/buyer-group-email-copy/SKILL.md",
-          "bytes": 6531,
-          "sha256": "91c78c1a45fb0acc573f3039d0303f1aa4e2702104c855b09e7fa1cc2d74002e"
+          "bytes": 6916,
+          "sha256": "2545dc5c7c4c9687966b54a794acdfccc93a117275260591c0c84470819196fc"
         },
         {
           "path": "folloze-ai-webinar-skills/skills/buyer-group-email-copy/agents/openai.yaml",
@@ -966,8 +966,8 @@
         },
         {
           "path": "folloze-ai-webinar-skills/skills/campaign-workspace/assets/campaign-workspace.html",
-          "bytes": 839132,
-          "sha256": "a99dcb41319bc42b6ef7d9d9023f1af460580e773065d45bb358774be4a452b1"
+          "bytes": 839519,
+          "sha256": "bc8eac8e190c24f737ba4566d332152bc1481f36187fb43a2c418fcb08a9ce95"
         },
         {
           "path": "folloze-ai-webinar-skills/skills/campaign-workspace/references/result-contract.md",

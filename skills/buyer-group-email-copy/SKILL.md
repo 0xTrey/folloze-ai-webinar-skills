@@ -43,6 +43,8 @@ Keep one CTA destination. In a board-led campaign, every click returns to the su
 
 When a named story has a verified native board item, link the CTA directly to that item. Keep the story, copy claim and destination aligned. In machine-readable batches, list clean verified item URLs in `verified_board_item_urls` and place the actual CTA destination in `cta_url`; the checker still rejects other boards and unlisted items.
 
+For named email recipients, preserve the complete identity-bearing item URL in both HTML and plain text. Decode and compare the identity and touch parameters against the source contact before handoff. Public previews use clean URLs and never expose real recipient identity. Parameterized URLs are not opaque Folloze Individual Links, and a local URL check does not prove attribution.
+
 For a named-recipient draft, preserve supplied suppressions, affiliation gaps and communication constraints. Missing eligibility does not block role-copy preparation.
 
 ## 5. Review the drafts
