@@ -53,6 +53,7 @@ For a requested company batch, also return `email-drafts.json`. `pitches` is the
 {
   "campaign_id": "campaign-review",
   "destination_url": "https://example.com/campaign",
+  "verified_board_item_urls": [],
   "footer_policy": "signature_only",
   "pitches": [{"id": "P1", "text": "Exact supplied pitch", "approval": "approved"}],
   "drafts": [{
@@ -63,6 +64,7 @@ For a requested company batch, also return `email-drafts.json`. `pitches` is the
     "bridge": "Different buying roles may need different proof before moving forward.",
     "pitch_id": "P1", "pitch_text": "Exact supplied pitch",
     "cta": "Explore the campaign example.", "board_url": "https://example.com/campaign",
+    "cta_url": "https://example.com/campaign",
     "resource_id": "campaign-example", "source_ids": [], "review_state": "draft"
   }],
   "prior_messages": []
@@ -76,5 +78,7 @@ python3 <skill-directory>/scripts/check_email_batch.py <email-drafts.json>
 ```
 
 It reads only the local JSON. It checks required sections, fixed pitch text, campaign destination, signature-only footer policy and normalized subject/opening/body duplicates against current and supplied prior messages. Its legacy subject guard allows 2-8 words; the framework's tighter 2-6 word target needs editorial review. It cannot check trigger freshness, channel length targets, approve claims, find unsupplied historical sends, reserve variants, validate recipient eligibility or contact an email platform. Review near duplicates, factual claims and LinkedIn copy separately.
+
+For story CTAs, supply the clean native item URL in `verified_board_item_urls` after observing it on the published board and checking its reader. Set `cta_url` to that item URL, including supplied identity/UTM parameters for private named drafts. `board_url` may remain the campaign root for context. The checker validates `cta_url` first and accepts only the root or exact listed item paths on the same board. It does not verify the underlying asset, identity attribution or analytics delivery.
 
 Add the selected provider handoff only when requested. Keep actual recipient addresses and identity URLs in protected files. Do not use the example domain, draft IDs or placeholder recipient references as real transport values.

@@ -247,7 +247,7 @@ def main():
     archives.append(archive('claude-rehearsal-kit.zip', claude_kit))
     full = {f'folloze-ai-webinar-skills/{name}': (ROOT / name).read_bytes() for name in SKILL_FILES | GUIDES}
     archives.append(archive('folloze-ai-webinar-skills.zip', full))
-    manifest = {'version': '0.3.1', 'skillCount': len(SKILLS), 'embeddedSkillCount': embedded_count, 'skillFileCount': len(SKILL_FILES), 'promptCount': prompt_count,
+    manifest = {'version': '0.3.2', 'skillCount': len(SKILLS), 'embeddedSkillCount': embedded_count, 'skillFileCount': len(SKILL_FILES), 'promptCount': prompt_count,
                 'checks': ['customer onboarding content', 'explicit file allowlist', 'portable paths', 'relative references', 'archive CRC', 'source byte parity', 'fresh extraction'],
                 'artifacts': archives}
     (ROOT / 'downloads/manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')

@@ -5,7 +5,7 @@ from collections import defaultdict
 import json
 from pathlib import Path
 import re
-from urllib.parse import urlsplit
+from urllib.parse import unquote, urlsplit
 
 
 def normal(value):
@@ -21,6 +21,18 @@ def check_batch(batch):
         return {'state': 'needs_revision', 'draft_count': 0, 'errors': [{'draft_id': None, 'issue': 'No draft rows'}], 'warnings': []}
     pitches = {p['id']: p for p in batch.get('pitches', [])}
     destination = urlsplit(batch.get('destination_url', ''))
+    board_path = destination.path.rstrip('/')
+    verified_items = batch.get('verified_board_item_urls') or []
+    if not isinstance(verified_items, list) or not all(isinstance(u, str) for u in verified_items):
+        raise ValueError('verified_board_item_urls must be a list of clean item URLs')
+    allowed_paths = {board_path}
+    for url in verified_items:
+        item = urlsplit(url)
+        path = item.path.rstrip('/')
+        if (item.scheme == destination.scheme == 'https' and item.netloc == destination.netloc
+                and path.startswith(board_path + '/items/') and not item.query and not item.fragment
+                and not {'.', '..'}.intersection(unquote(path).split('/'))):
+            allowed_paths.add(path)
     seen = defaultdict(dict)
     prior = batch.get('prior_messages', [])
     if not isinstance(prior, list):
@@ -49,11 +61,11 @@ def check_batch(batch):
                 issue('Pitch differs from the supplied library')
             elif pitch.get('approval') != 'approved':
                 warnings.append({'draft_id': ref, 'issue': 'Pitch wording is not approved'})
-            target = urlsplit(row.get('board_url', row.get('url', '')))
+            target = urlsplit(row.get('cta_url', row.get('board_url', row.get('url', ''))))
             if (destination.scheme != 'https' or not destination.netloc or
                 target.scheme != destination.scheme or target.netloc != destination.netloc or
-                target.path.rstrip('/') != destination.path.rstrip('/')):
-                issue('CTA must use the supplied campaign board')
+                target.path.rstrip('/') not in allowed_paths):
+                issue('CTA must use the supplied campaign board or an explicitly verified item on it')
             visible = '\n'.join(str(row.get(f, '')) for f in ('subject', 'opening', 'bridge', 'cta'))
             subject = row.get('subject', '')
             if isinstance(subject, str) and (not 2 <= len(subject.split()) <= 8 or len(subject) > 70 or re.search(r'[\r\n]', subject)):
